@@ -7,6 +7,12 @@ html {
     scroll-behavior: smooth;
 }
 
+.anchors {
+    display: block;
+    position: relative;
+    visibility: hidden;
+  }
+
 .nav-link {
     background-color: #fff;
     background-size: 100%;
@@ -35,4 +41,26 @@ html {
   .nav-link:hover, .fa-angles-down:hover {
     background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
     transition: all 0.3s ease;
+  }
+
+  .white {
+    background: #ffffff;
+    height: fit-content;
+    padding: 20px 0px;
+  }
+  
+  .grey {
+    background:#ededed;
+    height: fit-content;
+    padding: 20px 0px;
+  }
+
+  footer {
+    background-color: #131313;
+    color: #ffffff;
+  }
+  
+  footer .container {
+    display: flex;
+    height: 10svh;
   }
