@@ -59,15 +59,16 @@
         <div class="container">
             <div class="row text-center align-items-center">
                 <div class="col">
-                    <h1><strong>ABOUT ME</strong></h1>
+                    <h1><strong>ABOUT</strong></h1>
                 </div>
                 <div class="container">
-                    <div class="row text-center align-items-center">
-                        <div class="col-xs-12 col-lg-6">
+                    <div class="row text-left align-items-center">
+                        <div class="col-xs-12 col-lg-4">
                             <img class="w-100" src="images/about.jpg" alt="">
                         </div>
-                        <div class="col-xs-12 col-lg-6">
-                            <p>Hello there! I'm Johnny and I tend to find myself in interesting situations. 
+                        <div class="col-xs-12 col-lg-8">
+                            <p><strong>Hello there!</strong> 
+                                I'm Johnny and I tend to find myself in interesting situations. 
                                 I love going on adventures and creating stories that spark laughter. 
                                 Here's a little about me:</p>
                             <p>
@@ -101,7 +102,7 @@
         <div class="container">
             <div class="row text-center align-items-center">
                 <div class="col">
-                    <h1><strong>MY VALUES</strong></h1>
+                    <h1><strong>CORE VALUES</strong></h1>
                 </div>
             </div>
             <div class="row text-center align-items-center">
@@ -149,7 +150,8 @@
         <div class="container">
             <div class="row text-center align-items-center">
                 <div class="col">
-                    
+                    <h1><strong>EXPERIENCE</strong></h1>
+                    <p>Description</p>
                 </div>
             </div>
         </div>
@@ -161,45 +163,74 @@
         <div class="container">
             <div class="row text-center align-items-center">
                 <div class="col">
-                    <h1><strong>PERSONAL PROJECTS</strong></h1>
+                    <h1><strong>PROJECTS</strong></h1>
+                    <p>
+                        Here are the projects I've developed, 
+                        each inspired by the motto "See a need, fill a need." 
+                        I've pursued these journeys through self-directed learning, 
+                        with a focus on creating solutions that make a tangible impact.
+                        I'm always working on a new project - stay tuned for more!
+                    </p>
                 </div>
-                <div class="container">
-                    <div class="row text-center align-items-center">
-                        <div class="col-xs-12 col-lg-6">
-                            <img class="w-100" src="images/newgarden.jpg" alt="">
-                        </div>
-                        <div class="col-xs-12 col-lg-6">
-                            <div class="title">New Garden</div>
-                            <div class="techstack">Java</div>
-                            <div class="project">Description</div>
-                            <div class="button">GitHub</div>
-                        </div>
+            </div>
+            <div class="container">
+                <div class="row text-left align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <img class="w-100" src="images/newgarden.jpg" alt="">
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="title">New Garden</div>
+                        <div class="techstack">Java, PostgreSQL, Swing, MiGLayout</div>
+                        <p>
+                            Created a Java Swing GUI, Point of Sale system that allows 
+                            self-service for food ordering during the pandemic. 
+                            It deploys PostgreSQL to store every menu item and dynamically
+                            retrieves the correct items based on the selected category.
+                            It also counts the frequency of each item so restocking is easier.
+                        </p>
+                        <button class="form" onclick=" window.open('https://github.com/johnnyj2608/NewGarden','_blank')">GitHub</button>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row text-center align-items-center">
-                        <div class="col-xs-12 col-lg-6">
-                            <img class="w-100" src="images/lootcouncil.jpg" alt="">
-                        </div>
-                        <div class="col-xs-12 col-lg-6">
-                            <div class="title">Loot Council</div>
-                            <div class="techstack">Python</div>
-                            <div class="project">Description</div>
-                            <div class="button">GitHub</div>
-                        </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row text-left align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <img class="w-100" src="images/lootcouncil.jpg" alt="">
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="title">Loot Council</div>
+                        <div class="techstack">Python, GraphQL, Pandas</div>
+                        <p>
+                            Developed a Python script to construct reward assignments for 
+                            World of Warcraft guilds. It utilizes web scraping techniques 
+                            and GraphQL to extract data to be used in the criterion. 
+                            Environment variables are used to safeguard API keys.
+                            GitHub Actions will automatically run the script once a week.
+                        </p>
+                        <button class="form" onclick=" window.open('https://github.com/johnnyj2608/LootCouncil','_blank')">GitHub</button>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row text-center align-items-center">
-                        <div class="col-xs-12 col-lg-6">
-                            <img class="w-100" src="images/romantichut.jpg" alt="">
-                        </div>
-                        <div class="col-xs-12 col-lg-6">
-                            <div class="title">Romantic Hut</div>
-                            <div class="techstack">HTML / CSS</div>
-                            <div class="project">Description</div>
-                            <div class="button">GitHub</div>
-                        </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row text-left align-items-center">
+                    <div class="col-xs-12 col-lg-6">
+                        <img class="w-100" src="images/romantichut.jpg" alt="">
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="title">Romantic Hut</div>
+                        <div class="techstack">HTML, CSS, Javascript</div>
+                        <p>
+                            Designed a Bootstrap website to showcase the services of a party hall.
+                            By filling out the embedded Google Form, you can receive an 
+                            immediate response on the venue's availability via Twilio. 
+                            When submitted, Apps Script will look for schedule conflicts in 
+                            the Google Sheet that hold all the reservations.
+                        </p>
+                        <button class="form" onclick=" window.open('https://github.com/johnnyj2608/RomanticHut','_blank')">GitHub</button>
                     </div>
                 </div>
             </div>
@@ -212,7 +243,17 @@
         <div class="container">
             <div class="row text-center align-items-center">
                 <div class="col">
-                    
+                    <h1><strong>CONTACT</strong></h1>
+                </div>
+            </div>
+            <div class="row text-left align-items-center">
+                <div class="col">
+                    <p>
+                        <strong>Connect with me!</strong>
+                        <br>If you have any questions or wish to discuss potential opportunities, 
+                        feel free to reach out to me via email at johnnyj2608@gmail.com or 
+                        shoot me a message on LinkedIn.
+                    </p>
                 </div>
             </div>
         </div>
