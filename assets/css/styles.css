@@ -13,19 +13,33 @@ html {
   visibility: hidden;
 }
 
-.nav-link {
-  background-color: #fff;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  cursor: pointer;
-  font-size: 1.25rem !important;
+.navbar {
+  padding: 0 !important;
 }
 
-.navbar-nav > li {
-  padding: 0px 5px;
+.navbar-brand {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.nav-link {
+  padding: 10px 15px;
+  font-size: 1.25rem;
+  background-color: transparent;
+  color: white !important;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black !important;
 }
 
 .navbar button.navbar-toggler:hover {
@@ -34,11 +48,25 @@ html {
   transition: all 0.3s ease;
 }
 
+.navbar-dark .navbar-toggler {
+  border-color: rgba(255, 255, 255, 1) !important;
+}
+
 .navbar button.navbar-toggler:hover .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.nav-link:hover,
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+@media (max-width: 991.98px) {
+  .nav-link:not(.navbar-brand) {
+    width: 130px;
+    text-align: center;
+  }
+}
+
 .fa-angles-down:hover {
   background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
   transition: all 0.3s ease;
@@ -80,7 +108,99 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100svh;
+}
+
+.main h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.icon-button {
+  background-color: white;
+  border-radius: 4.5rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  margin: 5px 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 4.5rem;
+}
+
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+}
+
+.icon-button:hover span {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 4.5rem;
+  margin: -2.25rem;
+}
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 4.5rem;
+  left: 0;
+  line-height: 4.5rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 4.5rem;
+  z-index: 10;
+}
+
+.linkedin span {
+  background-color: #0073a4;
+}
+.github span {
+  background-color: black;
+}
+
+.icon-button .icon-linkedin {
+  color: #0073a4;
+}
+.icon-button .icon-github {
+  color: black;
+}
+
+.icon-button:hover .icon-linkedin,
+.icon-button:hover .icon-github {
+  color: white;
+}
+
+.arrow {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
 }
 
 .bounce {
@@ -104,13 +224,6 @@ html {
   }
 }
 
-.arrow {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 40px;
-}
-
 .fa-angles-down {
   background-color: #fff;
   background-size: 100%;
@@ -129,5 +242,5 @@ footer {
 
 footer .container {
   display: flex;
-  height: 10svh;
+  height: 7svh;
 }
