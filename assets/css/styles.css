@@ -67,11 +67,7 @@ html {
   }
 }
 
-.fa-angles-down:hover {
-  background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
-  transition: all 0.3s ease;
-}
-
+/* Section */
 .white {
   background: #ffffff;
   height: fit-content;
@@ -100,6 +96,7 @@ html {
   margin: 0 auto 20px;
 }
 
+/* Button */
 .btn {
   text-decoration: none;
   color: #fff;
@@ -119,6 +116,7 @@ html {
   background-color: #23527a;
 }
 
+/* Landing */
 .main {
   height: 100vh;
   text-transform: uppercase;
@@ -142,10 +140,7 @@ html {
   font-size: 1.5rem;
 }
 
-.value-icon {
-  margin-right: 5px;
-}
-
+/* Social */
 .icon-button {
   background-color: white;
   border-radius: 4.5rem;
@@ -187,7 +182,6 @@ html {
   margin: -2.25rem;
 }
 
-/* Icons */
 .icon-button i {
   background: none;
   color: white;
@@ -223,11 +217,28 @@ html {
   color: white;
 }
 
+/* Arrow */
 .arrow {
   width: 100%;
   text-align: center;
   position: absolute;
   bottom: 40px;
+}
+
+.fa-angles-down {
+  background-color: #fff;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.fa-angles-down:hover {
+  background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+  transition: all 0.3s ease;
 }
 
 .bounce {
@@ -251,31 +262,27 @@ html {
   }
 }
 
-.fa-angles-down {
-  background-color: #fff;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  cursor: pointer;
-  font-size: 25px;
+/* Values */
+.value-icon {
+  margin-right: 5px;
 }
 
-.project-title {
+/* Projects */
+.proj-title {
   font-size: 22px;
   font-weight: 500;
   color: #37c;
   margin-bottom: 10px;
 }
 
-.project-desc {
+.proj-desc {
   font-size: 15px;
   font-weight: 500;
   color: green;
   margin-bottom: 10px;
 }
 
+/* Footer */
 footer {
   background-color: #131313;
   color: #ffffff;
@@ -284,4 +291,116 @@ footer {
 footer .container {
   display: flex;
   height: 10svh;
+}
+
+/* Experience */
+.exp-timeline {
+  list-style: none;
+  position: relative;
+}
+
+/* Line */
+.exp-timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #e0e0e0;
+  left: 25%;
+  margin-left: -6px;
+}
+
+/* Heading */
+.exp-timeline > li > .exp-heading {
+  position: relative;
+  background: #869198;
+  padding: 11px 15px;
+  color: #fff;
+  margin: 0 0 45px 0;
+  line-height: 1.4;
+  font-size: 17px;
+}
+
+/* Date */
+.exp-timeline > li .exp-date {
+  width: 30%;
+  padding-right: 100px;
+  position: absolute;
+}
+
+.exp-timeline > li .exp-date span {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  color: #999;
+}
+
+/* Icon */
+.exp-timeline > li .exp-icon {
+  width: 40px;
+  height: 26px;
+  position: absolute;
+  color: #fff;
+  background: #666;
+  text-align: center;
+  left: 25%;
+  margin: 7px 0 0 -24px;
+  background-color: #869198;
+}
+
+/* Icon Top */
+.exp-timeline > li .exp-icon:before {
+  bottom: 100%;
+  border-bottom: 10px solid #869198;
+}
+
+/* Icon Bot */
+.exp-timeline > li .exp-icon:after {
+  top: 100%;
+  border-top: 10px solid #869198;
+}
+
+.exp-timeline > li .exp-icon:before,
+.exp-timeline > li .exp-icon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+/* Card */
+.exp-timeline > li .exp-card {
+  margin: 0 0 15px 30%;
+  padding: 20px 30px;
+  background: #fff;
+  position: relative;
+}
+
+/* Card Title */
+.exp-timeline > li .exp-card h4 {
+  margin: 0;
+  font-size: 17px;
+}
+
+/* Card Desc */
+.exp-timeline > li .exp-card p {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* Card Arrow */
+.exp-timeline > li .exp-card:after {
+  right: 100%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-right-color: #fff;
+  border-width: 10px;
+  top: 10px;
 }
