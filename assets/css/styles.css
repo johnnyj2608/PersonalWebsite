@@ -42,22 +42,22 @@ html {
   color: black !important;
 }
 
-.navbar button.navbar-toggler:hover {
-  border-color: #ffffff;
-  background: #4837ff;
-  transition: all 0.3s ease;
-}
-
 .navbar-dark .navbar-toggler {
   border-color: rgba(255, 255, 255, 1) !important;
 }
 
-.navbar button.navbar-toggler:hover .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+.navbar button.navbar-toggler:hover {
+  border-color: #ffffff;
+  background: #fff;
+  transition: all 0.3s ease;
 }
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  filter: invert(100%);
 }
 
 @media (max-width: 991.98px) {
@@ -109,12 +109,17 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100svh;
+  text-transform: uppercase;
+  color: white;
 }
 
 .main h1 {
   font-size: 4rem;
-  text-transform: uppercase;
-  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+.main h2 {
+  font-size: 1.5rem;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
 }
