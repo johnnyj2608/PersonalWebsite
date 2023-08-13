@@ -297,6 +297,7 @@ footer .container {
 .exp-timeline {
   list-style: none;
   position: relative;
+  margin-top: 50px;
 }
 
 /* Line */
@@ -390,6 +391,12 @@ footer .container {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 0;
+}
+
+/* Card Img */
+.exp-timeline > li .exp-card img {
+  max-height: 300px;
+  width: auto;
 }
 
 /* Card Arrow */
