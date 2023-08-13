@@ -99,8 +99,8 @@ html {
 
 .form:hover {
   cursor: pointer;
-  background: #4837ff;
   transition: all 0.3s ease;
+  transform: scale(1.15);
 }
 
 .main {
