@@ -75,6 +75,53 @@ html {
   transition: all 0.3s ease;
 }
 
+.main {
+  background-image: url("../../images/landing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+  animation-delay: 4s;
+}
+
+@keyframes bounce {
+  0%,
+  10%,
+  40%,
+  70%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.arrow {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+}
+
+.fa-angles-down {
+  background-color: #fff;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+}
+
 footer {
   background-color: #131313;
   color: #ffffff;

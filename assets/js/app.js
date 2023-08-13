@@ -1,4 +1,4 @@
-function jump(h){
-    var top = document.getElementById(h).offsetTop;
-    window.scrollTo(0, top-55);
-  }
+function jump(h) {
+  var top = document.getElementById(h).offsetTop;
+  window.scrollTo(0, top - 75);
+}
