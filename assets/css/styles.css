@@ -1,3 +1,6 @@
+/* -------------- *
+ * General
+ * -------------- */
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +20,72 @@ body {
   visibility: hidden;
 }
 
+.white {
+  background: #ffffff;
+  height: fit-content;
+  padding: 50px 0px;
+}
+
+.grey {
+  background: #ededed;
+  height: fit-content;
+  padding: 50px 0px;
+}
+
+.section-title {
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-title-border {
+  width: 70px;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 auto 20px;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #337ab7;
+  font-size: 1rem;
+  margin: 10px 0px;
+  position: relative;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #23527a;
+}
+
+/* -------------- *
+ * Preloader
+ * -------------- */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 33, 36, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1999;
+}
+
+/* -------------- *
+ * Nav Bar
+ * -------------- */
 .navbar {
   padding: 0 !important;
 }
@@ -80,56 +149,9 @@ body {
   }
 }
 
-/* Section */
-.white {
-  background: #ffffff;
-  height: fit-content;
-  padding: 50px 0px;
-}
-
-.grey {
-  background: #ededed;
-  height: fit-content;
-  padding: 50px 0px;
-}
-
-.section-title {
-  margin: 0 0 10px;
-  text-align: center;
-  font-size: 19px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.section-title-border {
-  width: 70px;
-  height: 3px;
-  background: rgba(0, 0, 0, 0.13);
-  margin: 0 auto 20px;
-}
-
-/* Button */
-.btn {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background-color: #337ab7;
-  font-size: 1rem;
-  margin: 10px 0px;
-  position: relative;
-}
-
-.btn:hover {
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background-color: #23527a;
-}
-
-/* Landing */
+/* -------------- *
+ * Landing
+ * -------------- */
 .main {
   height: 100vh;
   text-transform: uppercase;
@@ -275,28 +297,17 @@ body {
   }
 }
 
+/* -------------- *
+ * About
+ * -------------- */
 .intro {
   font-size: 21px;
   padding-top: 20px;
 }
 
-/* Projects */
-.proj-title {
-  font-size: 22px;
-  font-weight: 500;
-  color: #37c;
-  margin-bottom: 10px;
-  padding-top: 20px;
-}
-
-.proj-desc {
-  font-size: 15px;
-  font-weight: 500;
-  color: green;
-  margin-bottom: 10px;
-}
-
-/* Experience */
+/* -------------- *
+ * Experience
+ * -------------- */
 .exp-timeline {
   list-style: none;
   position: relative;
@@ -328,11 +339,13 @@ body {
 
 /* Date */
 .exp-timeline > li .exp-date {
+  display: block;
   width: 30%;
   padding-right: 100px;
   position: absolute;
 }
 
+/* Date */
 .exp-timeline > li .exp-date span {
   display: block;
   text-align: right;
@@ -365,6 +378,7 @@ body {
   border-top: 10px solid #869198;
 }
 
+/* Icon Top & Bot */
 .exp-timeline > li .exp-icon:before,
 .exp-timeline > li .exp-icon:after {
   content: "";
@@ -415,12 +429,70 @@ body {
   top: 10px;
 }
 
+@media (max-width: 47.2em) {
+  .exp-timeline:before {
+    display: none;
+  }
+  .exp-timeline > li .exp-date {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+  .exp-timeline > li .exp-date span {
+    text-align: left;
+  }
+  .exp-timeline > li .exp-card {
+    margin: 0 0 30px 0;
+    padding: 1.3em;
+  }
+  .exp-timeline > li .exp-card:after {
+    right: auto;
+    left: 20px;
+    border-right-color: transparent;
+    border-bottom-color: #869198;
+    top: -20px;
+  }
+  .exp-timeline > li .exp-icon {
+    display: none;
+  }
+}
+
+/* -------------- *
+ * Projects
+ * -------------- */
+.proj-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #37c;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+
+.proj-desc {
+  font-size: 15px;
+  font-weight: 500;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.project-border {
+  width: 280px;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 auto 20px;
+}
+
+/* -------------- *
+ * Resume
+ * -------------- */
 .resume {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* Footer */
+/* -------------- *
+ * Footer
+ * -------------- */
 footer {
   background-color: #131313;
   color: #ffffff;
@@ -433,17 +505,4 @@ footer .container {
 
 footer h5 {
   margin-bottom: 0;
-}
-
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(32, 33, 36, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1999;
 }
