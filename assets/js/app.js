@@ -28,10 +28,15 @@ window.addEventListener("scroll", function () {
   }
 });
 
+/*
 // Overlay for preloader
 Pace.on("done", function () {
   var overlay = document.getElementById("overlay");
   if (overlay) {
     overlay.style.display = "none"; // Remove preloader
+    document.body.style.overflow = ""; // Re-enable scrolling
   }
 });
+// Disable scrolling until Pace is done loading
+document.body.style.overflow = "hidden";
+*/
