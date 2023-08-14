@@ -12,6 +12,7 @@ html {
 
 body {
   overscroll-behavior: none;
+  background: #2c2c2c;
 }
 
 .anchors {
