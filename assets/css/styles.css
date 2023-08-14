@@ -12,7 +12,7 @@ html {
 
 body {
   overscroll-behavior: none;
-  background: #2c2c2c;
+  background: #2c2c2c !important;
 }
 
 .anchors {
@@ -56,7 +56,7 @@ body {
   border: none;
   outline: none;
   border-radius: 4px;
-  background-color: #337ab7;
+  background-color: #869198;
   font-size: 1rem;
   margin: 10px 0px;
   position: relative;
@@ -65,7 +65,8 @@ body {
 .btn:hover {
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #23527a;
+  background-color: #678;
+  transform: scale(1.1);
 }
 
 /* -------------- *
@@ -306,6 +307,11 @@ body {
   padding-top: 20px;
 }
 
+.abt-img {
+  max-height: 500px;
+  max-width: 100%;
+}
+
 /* -------------- *
  * Experience
  * -------------- */
@@ -476,13 +482,6 @@ body {
   margin-bottom: 10px;
 }
 
-.project-border {
-  width: 280px;
-  height: 3px;
-  background: rgba(0, 0, 0, 0.3);
-  margin: 0 auto 20px;
-}
-
 /* -------------- *
  * Resume
  * -------------- */
@@ -499,11 +498,68 @@ footer {
   color: #ffffff;
 }
 
-footer .container {
+.foot {
+  height: 5svh;
   display: flex;
-  height: 10svh;
 }
 
 footer h5 {
   margin-bottom: 0;
+}
+
+ul.banner-social-buttons li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  outline: 0;
+  color: rgba(255, 255, 255, 0.8);
+  background: #333;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 480px) {
+  ul.banner-social-buttons li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    outline: 0;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 340px) {
+  ul.banner-social-buttons li a {
+    width: 37px;
+    height: 37px;
+  }
+}
+ul.banner-social-buttons li a:hover,
+ul.banner-social-buttons li a:active {
+  color: #fff;
+  -webkit-box-shadow: 1px 1px 3px #333;
+  -moz-box-shadow: 1px 1px 3px #333;
+  box-shadow: 1px 1px 3px #333;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.list-inline > li {
+  padding: 0px !important;
+}
+
+#linkedin:hover {
+  background-color: #0077b5;
+}
+#github:hover {
+  background-color: #4183c4;
 }
