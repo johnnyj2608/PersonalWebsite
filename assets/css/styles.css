@@ -443,8 +443,3 @@ footer .container {
   justify-content: center;
   z-index: 1999;
 }
-
-.image {
-  max-width: 100%;
-  height: auto;
-}
