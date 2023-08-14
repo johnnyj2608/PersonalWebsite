@@ -1,6 +1,6 @@
 function jump(h) {
   var top = document.getElementById(h).offsetTop;
-  window.scrollTo(0, top - 65);
+  window.scrollTo(0, top - 45);
 }
 
 function toggleNavbar(h) {

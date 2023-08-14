@@ -32,28 +32,28 @@
     <div id="top"></div>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand nav-link" onclick="toggleNavbar('top')">JOHNNY JIANG</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-2 align-items-end">
-              <li class="nav-item active">
-                <a class="nav-link" onclick="jump('about')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick ="jump('experience')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Experience</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" onclick ="jump('projects')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a  class="nav-link" onclick ="jump('contact')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Contact</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand nav-link" onclick="toggleNavbar('top')">JOHNNY JIANG</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-2 align-items-end">
+                    <li class="nav-item active">
+                        <a class="nav-link" onclick="jump('about')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="jump('experience')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Experience</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="jump('projects')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="jump('resume')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Resume</a>
+                    </li>                    
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     <!--Landing Section-->
     <section class="main">
@@ -84,8 +84,8 @@
     </section>
     
     <!--About Section-->
-    <section class="grey">
-        <div id="about" class="anchors"></div>
+    <div id="about" class="anchors"></div>
+    <section class="white">
         <div class="container">
             <div class="row text-center align-items-center">
                 <div class="col">
@@ -98,7 +98,7 @@
                     <img class="w-100 image" src="images/about.jpg" alt="">
                 </div>
                 <div class="col-xs-12 col-lg-6" data-aos="fade-left" data-aos-once="true">
-                    <p><strong>Hello there!</strong> 
+                    <p class="intro"><strong>Hello there!</strong> 
                         I'm Johnny and I tend to find myself in interesting situations. 
                         I love going on adventures and creating stories. 
                         Here's a little about me:
@@ -127,53 +127,9 @@
         </div>
     </section>
 
-    <!--Interests Section-->
-    <section class="white">
-        <div class="container">
-            <div class="row text-center align-items-center">
-                <div class="col">
-                    <h3 class="section-title">Values</h3>
-                    <div class="section-title-border"></div>
-                </div>
-            </div>
-            <div class="row text-left align-items-center">
-                <div class="col-sm-6" data-aos="fade-right" data-aos-once="true">
-                    <p>
-                        <i class="value-icon fas fa-lightbulb"></i>
-                        <strong>Innovate</strong>
-                        <br>I am dedicated to pushing boundaries and finding inventive solutions. 
-                        I view every problem as a chance to craft something groundbreaking.
-                    </p>
-                    <br>
-                    <p>
-                        <i class="value-icon fas fa-rocket"></i>
-                        <strong>Challenge</strong>
-                        <br>Challenges invigorate me and fuel my desire to conquer new heights. 
-                        I believe that the greatest growth comes from overcoming obstacles.
-                    </p>
-                </div>
-                <div class="col-sm-6" data-aos="fade-left" data-aos-once="true">
-                    <p>
-                        <i class="value-icon fas fa-users"></i>
-                        <strong>Collaborate</strong>
-                        <br>I embrace the chance to team up with diverse minds, 
-                        merging our ideas to create something greater than ourselves.
-                    </p>
-                    <br>
-                    <p>
-                        <i class="value-icon fas fa-heart"></i>
-                        <strong>Impact</strong>
-                        <br>I channel my efforts into projects hat create 
-                        meaningful change and leave a positive mark on the world around me.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!--Exprience Section-->
+    <div id="experience" class="anchors"></div>
     <section class="grey">
-        <div id="experience" class="anchors"></div>
         <div class="container">
             <div class="row text-center align-items-center">
                 <div class="col">
@@ -280,8 +236,8 @@
     </section>
 
     <!--Projects Section-->
+    <div id="projects" class="anchors"></div>
     <section class="white">
-        <div id="projects" class="anchors"></div>
         <div class="container">
             <div class="row text-center align-items-center">
                 <div class="col">
@@ -358,21 +314,25 @@
         </div>
     </section>
 
-    <!--Contact Section-->
+    <!--Resume Section-->
+    <div id="resume" class="anchors"></div>
     <section class="grey">
-        <div id="contact" class="anchors"></div>
         <div class="container">
             <div class="row text-center align-items-center">
                 <div class="col">
-                    <h3 class="section-title">Contact</h3>
+                    <h3 class="section-title">resume</h3>
                     <div class="section-title-border"></div>
                 </div>
             </div>
-            <div class="row text-left align-items-center">
-                <div class="col">
+            <div class="row text-center align-items-top">
+                <div class="col-sm-6">
+                  <h4>Check out my resume!</h4>
+                  <button class="btn" onclick=" window.open('johnnyjiang-resume.pdf')">Resume</button>
+                </div>
+                <div class="col-sm-6">
+                    <h4>Connect with me!</h4>
                     <p>
-                        <strong>Connect with me!</strong>
-                        <br>If you have any questions or wish to discuss potential opportunities, 
+                        If you have any questions or wish to discuss potential opportunities, 
                         feel free to reach out to me via email at johnnyj2608@gmail.com or 
                         shoot me a message on LinkedIn.
                     </p>
@@ -417,7 +377,7 @@
             const aboutSection = document.getElementById("about");
             const navbar = document.querySelector(".navbar");
 
-            if (window.scrollY > aboutSection.offsetTop-66) {
+            if (window.scrollY > aboutSection.offsetTop-46) {
                 navbar.classList.add("solid-navbar");
                 navbar.classList.remove("transparent-navbar");
             } else {
@@ -426,7 +386,5 @@
             }
         });
     </script>
-</body>
-
 </body>
 </html>

@@ -84,13 +84,13 @@ body {
 .white {
   background: #ffffff;
   height: fit-content;
-  padding: 20px 0px;
+  padding: 50px 0px;
 }
 
 .grey {
   background: #ededed;
   height: fit-content;
-  padding: 20px 0px;
+  padding: 50px 0px;
 }
 
 .section-title {
@@ -275,9 +275,8 @@ body {
   }
 }
 
-/* Values */
-.value-icon {
-  margin-right: 5px;
+.intro {
+  font-size: 21px;
 }
 
 /* Projects */
@@ -347,7 +346,7 @@ footer .container {
   display: block;
   text-align: right;
   font-size: 16px;
-  color: #999;
+  color: black;
 }
 
 /* Icon */
