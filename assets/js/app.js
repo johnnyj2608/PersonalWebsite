@@ -38,6 +38,3 @@ Pace.on("done", function () {
 });
 // Disable scrolling until Pace is done loading
 document.body.style.overflow = "hidden";
-
-// Initializes animate on scroll
-AOS.init();
