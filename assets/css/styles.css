@@ -277,6 +277,7 @@ body {
 
 .intro {
   font-size: 21px;
+  padding-top: 20px;
 }
 
 /* Projects */
@@ -285,6 +286,7 @@ body {
   font-weight: 500;
   color: #37c;
   margin-bottom: 10px;
+  padding-top: 20px;
 }
 
 .proj-desc {
@@ -292,17 +294,6 @@ body {
   font-weight: 500;
   color: green;
   margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-  background-color: #131313;
-  color: #ffffff;
-}
-
-footer .container {
-  display: flex;
-  height: 10svh;
 }
 
 /* Experience */
@@ -429,6 +420,17 @@ footer .container {
   padding-bottom: 20px;
 }
 
+/* Footer */
+footer {
+  background-color: #131313;
+  color: #ffffff;
+}
+
+footer .container {
+  display: flex;
+  height: 10svh;
+}
+
 #overlay {
   position: fixed;
   top: 0;
@@ -440,4 +442,9 @@ footer .container {
   align-items: center;
   justify-content: center;
   z-index: 1999;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
 }
