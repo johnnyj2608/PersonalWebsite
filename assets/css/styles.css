@@ -7,6 +7,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overscroll-behavior: none;
+}
+
 .anchors {
   display: block;
   position: relative;
@@ -15,6 +19,15 @@ html {
 
 .navbar {
   padding: 0 !important;
+}
+
+.transparent-navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.solid-navbar {
+  background-color: #131313;
 }
 
 .navbar-brand {
