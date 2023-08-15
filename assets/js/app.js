@@ -28,6 +28,8 @@ window.addEventListener("scroll", function () {
   }
 });
 
+/*
+// Collapsable experiences
 document.addEventListener("DOMContentLoaded", function () {
   const iconButtons = document.querySelectorAll(".exp-icon-button");
   iconButtons.forEach((iconButton) => {
@@ -48,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+*/
 
 /*
 // Overlay for preloader
