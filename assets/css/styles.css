@@ -293,12 +293,12 @@ body {
   transition: all 0.3s ease;
 }
 
-.bounce {
-  animation: bounce 2s infinite;
+.bounces {
+  animation: bounces 2s infinite;
   animation-delay: 4s;
 }
 
-@keyframes bounce {
+@keyframes bounces {
   0%,
   10%,
   40%,
