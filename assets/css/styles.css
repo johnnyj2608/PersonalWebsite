@@ -329,7 +329,7 @@ body {
   bottom: 0;
   width: 4px;
   background: #e0e0e0;
-  left: 25%;
+  left: 23%;
   margin-left: -6px;
 }
 
@@ -347,7 +347,7 @@ body {
 /* Date */
 .exp-timeline > li .exp-date {
   display: block;
-  width: 30%;
+  width: 28%;
   padding-right: 100px;
   position: absolute;
 }
@@ -368,7 +368,7 @@ body {
   color: #fff;
   background: #666;
   text-align: center;
-  left: 25%;
+  left: 23%;
   margin: 7px 0 0 -24px;
   background-color: #869198;
 }
@@ -398,7 +398,7 @@ body {
 
 /* Card */
 .exp-timeline > li .exp-card {
-  margin: 0 0 15px 30%;
+  margin: 0 0 15px 28%;
   padding: 20px 30px;
   background: #fff;
   position: relative;
@@ -436,7 +436,7 @@ body {
   top: 10px;
 }
 
-@media (max-width: 47.2em) {
+@media (max-width: 767px) {
   .exp-timeline:before {
     display: none;
   }
@@ -521,26 +521,6 @@ ul.banner-social-buttons li a {
   transition: all 0.3s;
 }
 
-@media screen and (max-width: 480px) {
-  ul.banner-social-buttons li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    line-height: 40px;
-    outline: 0;
-    color: rgba(255, 255, 255, 0.8);
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-}
-@media screen and (max-width: 340px) {
-  ul.banner-social-buttons li a {
-    width: 37px;
-    height: 37px;
-  }
-}
 ul.banner-social-buttons li a:hover,
 ul.banner-social-buttons li a:active {
   color: #fff;
