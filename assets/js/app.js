@@ -28,6 +28,27 @@ window.addEventListener("scroll", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const iconButtons = document.querySelectorAll(".exp-icon-button");
+  iconButtons.forEach((iconButton) => {
+    const collapseContent = iconButton.parentElement.querySelector(
+      ".exp-collapse-content"
+    );
+    iconButton.addEventListener("click", function () {
+      collapseContent.classList.toggle("collapsed");
+      const icon = iconButton.querySelector("i"); // Get the icon element within the button
+      icon.classList.toggle(
+        "fa-plus",
+        collapseContent.classList.contains("collapsed")
+      ); // Set the class based on collapsed state
+      icon.classList.toggle(
+        "fa-minus",
+        !collapseContent.classList.contains("collapsed")
+      ); // Set the class based on collapsed state
+    });
+  });
+});
+
 /*
 // Overlay for preloader
 Pace.on("done", function () {

@@ -349,7 +349,7 @@ body {
 }
 
 /* Heading */
-.exp-timeline > li > .exp-heading {
+.exp-heading {
   position: relative;
   background: #869198;
   padding: 11px 15px;
@@ -360,7 +360,7 @@ body {
 }
 
 /* Date */
-.exp-timeline > li .exp-date {
+.exp-date {
   display: block;
   width: 28%;
   padding-right: 100px;
@@ -368,7 +368,7 @@ body {
 }
 
 /* Date */
-.exp-timeline > li .exp-date span {
+.exp-date span {
   display: block;
   text-align: right;
   font-size: 16px;
@@ -376,43 +376,67 @@ body {
 }
 
 /* Icon */
-.exp-timeline > li .exp-icon {
+.exp-icon {
   width: 40px;
   height: 26px;
   position: absolute;
   color: #fff;
-  background: #666;
   text-align: center;
   left: 23%;
-  margin: 7px 0 0 -24px;
-  background-color: #869198;
+  margin: 10px 0 0 -24px;
 }
 
 /* Icon Top */
-.exp-timeline > li .exp-icon:before {
+.exp-icon:before {
   bottom: 100%;
   border-bottom: 10px solid #869198;
 }
 
 /* Icon Bot */
-.exp-timeline > li .exp-icon:after {
+.exp-icon:after {
   top: 100%;
   border-top: 10px solid #869198;
 }
 
 /* Icon Top & Bot */
-.exp-timeline > li .exp-icon:before,
-.exp-timeline > li .exp-icon:after {
+.exp-icon:before,
+.exp-icon:after {
   content: "";
   position: absolute;
   width: 0;
   left: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.exp-icon-button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  background-color: #869198;
+  transition: all 0.3s ease-in-out;
+}
+
+.exp-icon-button:focus {
+  outline: none;
+}
+
+.exp-icon:hover {
+  background-color: #678;
+}
+
+.exp-icon:hover:before {
+  border-bottom: 10px solid #678;
+}
+
+.exp-icon:hover:after {
+  border-top: 10px solid #678;
 }
 
 /* Card */
-.exp-timeline > li .exp-card {
+.exp-card {
   margin: 0 0 15px 28%;
   padding: 20px 30px;
   background: #fff;
@@ -420,26 +444,26 @@ body {
 }
 
 /* Card Title */
-.exp-timeline > li .exp-card h4 {
+.exp-card h4 {
   margin: 0;
   font-size: 17px;
 }
 
 /* Card Desc */
-.exp-timeline > li .exp-card p {
+.exp-card p {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 0;
 }
 
 /* Card Img */
-.exp-timeline > li .exp-card img {
+.exp-card img {
   max-height: 300px;
   width: auto;
 }
 
 /* Card Arrow */
-.exp-timeline > li .exp-card:after {
+.exp-card:after {
   right: 100%;
   border: solid transparent;
   content: "";
@@ -451,30 +475,41 @@ body {
   top: 10px;
 }
 
+/* Collapse */
+.exp-collapse-content {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.exp-collapse-content.collapsed {
+  max-height: 0;
+}
+
 @media (max-width: 767px) {
   .exp-timeline:before {
     display: none;
   }
-  .exp-timeline > li .exp-date {
+  .exp-date {
     width: 100%;
     position: relative;
     padding: 0 0 20px 0;
   }
-  .exp-timeline > li .exp-date span {
+  .exp-date span {
     text-align: left;
   }
-  .exp-timeline > li .exp-card {
+  .exp-card {
     margin: 0 0 30px 0;
     padding: 1.3em;
   }
-  .exp-timeline > li .exp-card:after {
+  .exp-card:after {
     right: auto;
     left: 20px;
     border-right-color: transparent;
     border-bottom-color: #869198;
     top: -20px;
   }
-  .exp-timeline > li .exp-icon {
+  .exp-icon {
     display: none;
   }
 }
