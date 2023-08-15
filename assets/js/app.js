@@ -1,7 +1,7 @@
 // Anchors
 function jump(h) {
   var top = document.getElementById(h).offsetTop;
-  window.scrollTo(0, top - 45);
+  window.scrollTo(0, top - 95);
 }
 
 // Toggle navbar from navbar-brand
@@ -19,7 +19,7 @@ window.addEventListener("scroll", function () {
   const aboutSection = document.getElementById("about");
   const navbar = document.querySelector(".navbar");
 
-  if (window.scrollY > aboutSection.offsetTop - 46) {
+  if (window.scrollY > aboutSection.offsetTop - 100) {
     navbar.classList.add("solid-navbar");
     navbar.classList.remove("transparent-navbar");
   } else {
