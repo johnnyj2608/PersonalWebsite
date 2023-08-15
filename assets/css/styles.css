@@ -177,6 +177,21 @@ body {
   font-size: 1.5rem;
 }
 
+.delay-05s {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+.delay-1s {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+.delay-2s {
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+}
+
 /* Social */
 .icon-button {
   background-color: white;
