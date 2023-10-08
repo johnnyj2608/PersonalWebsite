@@ -28,6 +28,17 @@ window.addEventListener("scroll", function () {
   }
 });
 
+function confirmDownload() {
+  if (confirm("Are you sure you want to download this file?")) {
+    var link = document.createElement("a");
+    link.href = "assets/NewGardenProject.jar";
+    link.download = "NewGardenProject.jar";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+}
+
 /*
 // Collapsable experiences
 document.addEventListener("DOMContentLoaded", function () {
