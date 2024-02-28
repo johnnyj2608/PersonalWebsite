@@ -1,406 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="johnny jiang, johnny, jiang, penn state, 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="johnny jiang, johnny, jiang, penn state, 
         pennsylvania state university, pennsylvania, new york, front-end, 
         back-end, web, website, computer science, software, developer, engineer,
-        Python, Java, Swift, HTML, CSS, Javascript, SQL, PostgreSQL">
-    <meta name="author" content="Johnny Jiang">
-    <meta name="description" content="Software Engineer">
+        Python, Java, Swift, HTML, CSS, Javascript, SQL, PostgreSQL"
+    />
+    <meta name="author" content="Johnny Jiang" />
+    <meta name="description" content="Software Engineer" />
     <title>Johnny Jiang</title>
 
-    <link rel="icon" href="assets/images/favicon.ico?"/>
-    <link rel="stylesheet" href="assets/css/styles.css"/>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/css/minimal.css"/>
-    <link rel="stylesheet" href="assets/css/animate.css"/>
+    <link rel="icon" href="assets/images/favicon.ico?" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/minimal.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
     <script src="assets/js/pace.min.js"></script>
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CH14JF6KNN"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CH14JF6KNN"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-CH14JF6KNN');
+      gtag("config", "G-CH14JF6KNN");
     </script>
-
-</head>
-<body>
+  </head>
+  <body>
     <!--Preloader
     <div id="overlay"></div>
     -->
 
     <!--Navbar Section-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div id="top"></div>
-        <div class="container-fluid">
-            <a class="navbar-brand nav-link" onclick="toggleNavbar('top')">JOHNNY JIANG</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-2 align-items-end">
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="jump('about')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="jump('experience')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Experience</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="jump('projects')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="jump('resume')" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Resume</a>
-                    </li>                    
-                </ul>
-            </div>
+      <div id="top"></div>
+      <div class="container-fluid">
+        <a class="navbar-brand nav-link" onclick="toggleNavbar('top')"
+          >JOHNNY JIANG</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-2 align-items-end">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                onclick="jump('about')"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onclick="jump('experience')"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onclick="jump('projects')"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                onclick="jump('resume')"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >Resume</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!--Landing Section-->
     <section class="main">
-        <img class="background-image" src="assets/images/landing.jpg" alt="">
-        <div class="container d-flex flex-column align-items-center justify-content-center h-100">
-            <div class="row text-center align-items-center">
-                <div class="col">
-                    <h1 class="animated fadeInDown delay-05s">Johnny Jiang</h1>
-                    <h2 class="animated bounceIn delay-1s">Software Engineer</h2>
-                </div>
-            </div>
-            <div class="row text-center align-items-center animated fadeIn delay-2s">
-                <div class="col social-icons">
-                    <a href="https://www.linkedin.com/in/johnnyj2608" target="_blank" proj-title="LinkedIn Profile" class="icon-button linkedin">
-                        <i class="icon-linkedin fa fa-linkedin"></i>
-                        <span></span>
-                    </a>
-                    <a href="https://github.com/johnnyj2608" target="_blank" proj-title="GitHub Profile" class="icon-button github">
-                        <i class="icon-github fa fa-github"></i>
-                        <span></span>
-                    </a>
-                </div>
-            </div>
+      <img class="background-image" src="assets/images/landing.jpg" alt="" />
+      <div
+        class="container d-flex flex-column align-items-center justify-content-center h-100"
+      >
+        <div class="row text-center align-items-center">
+          <div class="col">
+            <h1 class="animated fadeInDown delay-05s">Johnny Jiang</h1>
+            <h2 class="animated bounceIn delay-1s">Software Engineer</h2>
+          </div>
         </div>
-        <div class="arrow bounces">
-            <a onclick="jump('about')"><i class="fa-solid fa-angles-down"></i></a>
+        <div
+          class="row text-center align-items-center animated fadeIn delay-2s"
+        >
+          <div class="col social-icons">
+            <a
+              href="https://www.linkedin.com/in/johnnyj2608"
+              target="_blank"
+              proj-title="LinkedIn Profile"
+              class="icon-button linkedin"
+            >
+              <i class="icon-linkedin fa fa-linkedin"></i>
+              <span></span>
+            </a>
+            <a
+              href="https://github.com/johnnyj2608"
+              target="_blank"
+              proj-title="GitHub Profile"
+              class="icon-button github"
+            >
+              <i class="icon-github fa fa-github"></i>
+              <span></span>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="arrow bounces">
+        <a onclick="jump('about')"><i class="fa-solid fa-angles-down"></i></a>
+      </div>
     </section>
-    
+
     <!--About Section-->
     <section class="white">
-        <div id="about" class="anchors"></div>
-        <div class="container">
-            <div class="row text-center align-items-center">
-                <div class="col">
-                    <h3 class="section-title">About</h3>
-                    <div class="section-title-border"></div>
-                </div>
-            </div>
-            <div class="row text-left align-items-center">
-                <div class="col-sm-4 text-center">
-                    <img class="abt-img" src="assets/images/about.jpg" alt="">
-                </div>
-                <div class="col-sm-8">
-                    <p class="intro"><strong>Hello there!</strong> 
-                        I'm Johnny and I tend to find myself in interesting situations. 
-                        I love going on adventures and creating stories. 
-                        Here's a little about me:
-                    </p>
-                    <p>
-                        <strong>Capabilities:</strong>
-                        <br>- Eat countless packets of Mi Goreng instant noodles
-                        <br>- Carry any amount of groceries in a single trip
-                        <br>- Speedrun any task with Mario Kart Star Music 10 hours
-                    </p>
-                    <p>
-                        <strong>Accomplishments:</strong>
-                        <br>- Survived two separate graduations in pouring rain
-                        <br>- Crowned the Four Square King in elementary school
-                        <br>- Worked as an Assistant (to the) Manager of a restaurant
-                    </p>
-                    <p>
-                        <strong>Misdemeanors:</strong>
-                        <br>- Enjoys chewing bubble gum but can't blow bubbles
-                        <br>- Claims to be trilingual but still uses translate apps
-                        <br>- Has a confusing one-word, all-lowercase WiFi password
-                    </p>
-                </div>
-            </div>
+      <div id="about" class="anchors"></div>
+      <div class="container">
+        <div class="row text-center align-items-center">
+          <div class="col">
+            <h3 class="section-title">About</h3>
+            <div class="section-title-border"></div>
+          </div>
         </div>
+        <div class="row text-left align-items-center">
+          <div class="col-sm-4 text-center">
+            <img class="abt-img" src="assets/images/about.jpg" alt="" />
+          </div>
+          <div class="col-sm-8">
+            <p class="intro">
+              <strong>Hello there!</strong>
+              I'm Johnny and I tend to find myself in interesting situations. I
+              love going on adventures and creating stories. Here's a little
+              about me:
+            </p>
+            <p>
+              <strong>Capabilities:</strong>
+              <br />- Eat countless packets of Mi Goreng instant noodles <br />-
+              Carry any amount of groceries in a single trip <br />- Speedrun
+              any task with Mario Kart Star Music 10 hours
+            </p>
+            <p>
+              <strong>Accomplishments:</strong>
+              <br />- Survived two separate graduations in pouring rain <br />-
+              Crowned the Four Square King in elementary school <br />- Worked
+              as an Assistant (to the) Manager of a restaurant
+            </p>
+            <p>
+              <strong>Misdemeanors:</strong>
+              <br />- Enjoys chewing bubble gum but can't blow bubbles <br />-
+              Claims to be trilingual but still uses translate apps <br />- Has
+              a confusing one-word, all-lowercase WiFi password
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Exprience Section-->
     <section class="grey">
-        <div id="experience" class="anchors"></div>
-        <div class="container">
-            <div class="row text-center align-items-center">
-                <div class="col">
-                    <h3 class="section-title">Experience</h3>
-                    <div class="section-title-border"></div>
-                    <p>I've gained experience within established corporations 
-                        and led multiple teams on various academic projects. 
-                        These opportunities have given me a well-rounded perspective 
-                        on addressing complex problems using data-driven techniques.
-                    </p>
-                </div>
-            </div>
-            <div class="row text-left align-items-center">
-                <div class="col">
-                    <ul class="exp-timeline">
-                        <li>
-                            <h3 class="exp-heading">
-                                <i class="fas fa-briefcase"></i> 
-                                Work Experience
-                            </h3>
-                        </li>
-                        <!--An Kang-->
-                        <li>
-                            <time class="exp-date"><span><b>May '22 - Present</b></span></time>
-                            <div class="exp-icon"></div>
-                            <div class="exp-card">
-                                <h4><strong>An Kang Social Day Care</strong> | <em>Computer Technician</em></h4>
-                                <p>Resolving software and application issues for over 400 people.
-                                    Overhauled the bookkeeping system to formulaic spreadsheets,
-                                    saving 7.5 hours biweekly.
-                                </p>
-                            </div>
-                        </li>
-                        <!--Siemens-->
-                        <li>
-                            <time class="exp-date"><span><b>May '21 - Aug '21</b></span></time>
-                            <div class="exp-icon"></div>
-                            <div class="exp-card">
-                                <h4><strong>Siemens Digital Industries Software</strong> | <em>Software Engineer Intern</em></h4>
-                                <p>An ML / AI focused role. Utilized TensorFlow to classify sentences, ran tests for OpenAI API (ChatGPT),
-                                    and researched the What-If-Tool for Explainable AI.
-                                </p>
-                                <br>
-                                <img class="img-fluid" src="assets/images/siemens.jpg" alt="">
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="exp-timeline">
-                        <li>
-                            <h3 class="exp-heading">
-                                <i class="fas fa-graduation-cap"></i>
-                                Education
-                            </h3>
-                        </li>
-                        <!--Penn State-->
-                        <li>
-                            <time class="exp-date"><span><b>Aug '18 - May '22</b></span></time>
-                            <div class="exp-icon"></div>
-                            <div class="exp-card">
-                                <h4><strong>The Pennsylvania State University</strong></h4>
-                                <p>- Bachelor of Science in Computer Science
-                                    <br>- 2019 Hackathon JPMorgan Sponsored Challenge Winner (900+ participants)
-                                    <br>- Leonhard Center Speaking Contest semi-finalist (Top 3%)
-                                </p>
-                                <br>
-                                <img class="img-fluid" src="assets/images/grad.jpg" alt="">
-                            </div>
-                        </li>
-                        <!--GDSC-->
-                        <li>
-                            <div class="exp-icon"></div>
-                            <div class="exp-card">
-                                <h4><strong>Google Developer Student Club</strong> | <em>Technical Lead</em></h4>
-                                <p>
-                                    Led a team of 5 in organizing biweekly workshops about GCP products.
-                                    Also provided year-long mentorship to members participating in the Google Solutions Challenge.
-                                </p>
-                                <br>
-                                <img class="img-fluid" src="assets/images/gdsc.jpg" alt=""> 
-                            </div>
-                        </li>
-                        <!--IM-->
-                        <li>
-                            <div class="exp-icon"></div>
-                            <div class="exp-card">
-                                <h4><strong>Penn State Competitive Sports</strong> | <em>Intramural Supervisor</em></h4>
-                                <p>
-                                    Led a team of 30 staff members to run a variety of intramural games.
-                                    Also contributed to the launch of the LinkedIn Learning Program, 
-                                    which accumulated over 44,000 hours of total watch time.
-                                </p>
-                                <br>
-                                <img class="img-fluid" src="assets/images/.jpg" alt=""> 
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div id="experience" class="anchors"></div>
+      <div class="container">
+        <div class="row text-center align-items-center">
+          <div class="col">
+            <h3 class="section-title">Experience</h3>
+            <div class="section-title-border"></div>
+            <p>
+              I've gained experience within established corporations and led
+              multiple teams on various academic projects. These opportunities
+              have given me a well-rounded perspective on addressing complex
+              problems using data-driven techniques.
+            </p>
+          </div>
         </div>
+        <div class="row text-left align-items-center">
+          <div class="col">
+            <ul class="exp-timeline">
+              <li>
+                <h3 class="exp-heading">
+                  <i class="fas fa-briefcase"></i>
+                  Work Experience
+                </h3>
+              </li>
+              <!--An Kang-->
+              <li>
+                <time class="exp-date"
+                  ><span><b>May '22 - Present</b></span></time
+                >
+                <div class="exp-icon"></div>
+                <div class="exp-card">
+                  <h4>
+                    <strong>An Kang Social Day Care</strong> |
+                    <em>Computer Technician</em>
+                  </h4>
+                  <p>
+                    Resolving software and application issues for over 400
+                    people. Overhauled the bookkeeping system to formulaic
+                    spreadsheets, saving 7.5 hours biweekly.
+                  </p>
+                </div>
+              </li>
+              <!--Siemens-->
+              <li>
+                <time class="exp-date"
+                  ><span><b>May '21 - Aug '21</b></span></time
+                >
+                <div class="exp-icon"></div>
+                <div class="exp-card">
+                  <h4>
+                    <strong>Siemens Digital Industries Software</strong> |
+                    <em>Software Engineer Intern</em>
+                  </h4>
+                  <p>
+                    An ML / AI focused role. Utilized TensorFlow to classify
+                    sentences, ran tests for OpenAI API (ChatGPT), and
+                    researched the What-If-Tool for Explainable AI.
+                  </p>
+                  <br />
+                  <img
+                    class="img-fluid"
+                    src="assets/images/siemens.jpg"
+                    alt=""
+                  />
+                </div>
+              </li>
+            </ul>
+            <ul class="exp-timeline">
+              <li>
+                <h3 class="exp-heading">
+                  <i class="fas fa-graduation-cap"></i>
+                  Education
+                </h3>
+              </li>
+              <!--Penn State-->
+              <li>
+                <time class="exp-date"
+                  ><span><b>Aug '18 - May '22</b></span></time
+                >
+                <div class="exp-icon"></div>
+                <div class="exp-card">
+                  <h4><strong>The Pennsylvania State University</strong></h4>
+                  <p>
+                    - Bachelor of Science in Computer Science <br />- 2019
+                    Hackathon JPMorgan Sponsored Challenge Winner (900+
+                    participants) <br />- Leonhard Center Speaking Contest
+                    semi-finalist (Top 3%)
+                  </p>
+                  <br />
+                  <img class="img-fluid" src="assets/images/grad.jpg" alt="" />
+                </div>
+              </li>
+              <!--GDSC-->
+              <li>
+                <div class="exp-icon"></div>
+                <div class="exp-card">
+                  <h4>
+                    <strong>Google Developer Student Club</strong> |
+                    <em>Technical Lead</em>
+                  </h4>
+                  <p>
+                    Led a team of 5 in organizing biweekly workshops about GCP
+                    products. Also provided year-long mentorship to members
+                    participating in the Google Solutions Challenge.
+                  </p>
+                  <br />
+                  <img class="img-fluid" src="assets/images/gdsc.jpg" alt="" />
+                </div>
+              </li>
+              <!--IM-->
+              <li>
+                <div class="exp-icon"></div>
+                <div class="exp-card">
+                  <h4>
+                    <strong>Penn State Competitive Sports</strong> |
+                    <em>Intramural Supervisor</em>
+                  </h4>
+                  <p>
+                    Led a team of 30 staff members to run a variety of
+                    intramural games. Also contributed to the launch of the
+                    LinkedIn Learning Program, which accumulated over 44,000
+                    hours of total watch time.
+                  </p>
+                  <br />
+                  <img class="img-fluid" src="assets/images/.jpg" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Projects Section-->
     <section class="white">
-        <div id="projects" class="anchors"></div>
-        <div class="container">
-            <div class="row text-center align-items-center">
-                <div class="col">
-                    <h3 class="section-title">Projects</h3>
-                    <div class="section-title-border"></div>
-                    <p>
-                        Here are the projects I've developed, 
-                        each inspired by the motto "See a need, fill a need." 
-                        I've pursued these journeys through self-directed learning, 
-                        with a focus on creating solutions that make a tangible impact.
-                        I'm always working on a new project - stay tuned for more!
-                    </p>
-                    <br>
-                </div>
-            </div>
-            <!--Lunar Birthdays-->
-            <div class="row text-left align-items-center">
-                <div class="col-xs-12 col-lg-6">
-                    <img class="img-fluid" src="assets/images/lunarbirthdays.jpg" alt="">
-                </div>
-                <div class="col-xs-12 col-lg-6">
-                    <div class="proj-title">Lunar Birthdays</div>
-                    <div class="proj-desc">Birthday Reminder & Converter</div>
-                    <p>
-                        Created a SwiftUI iOS app to save birthday profiles in core data
-                        and count down until the next. It will notify users of upcoming
-                        birthdays. The main idea is to help ABC's (American-born  Chinese)
-                        to help remember their family's birthdays since Lunar birthdays
-                        are never on the same day on Gregorian calendars.
-                    </p>
-                    <div class="proj-desc"><a href="/privacy">Privacy Policy</a></div>
-                    <button class="btn" onclick=" window.open('https://github.com/johnnyj2608/LunarBirthdays','_blank')">GitHub</button>
-                    <button class="btn" onclick=" window.open('https://apps.apple.com/us/app/lunar-birthdays/id6468920519','_blank')">Demo</button>
-                </div>
-            </div>
-            <br>
-            <br>
-            <!--Romantic Hut-->
-            <div class="row text-left align-items-center">
-                <div class="col-xs-12 col-lg-6">
-                    <img class="img-fluid" src="assets/images/romantichut.jpg" alt="">
-                </div>
-                <div class="col-xs-12 col-lg-6">
-                    <div class="proj-title">Romantic Hut</div>
-                    <div class="proj-desc">Local Business Website</div>
-                    <p>
-                        Designed a Bootstrap website to showcase the services of a party hall.
-                        By filling out the embedded Google Form, you can receive an 
-                        immediate response on the venue's availability via Twilio. 
-                        When submitted, Apps Script will look for schedule conflicts in 
-                        the Google Sheet that hold all the reservations.
-                    </p>
-                    <button class="btn" onclick=" window.open('https://github.com/johnnyj2608/RomanticHut','_blank')">GitHub</button>
-                    <button class="btn" onclick=" window.open('https://www.romantichutparty.com/','_blank')">Demo</button>
-                </div>
-            </div>
-            <br>
-            <br>
-            <!--Restaurant POS-->
-            <div class="row text-left align-items-center">
-                <div class="col-xs-12 col-lg-6">
-                    <img class="img-fluid" src="assets/images/newgarden.jpg" alt="">
-                </div>
-                <div class="col-xs-12 col-lg-6">
-                    <div class="proj-title">Restaurant POS</div>
-                    <div class="proj-desc">Point-of-Sale System</div>
-                    <p>
-                        Created a Java Swing GUI, Point-of-Sale system that allows 
-                        self-service for food ordering during the pandemic. 
-                        It deploys PostgreSQL to store every menu item and dynamically
-                        retrieves the correct items based on the selected category.
-                        It also counts the frequency of each item so restocking is easier.
-                    </p>
-                    <button class="btn" onclick=" window.open('https://github.com/johnnyj2608/RestaurantPOS','_blank')">GitHub</button>
-                    <button class="btn" onclick="confirmDownload()">Demo</button>
-                </div>
-            </div>
-            <br>
-            <br>
-            <!--Loot Council-->
-            <div class="row text-left align-items-center">
-                <div class="col-xs-12 col-lg-6">
-                    <img class="img-fluid" src="assets/images/lootcouncil.jpg" alt="">
-                </div>
-                <div class="col-xs-12 col-lg-6">
-                    <div class="proj-title">Loot Council</div>
-                    <div class="proj-desc">Web Scraper & Reward Allocator</div>
-                    <p>
-                        Developed a Python script to construct reward assignments for 
-                        World of Warcraft guilds. It utilizes web scraping techniques 
-                        and GraphQL to extract data to be used in the criterion. 
-                        Environment variables are used to safeguard API keys.
-                        GitHub Actions will automatically run the script once a week.
-                    </p>
-                    <button class="btn" onclick=" window.open('https://github.com/johnnyj2608/LootCouncil','_blank')">GitHub</button>
-                </div>
-            </div>
+      <div id="projects" class="anchors"></div>
+      <div class="container">
+        <div class="row text-center align-items-center">
+          <div class="col">
+            <h3 class="section-title">Projects</h3>
+            <div class="section-title-border"></div>
+            <p>
+              Here are the projects I've developed, each inspired by the motto
+              "See a need, fill a need." I've pursued these journeys through
+              self-directed learning, with a focus on creating solutions that
+              make a tangible impact. I'm always working on a new project - stay
+              tuned for more!
+            </p>
+            <br />
+          </div>
         </div>
+        <!--Lunar Birthdays-->
+        <div class="row text-left align-items-center">
+          <div class="col-xs-12 col-lg-6">
+            <img
+              class="img-fluid"
+              src="assets/images/lunarbirthdays.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-xs-12 col-lg-6">
+            <div class="proj-title">Lunar Birthdays</div>
+            <div class="proj-desc">Birthday Reminder & Converter</div>
+            <p>
+              Created a SwiftUI iOS app to save birthday profiles in core data
+              and count down until the next. It will notify users of upcoming
+              birthdays. The main idea is to help ABC's (American-born Chinese)
+              to help remember their family's birthdays since Lunar birthdays
+              are never on the same day on Gregorian calendars.
+            </p>
+            <div class="proj-desc"><a href="/privacy">Privacy Policy</a></div>
+            <button
+              class="btn"
+              onclick=" window.open('https://github.com/johnnyj2608/LunarBirthdays','_blank')"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn"
+              onclick=" window.open('https://apps.apple.com/us/app/lunar-birthdays/id6468920519','_blank')"
+            >
+              Demo
+            </button>
+          </div>
+        </div>
+        <br />
+        <br />
+        <!--Romantic Hut-->
+        <div class="row text-left align-items-center">
+          <div class="col-xs-12 col-lg-6">
+            <img class="img-fluid" src="assets/images/romantichut.jpg" alt="" />
+          </div>
+          <div class="col-xs-12 col-lg-6">
+            <div class="proj-title">Romantic Hut</div>
+            <div class="proj-desc">Local Business Website</div>
+            <p>
+              Designed a Bootstrap website to showcase the services of a party
+              hall. By filling out the embedded Google Form, you can receive an
+              immediate response on the venue's availability via Twilio. When
+              submitted, Apps Script will look for schedule conflicts in the
+              Google Sheet that hold all the reservations.
+            </p>
+            <button
+              class="btn"
+              onclick=" window.open('https://github.com/johnnyj2608/RomanticHut','_blank')"
+            >
+              GitHub
+            </button>
+            <button
+              class="btn"
+              onclick=" window.open('https://www.romantichutparty.com/','_blank')"
+            >
+              Demo
+            </button>
+          </div>
+        </div>
+        <br />
+        <br />
+        <!--Restaurant POS-->
+        <div class="row text-left align-items-center">
+          <div class="col-xs-12 col-lg-6">
+            <img class="img-fluid" src="assets/images/newgarden.jpg" alt="" />
+          </div>
+          <div class="col-xs-12 col-lg-6">
+            <div class="proj-title">Restaurant POS</div>
+            <div class="proj-desc">Point-of-Sale System</div>
+            <p>
+              Created a Java Swing GUI, Point-of-Sale system that allows
+              self-service for food ordering during the pandemic. It deploys
+              PostgreSQL to store every menu item and dynamically retrieves the
+              correct items based on the selected category. It also counts the
+              frequency of each item so restocking is easier.
+            </p>
+            <button
+              class="btn"
+              onclick=" window.open('https://github.com/johnnyj2608/RestaurantPOS','_blank')"
+            >
+              GitHub
+            </button>
+            <button class="btn" onclick="confirmDownload()">Demo</button>
+          </div>
+        </div>
+        <br />
+        <br />
+        <!--Loot Council-->
+        <div class="row text-left align-items-center">
+          <div class="col-xs-12 col-lg-6">
+            <img class="img-fluid" src="assets/images/lootcouncil.jpg" alt="" />
+          </div>
+          <div class="col-xs-12 col-lg-6">
+            <div class="proj-title">Loot Council</div>
+            <div class="proj-desc">Web Scraper & Reward Allocator</div>
+            <p>
+              Developed a Python script to construct reward assignments for
+              World of Warcraft guilds. It utilizes web scraping techniques and
+              GraphQL to extract data to be used in the criterion. Environment
+              variables are used to safeguard API keys. GitHub Actions will
+              automatically run the script once a week.
+            </p>
+            <button
+              class="btn"
+              onclick=" window.open('https://github.com/johnnyj2608/LootCouncil','_blank')"
+            >
+              GitHub
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Resume Section-->
     <section class="grey">
-        <div id="resume" class="anchors"></div>
-        <div class="container">
-            <div class="row text-center align-items-center">
-                <div class="col">
-                    <h3 class="section-title">resume</h3>
-                    <div class="section-title-border"></div>
-                </div>
-            </div>
-            <div class="row text-center align-items-top">
-                <div class="col-xs-12 col-lg-6 resume">
-                  <h4>Check out my resume!</h4>
-                  <button class="btn" onclick=" window.open('assets/johnnyjiang-resume.pdf')">Resume</button>
-                  <p>(More detail for each experience)</p>
-                </div>
-                <div class="col-xs-12 col-lg-6 resume">
-                    <h4>Connect with me!</h4>
-                    <p>
-                        If you have any questions or wish to discuss potential opportunities, 
-                        feel free to reach out to me via email at johnnyj2608@gmail.com or 
-                        shoot me a message on LinkedIn.
-                    </p>
-                </div>
-            </div>
+      <div id="resume" class="anchors"></div>
+      <div class="container">
+        <div class="row text-center align-items-center">
+          <div class="col">
+            <h3 class="section-title">resume</h3>
+            <div class="section-title-border"></div>
+          </div>
         </div>
+        <div class="row text-center align-items-top">
+          <div class="col-xs-12 col-lg-6 resume">
+            <h4>Check out my resume!</h4>
+            <button
+              class="btn"
+              onclick=" window.open('assets/johnnyjiang-resume.pdf')"
+            >
+              Resume
+            </button>
+            <p>(More detail for each experience)</p>
+          </div>
+          <div class="col-xs-12 col-lg-6 resume">
+            <h4>Connect with me!</h4>
+            <p>
+              If you have any questions or wish to discuss potential
+              opportunities, feel free to reach out to me via email at
+              johnnyj2608@gmail.com or shoot me a message on LinkedIn.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Footer Section-->
     <footer>
-        <br>
-        <div class="container align-items-center justify-content-center">
-            <div class="row text-center align-items-center">
-                <div class="col">
-                    <ul class="list-inline banner-social-buttons">
-                        <li class="list-inline-item">
-                            <a id="linkedin" href="https://www.linkedin.com/in/johnnyj2608" target="_blank">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a id="github" href="https://github.com/johnnyj2608" target="_blank">
-                                <i class="fa fa-github"></i>
-                            </a>
-                        </li>
-                      </ul>
-                </div>
-            </div>
-            <div class="row text-center foot">
-                <div class="col">
-                <h5>Copyright &copy; 2023 JOHNNY JIANG. All rights reserved.</h5>
-                </div>
-            </div>
+      <br />
+      <div class="container align-items-center justify-content-center">
+        <div class="row text-center align-items-center">
+          <div class="col">
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a
+                  id="linkedin"
+                  href="https://www.linkedin.com/in/johnnyj2608"
+                  target="_blank"
+                >
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  id="github"
+                  href="https://github.com/johnnyj2608"
+                  target="_blank"
+                >
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <br>
+        <div class="row text-center foot">
+          <div class="col">
+            <h5>Copyright &copy; 2023 JOHNNY JIANG. All rights reserved.</h5>
+          </div>
+        </div>
+      </div>
+      <br />
     </footer>
 
     <script src="assets/js/app.js"></script>
-    <script src="https://kit.fontawesome.com/a8eb5cb089.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
-    crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/a8eb5cb089.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
