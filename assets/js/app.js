@@ -28,11 +28,11 @@ window.addEventListener("scroll", function () {
   }
 });
 
-function confirmDownload() {
+function confirmDownload(linkUrl, fileName) {
   if (confirm("Are you sure you want to download this file?")) {
     var link = document.createElement("a");
-    link.href = "assets/NewGardenProject.jar";
-    link.download = "NewGardenProject.jar";
+    link.href = linkUrl;
+    link.download = fileName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
