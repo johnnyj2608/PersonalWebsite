@@ -28,16 +28,40 @@ window.addEventListener("scroll", function () {
   }
 });
 
-function confirmDownload(linkUrl, fileName) {
-  if (confirm("Are you sure you want to download this file?")) {
-    var link = document.createElement("a");
-    link.href = linkUrl;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
+// Pop up youtube video for project demos
+function popupVideo() {
+  const playButtons = document.querySelectorAll('.play-video');
+  const popup = document.querySelector('.popup-video');
+  const iframe = document.querySelector('.popup-video iframe');
+  const closeButton = document.querySelector('.popup-video span');
+
+  playButtons.forEach(button => {
+    button.onclick = () => {
+      const videoId = button.getAttribute('data-video-id');
+      const youtubeUrl = `https://www.youtube.com/embed/${videoId}`;
+      iframe.src = youtubeUrl;
+      popup.style.display = 'block';
+    };
+  });
+
+  closeButton.onclick = () => {
+    popup.style.display = 'none';
+    iframe.src = ''; 
+  };
 }
+
+document.addEventListener('DOMContentLoaded', popupVideo);
+
+// function confirmDownload(linkUrl, fileName) {
+//   if (confirm("Are you sure you want to download this file?")) {
+//     var link = document.createElement("a");
+//     link.href = linkUrl;
+//     link.download = fileName;
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+//   }
+// }
 
 /*
 // Collapsable experiences
