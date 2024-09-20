@@ -496,6 +496,10 @@ body {
 /* -------------- *
  * Projects
  * -------------- */
+ .project {
+  margin-bottom: 50px;
+}
+
  .proj-img img {
   height: 300px;
   max-width: 100%;
