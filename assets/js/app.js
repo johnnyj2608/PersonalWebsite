@@ -52,6 +52,15 @@ function popupVideo() {
 
 document.addEventListener('DOMContentLoaded', popupVideo);
 
+// Toggle button to see hidden projects
+function toggleProjects() {
+  var hiddenProjects = document.getElementById('hidden-projects');
+  var seeMoreBtn = document.getElementById('see-more-btn');
+  
+  hiddenProjects.style.display = "block";
+  seeMoreBtn.style.display = "none";
+}
+
 // function confirmDownload(linkUrl, fileName) {
 //   if (confirm("Are you sure you want to download this file?")) {
 //     var link = document.createElement("a");

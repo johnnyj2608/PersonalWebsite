@@ -504,89 +504,96 @@
         </div>
         <br />
         <br />
-        <!--Loot Council-->
-        <div class="row text-left align-items-center">
-          <div class="col-xs-12 col-lg-6 proj-img">
-            <img class="img-fluid" src="assets/images/lootcouncil.jpg" alt="" />
-          </div>
-          <div class="col-xs-12 col-lg-6">
-            <div class="proj-title">Loot Council</div>
-            <div class="proj-desc">Web Scraper & Reward Allocator</div>
-            <p>
-              Developed a Python script to construct reward assignments for
-              World of Warcraft guilds. It utilizes web scraping techniques and
-              GraphQL to extract data to be used in the criterion. Environment
-              variables are used to safeguard API keys. GitHub Actions will
-              automatically run the script once a week.
-            </p>
-            <button
-              class="btn"
-              onclick=" window.open('https://github.com/johnnyj2608/LootCouncil','_blank')"
-            >
-              GitHub
-            </button>
-            <button class="btn play-video" data-video-id="STeGI4txP7M">
-              Demo
-            </button>
+        <div class="row text-center">
+          <div class="col">
+            <button id="see-more-btn" class="btn" onclick="toggleProjects()">See More Projects</button>
           </div>
         </div>
-        <br />
-        <br />
-        <!--Restaurant POS-->
-        <div class="row text-left align-items-center">
-          <div class="col-xs-12 col-lg-6 proj-img">
-            <img class="img-fluid" src="assets/images/newgarden.jpg" alt="" />
+        <div id="hidden-projects" style="display: none;">
+          <!--Loot Council-->
+          <div class="row text-left align-items-center">
+            <div class="col-xs-12 col-lg-6 proj-img">
+              <img class="img-fluid" src="assets/images/lootcouncil.jpg" alt="" />
+            </div>
+            <div class="col-xs-12 col-lg-6">
+              <div class="proj-title">Loot Council</div>
+              <div class="proj-desc">Web Scraper & Reward Allocator</div>
+              <p>
+                Developed a Python script to construct reward assignments for
+                World of Warcraft guilds. It utilizes web scraping techniques and
+                GraphQL to extract data to be used in the criterion. Environment
+                variables are used to safeguard API keys. GitHub Actions will
+                automatically run the script once a week.
+              </p>
+              <button
+                class="btn"
+                onclick=" window.open('https://github.com/johnnyj2608/LootCouncil','_blank')"
+              >
+                GitHub
+              </button>
+              <button class="btn play-video" data-video-id="STeGI4txP7M">
+                Demo
+              </button>
+            </div>
           </div>
-          <div class="col-xs-12 col-lg-6">
-            <div class="proj-title">Restaurant POS</div>
-            <div class="proj-desc">Point-of-Sale System</div>
-            <p>
-              Created a Java Swing GUI, Point-of-Sale system that allows
-              self-service for food ordering during the pandemic. It deploys
-              PostgreSQL to store every menu item and dynamically retrieves the
-              correct items based on the selected category. It also counts the
-              frequency of each item so restocking is easier.
-            </p>
-            <button
-              class="btn"
-              onclick=" window.open('https://github.com/johnnyj2608/RestaurantPOS','_blank')"
-            >
-              GitHub
-            </button>
-            <button class="btn play-video" data-video-id="aZanP8LEd20">
-              Demo
-            </button>
+          <br />
+          <br />
+          <!--Restaurant POS-->
+          <div class="row text-left align-items-center">
+            <div class="col-xs-12 col-lg-6 proj-img">
+              <img class="img-fluid" src="assets/images/newgarden.jpg" alt="" />
+            </div>
+            <div class="col-xs-12 col-lg-6">
+              <div class="proj-title">Restaurant POS</div>
+              <div class="proj-desc">Point-of-Sale System</div>
+              <p>
+                Created a Java Swing GUI, Point-of-Sale system that allows
+                self-service for food ordering during the pandemic. It deploys
+                PostgreSQL to store every menu item and dynamically retrieves the
+                correct items based on the selected category. It also counts the
+                frequency of each item so restocking is easier.
+              </p>
+              <button
+                class="btn"
+                onclick=" window.open('https://github.com/johnnyj2608/RestaurantPOS','_blank')"
+              >
+                GitHub
+              </button>
+              <button class="btn play-video" data-video-id="aZanP8LEd20">
+                Demo
+              </button>
+            </div>
           </div>
-        </div>
-        <br />
-        <br />
-        <!--Romantic Hut-->
-        <div class="row text-left align-items-center">
-          <div class="col-xs-12 col-lg-6 proj-img">
-            <img class="img-fluid" src="assets/images/romantichut.jpg" alt="" />
-          </div>
-          <div class="col-xs-12 col-lg-6">
-            <div class="proj-title">Romantic Hut</div>
-            <div class="proj-desc">Local Business Website</div>
-            <p>
-              Designed a Bootstrap website to showcase the services of a party
-              hall. By filling out the embedded Google Form, you can receive an
-              immediate response on the venue's availability via Twilio. When
-              submitted, Apps Script will look for schedule conflicts in the
-              Google Sheet that hold all the reservations.
-            </p>
-            <button
-              class="btn"
-              onclick=" window.open('https://github.com/johnnyj2608/RomanticHut','_blank')"
-            >
-              GitHub
-            </button>
-            <button
-              class="btn"
-              onclick=" window.open('https://www.romantichutparty.com/','_blank')"
-            >
-              Demo
-            </button>
+          <br />
+          <br />
+          <!--Romantic Hut-->
+          <div class="row text-left align-items-center">
+            <div class="col-xs-12 col-lg-6 proj-img">
+              <img class="img-fluid" src="assets/images/romantichut.jpg" alt="" />
+            </div>
+            <div class="col-xs-12 col-lg-6">
+              <div class="proj-title">Romantic Hut</div>
+              <div class="proj-desc">Local Business Website</div>
+              <p>
+                Designed a Bootstrap website to showcase the services of a party
+                hall. By filling out the embedded Google Form, you can receive an
+                immediate response on the venue's availability via Twilio. When
+                submitted, Apps Script will look for schedule conflicts in the
+                Google Sheet that hold all the reservations.
+              </p>
+              <button
+                class="btn"
+                onclick=" window.open('https://github.com/johnnyj2608/RomanticHut','_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn"
+                onclick=" window.open('https://www.romantichutparty.com/','_blank')"
+              >
+                Demo
+              </button>
+            </div>
           </div>
         </div>
       </div>
