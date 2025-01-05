@@ -1,16 +1,16 @@
 /* -------------- *
  * General
  * -------------- */
- * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
+* {
+        margin: 0;
+        padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
     overscroll-behavior: none;
     /*background: #2c2c2c !important;*/
-  }
+}
