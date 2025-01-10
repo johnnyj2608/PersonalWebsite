@@ -2,12 +2,12 @@
  * General
  * -------------- */
 * {
-        margin: 0;
-        padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
