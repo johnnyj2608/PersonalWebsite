@@ -560,6 +560,10 @@ body {
   cursor: pointer;
 }
 
+.popup-video span:hover {
+  transform: scale(1.2);
+}
+
 @media (max-width: 768px) {
   .popup-video iframe {
     width: 95%;
