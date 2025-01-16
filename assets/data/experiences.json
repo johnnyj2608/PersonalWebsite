@@ -1,0 +1,34 @@
+[
+    {
+        "experience": true,
+        "location": "An Kang Social Day Care",
+        "title": "Software Engineer",
+        "date": "June '22 - Present",
+        "description": "Saved the company over 1,000 cumulative hours of workload by utilizing Python to develop tailored automation tools across various departments.",
+        "image": "assets/images/experience/ankang.jpg"
+    },
+    {
+        "experience": true,
+        "location": "Siemens Digital Industries Software",
+        "title": "Software Engineer Intern",
+        "date": "May '21 - Aug '21",
+        "description": "An AI / ML focused role where I worked with Explainable AI, the What-If-Tool, OpenAI API, and k-means clustering.",
+        "image": "assets/images/experience/siemens.jpg"
+    },
+    {
+        "experience": false,
+        "location": "The Pennsylvania State University",
+        "title": "Bachelor of Science in Computer Science",
+        "date": "Aug '18 - May '22",
+        "description": "- Google Developer Student Club | Technical Lead\n- Engineering Orientation Network | Head Mentor\n- Penn State Competitive Sports | Supervisor",
+        "image": "assets/images/experience/psu.jpg"
+    },
+    {
+        "experience": false,
+        "location": "Juniata Senior High School",
+        "title": "High School Diploma",
+        "date": "Aug '14 - May '18",
+        "description": "- Volunteered as class videographer\n- Played on the basketball and pole vault team\n- Played in marching & concert band on the snare drum\n- Acted in musical as a priest, turtle, captain, and alligator",
+        "image": "assets/images/experience/jhs.jpg"
+    }
+  ]
