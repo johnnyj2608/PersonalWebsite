@@ -1,9 +1,3 @@
-// Anchors
-function jump(h) {
-  var top = document.getElementById(h).offsetTop;
-  window.scrollTo(0, top - 95);
-}
-
 // Toggle navbar from navbar-brand
 function toggleNavbar(h) {
   const navbarCollapse = document.querySelector(".navbar-collapse");
