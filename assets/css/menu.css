@@ -5,12 +5,54 @@
     margin: 0;
     padding: 0;
 }
-
+  
 html {
     scroll-behavior: smooth;
 }
-
+  
 body {
     overscroll-behavior: none;
-    /*background: #2c2c2c !important;*/
+}
+
+/* -------------- *
+ * Categories
+ * -------------- */
+.category h2 {
+    font-weight: bold;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 33.3%;
+    height: 100%;
+    border-right: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 15px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.col-md-6 {
+    padding: 10px;
 }

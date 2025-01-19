@@ -1,19 +1,19 @@
 function loadMenu() {
 
     const categories = {
-        "appetizer": 0,
-        "beef": 0,
         "breakfast": 0,
-        "chicken": 0,
-        "dessert": 0,
+        "appetizer": 0,
         "noodle": 0,
-        "pie": 0,
+        "chicken": 0,
+        "beef": 0,
         "pork": 0,
-        "sandwich": 0,
-        "sauce": 0,
         "seafood": 0,
-        "sides": 0,
         "vegetable": 0,
+        "pie": 0,
+        "sandwich": 0,
+        "sides": 0,
+        "sauce": 0,
+        "dessert": 0,
     };
 
     const cuisines = {
@@ -28,27 +28,55 @@ function loadMenu() {
         "Other": 0,
     };
 
+    const menuContainer = document.getElementById("menu-container");
+
     for (let category in categories) {
         const file = `assets/data/menu/${category}.json`;
         fetch(file)
             .then(response => response.json())
             .then(data => {
-                categories[category] = data.length;
-                data.forEach(item => {
-                    const cuisine = item.cuisine;
+                const section = document.createElement("div");
+                section.className = "category mt-5";
 
-                    if (cuisine in cuisines) {
-                        cuisines[cuisine]++;
-                    } else {
-                        cuisines["Other"]++;
+                const title = document.createElement("h2");
+                title.textContent = category;
+                section.appendChild(title);
+
+                const row = document.createElement("div");
+                row.className = "row";
+
+                data.forEach((item, index) => {
+                    const col = document.createElement("div");
+                    col.className = "col-md-6";
+
+                    const card = `
+                        <div class="card">
+                            <img src="assets/images/menu/cookoutjohn.png" class="card-img" alt="${item.name}">
+                            <div class="card-body">
+                                <h5 class="card-title">${item.name}</h5>
+                                <p class="card-text"><strong>Ingredients:</strong> ${item.ingredients}</p>
+                                <p class="card-text"><strong>Cuisine:</strong> ${item.cuisine}</p>
+                            </div>
+                        </div>
+                    `;
+                    col.innerHTML = card;
+                    row.appendChild(col);
+
+                    if ((index + 1) % 2 === 0) {
+                        section.appendChild(row.cloneNode(true));
+                        row.innerHTML = "";
                     }
                 });
-        })
-        .catch(error => {
-            console.error('Error loading ' + file, error);
-        });
+
+                if (row.innerHTML.trim()) {
+                    section.appendChild(row);
+                }
+                menuContainer.appendChild(section);
+            })
+            .catch(error => {
+                console.error("Error loading " + file, error);
+            });
     };
-    console.log(categories, cuisines);
 }
 
 loadMenu();
