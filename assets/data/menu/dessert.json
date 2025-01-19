@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Oreo Pudding",
+        "ingredients": "Vanilla Pudding, Oreo, Cream Cheese, Cool Whip",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Vanilla Ice Cream with Brownie",
+        "ingredients": "Vanilla Ice Cream, Brownie",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Oreo Milkshake",
+        "ingredients": "Cookies & Creme Ice Cream, Milk",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    }
+]

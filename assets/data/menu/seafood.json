@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Coconut Shrimp",
+        "ingredients": "",
+        "addons": "Coral Sauce",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Pepper Shrimp",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Shrimp with Broccoli",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Stir-Fry Clams",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Marble Goby Fish",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Salmon",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Spicy Kani Sushi Roll",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Japanese",
+        "calories": 0,
+        "instructions": ""
+    }
+]

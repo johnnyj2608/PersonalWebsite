@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Lo Mein Noodles",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Mai Fun Rice Noodles",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Spaghetti Noodles",
+        "ingredients": "",
+        "addons": "Meatballs",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Pho Soup",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Vietnamese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Ramen Soup",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Japanese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Mi Goreng Ramen",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Japanese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Peanut Butter Noodles",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Noodle Soup",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    }
+]

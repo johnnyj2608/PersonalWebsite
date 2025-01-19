@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Burger",
+        "ingredients": "Beef",
+        "addons": "Cheese",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Hot Dog",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Philly Cheesesteak",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Chicken Sandwich",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Grilled Cheese",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    }
+]

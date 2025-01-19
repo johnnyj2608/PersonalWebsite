@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Stir-Fry Water Spinach",
+        "ingredients": "Water Spinach, Garlic, Salt, Sugar, Oyster Sauce",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Stir-Fry Cauliflower",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Red Wine Bamboo Shoots",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Uncle Tofu",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Ma Po Tofu",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Steamed Broccoli",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    }
+]

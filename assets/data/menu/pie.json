@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Pizza",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Calzone",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Apple Pie",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Quesadilla",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Mexican",
+        "calories": 0,
+        "instructions": ""
+    }
+]

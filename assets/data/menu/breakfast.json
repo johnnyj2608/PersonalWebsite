@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Scrambled Eggs",
+        "ingredients": "Eggs, Salt",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Sunny Side Eggs",
+        "ingredients": "Eggs, Salt",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Over Easy Eggs",
+        "ingredients": "Eggs, Salt",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Soft Boiled Eggs",
+        "ingredients": "Eggs, Salt",
+        "addons": "Soy Sauce",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Omelette",
+        "ingredients": "Eggs, Salt",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Fried Egg w/ Sauce",
+        "ingredients": "Eggs, Salt",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Bacon",
+        "ingredients": "Bacon",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Sausage",
+        "ingredients": "Sausage",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Toast",
+        "ingredients": "Bread",
+        "addons": "Strawberry Jam, Butter",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Pancake",
+        "ingredients": "Pancake",
+        "addons": "Maple Syrup, Butter",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Breakfast Burrito",
+        "ingredients": "Tortilla Wrap, Eggs, Sausage, Cheese, Salt",
+        "addons": "",
+        "cuisine": "Mexican",
+        "calories": 0,
+        "instructions": ""
+    }
+]

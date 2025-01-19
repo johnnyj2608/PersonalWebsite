@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Eggs with Minced Pork",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Fried Pork Belly",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Braised Pork Belly",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Chair Siu",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Crispy Pork Belly",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Boneless Spare Ribs",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Pork Chop",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Vietnamese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Pork Katsu",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Japanese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Baby Back Ribs",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    }
+]

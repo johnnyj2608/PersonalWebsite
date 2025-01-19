@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Pepper Steak with Onions",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Mongolian Beef",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Wagyu",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Filet Mignon",
+        "ingredients": "Salt, Pepper",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Ribeye",
+        "ingredients": "Salt, Pepper",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Sirloin",
+        "ingredients": "Salt, Pepper",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "T-Bone",
+        "ingredients": "Salt, Pepper",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Porterhouse",
+        "ingredients": "Salt, Pepper",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    }
+]

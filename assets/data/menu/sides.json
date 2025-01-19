@@ -1,0 +1,170 @@
+[
+    {
+        "name": "White Rice",
+        "ingredients": "White Rice",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Fried Rice",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Congee",
+        "ingredients": "White Rice",
+        "addons": "Sweet Potato",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Pork Wontons",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Fish Balls",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Wonton Soup",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Egg Drop Soup",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Miso Soup",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Japanese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Clam Chowder",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Corn Kernels",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Egg Roll",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Spring Roll",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Sausage",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Vietnamese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Onigiri",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Japanese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Mashed Potatoes",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Waffle Fries",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Shoestring Fries",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Curly Fries",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Baked Potatoes",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Hash Browns",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Tater Tots",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    }
+]

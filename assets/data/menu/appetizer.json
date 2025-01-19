@@ -1,0 +1,130 @@
+[
+    {
+        "name": "Buffalo Chicken Dip",
+        "ingredients": "",
+        "addons": "Chips",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Garlic Bread",
+        "ingredients": "Garlic, Bread",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Onion Rings",
+        "ingredients": "Onions",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Mozzarella Sticks",
+        "ingredients": "Cheese",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Chive Pancake",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Scallion Pancake",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Satay Chicken",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Malaysian",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Egg Foo Young",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Crab Rangoons",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Fried Dumplings",
+        "ingredients": "",
+        "addons": "Dumpling Sauce",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Fried Scallops",
+        "ingredients": "Scallops",
+        "addons": "",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Fried Mantou",
+        "ingredients": "",
+        "addons": "Condensed Milk",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Rice Rolls",
+        "ingredients": "",
+        "addons": "Soy Sauce",
+        "cuisine": "Chinese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Meatballs",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Seaweed Salad",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Japanese",
+        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Kani Salad",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Japanese",
+        "calories": 0,
+        "instructions": ""
+    }
+]
