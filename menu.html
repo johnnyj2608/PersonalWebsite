@@ -12,7 +12,7 @@
         Python, Java, Swift, HTML, CSS, Javascript, SQL, PostgreSQL"
     />
     <meta name="author" content="Johnny Jiang" />
-    <meta name="description" content="Software Engineer" />
+    <meta name="description" content="Cookout Menu" />
     <title>Cookout John</title>
 
     <link rel="icon" href="assets/images/main/cookoutJohn.ico" />
@@ -41,13 +41,60 @@
 
     <!--Navbar Section-->
     <!-- Search Icon (Expands when clicked with cancel button) -->
-     <!-- Scrolling categories -->
+    <!-- Scrolling categories -->
+    <!-- Option to nav by cuisine -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Cookout John</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('breakfast')">Breakfast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('appetizer')">Appetizer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('noodle')">Noodle</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('chicken')">Chicken</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('beef')">Beef</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('pork')">Pork</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('seafood')">Seafood</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('vegetable')">Vegetable</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('pie')">Pie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('sandwich')">Sandwich</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('sides')">Sides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('sauce')">Sauce</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="jump('dessert')">Dessert</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     
     <!--Food Section-->
-    <!-- 2 items per row -->
-    <!-- L: Image, R: Desc -->
     <!-- When clicked, pop up info -->
-    <div class="container mt-5">
+    <div class="container">
       <div id="menu-container"></div>
     </div>
 
@@ -64,6 +111,7 @@
       <br />
     </footer>
 
+    <script src="assets/js/jump.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="https://kit.fontawesome.com/a8eb5cb089.js" crossorigin="anonymous"></script>
     <script

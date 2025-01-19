@@ -37,7 +37,8 @@ async function loadMenu() {
             const data = await response.json();
 
             const section = document.createElement("div");
-            section.className = "category mt-5";
+            section.className = "category my-4";
+            section.id = category;
 
             const title = document.createElement("h2");
             title.textContent = category;
@@ -88,4 +89,6 @@ async function loadMenu() {
     }
 }
 
-loadMenu();
+document.addEventListener('DOMContentLoaded', () => {
+    loadMenu();
+});
