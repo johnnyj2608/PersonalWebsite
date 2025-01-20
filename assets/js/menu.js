@@ -137,27 +137,8 @@ function updateNavHighlight() {
 }
 
 function toggleSearch() {
-    const searchContainer = document.getElementById('search-container');
-    const searchIcon = document.getElementById('search-icon');
-    const searchInput = document.getElementById('search-input');
-
-    if (!searchContainer.classList.contains('active')) {
-        searchContainer.classList.add('active');
-        searchInput.focus();
-
-        searchContainer.onclick = null;
-        searchIcon.onclick = function() {
-            toggleSearch();
-        };
-    } else {
-        searchContainer.classList.remove('active');
-        searchIcon.onclick = null;
-        setTimeout(function() {
-            searchContainer.onclick = function() {
-                toggleSearch();
-            };
-        }, 100);
-    }
+    document.getElementById('search-container').classList.toggle('active');
+    document.getElementById('search-input').focus();
 }
 
 document.addEventListener('DOMContentLoaded', () => {

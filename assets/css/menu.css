@@ -97,14 +97,6 @@ body {
 .search-container {
     position: relative;
     margin-right: 10px;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    cursor: pointer;
-}
-
-.search-container:hover {
-    border: 2px solid grey;
-    color: #333;
 }
 
 .search-input {
@@ -129,16 +121,28 @@ body {
     outline: none;
 }
 
-.search-container.active:hover {
-    border: 2px solid transparent;
-}
-
-#search-icon {
+.search-icon {
     color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    left: 13px;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search-icon i {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    font-size: 1.25rem;
+}
+
+.search-icon i:hover {
+    border: 2px solid grey;
+    color: #333;
+}
+
+.search-container.active:hover .search-icon i:hover {
+    border: 2px solid transparent;
 }
 
 /* -------------- *
