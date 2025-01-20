@@ -48,6 +48,10 @@ body {
     display: none;
 }
 
+.navbar-nav .nav-link.active {
+    background-color: #E0E0E0;
+}
+
 /* -------------- *
  * Categories
  * -------------- */
