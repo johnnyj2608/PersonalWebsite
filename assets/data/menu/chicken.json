@@ -4,7 +4,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -12,7 +11,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -20,7 +18,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -28,7 +25,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -36,7 +32,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -44,7 +39,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -52,7 +46,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -60,7 +53,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -68,7 +60,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -76,7 +67,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -84,7 +74,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -92,7 +81,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -100,7 +88,13 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "calories": 0,
+        "instructions": ""
+    },
+    {
+        "name": "Sweet Chili Sriracha Chicken",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Japanese",
         "instructions": ""
     },
     {
@@ -108,7 +102,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Korean",
-        "calories": 0,
         "instructions": ""
     }
 ]

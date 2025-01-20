@@ -4,7 +4,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -12,7 +11,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -20,7 +18,6 @@
         "ingredients": "",
         "addons": "Meatballs",
         "cuisine": "American",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -28,7 +25,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Vietnamese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -36,7 +32,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -44,7 +39,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -52,7 +46,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "calories": 0,
         "instructions": ""
     },
     {
@@ -60,7 +53,6 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "calories": 0,
         "instructions": ""
     }
 ]
