@@ -94,3 +94,9 @@ body {
 .col-md-6 {
     padding: 10px;
 }
+
+@media (max-width: 991.98px) {
+    .card {
+        height: 150px;
+    }
+}
