@@ -133,7 +133,7 @@ body {
     border: 2px solid transparent;
 }
 
-.search-icon {
+#search-icon {
     color: rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 13px;

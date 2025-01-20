@@ -137,8 +137,27 @@ function updateNavHighlight() {
 }
 
 function toggleSearch() {
-    document.getElementById('search-container').classList.add('active');
-    document.getElementById('search-input').focus();
+    const searchContainer = document.getElementById('search-container');
+    const searchIcon = document.getElementById('search-icon');
+    const searchInput = document.getElementById('search-input');
+
+    if (!searchContainer.classList.contains('active')) {
+        searchContainer.classList.add('active');
+        searchInput.focus();
+
+        searchContainer.onclick = null;
+        searchIcon.onclick = function() {
+            toggleSearch();
+        };
+    } else {
+        searchContainer.classList.remove('active');
+        searchIcon.onclick = null;
+        setTimeout(function() {
+            searchContainer.onclick = function() {
+                toggleSearch();
+            };
+        }, 100);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
