@@ -92,6 +92,56 @@ body {
 }
 
 /* -------------- *
+ * Search
+ * -------------- */
+.search-container {
+    position: relative;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.search-container:hover {
+    border: 2px solid grey;
+    color: #333;
+}
+
+.search-input {
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    transition: width 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    text-indent: 10%;
+    pointer-events: none;
+}
+
+.search-container.active .search-input {
+    width: 200px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-container.active:hover {
+    border: 2px solid transparent;
+}
+
+.search-icon {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* -------------- *
  * Categories
  * -------------- */
 .category h2 {

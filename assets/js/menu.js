@@ -136,6 +136,11 @@ function updateNavHighlight() {
     });
 }
 
+function toggleSearch() {
+    document.getElementById('search-container').classList.add('active');
+    document.getElementById('search-input').focus();
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadMenu();
     updateNavHighlight();
