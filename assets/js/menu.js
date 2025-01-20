@@ -94,6 +94,7 @@ function updateNavHighlight() {
 
     const sections = document.querySelectorAll('.category');
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
 
     navLinks.forEach(link => link.classList.remove('active'));
 
@@ -104,10 +105,14 @@ function updateNavHighlight() {
         if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
             const navLink = document.getElementById(`nav-${section.id}`);
             navLink?.classList.add('active');
+
+            navbarCollapse.scrollTo({
+                left: navLink.offsetLeft - navbarCollapse.offsetLeft,
+                behavior: 'smooth'
+            });
         }
     });
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
     loadMenu();
