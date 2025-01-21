@@ -66,7 +66,7 @@ body {
  * -------------- */
 .search-container {
     position: relative;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .search-input {
@@ -115,6 +115,28 @@ body {
 
 .search-container.active:hover .search-icon i:hover {
     border: 2px solid transparent;
+}
+
+/* -------------- *
+ * Arrow Scroll
+ * -------------- */
+.scroll-arrow {
+    position: relative;
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.left-arrow {
+    left: 0;
+    margin-right: 5px;
+}
+  
+.right-arrow {
+    right: 0;
+    margin-left: 5px;
 }
 
 /* -------------- *
@@ -255,5 +277,9 @@ body {
         opacity: 1;
         pointer-events: auto;
         transition: none;
+    }
+    
+    .scroll-arrow {
+        display: none;
     }
 }

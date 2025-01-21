@@ -141,8 +141,26 @@ function toggleSearch() {
     document.getElementById('search-input').focus();
 }
 
+function scrollNav(direction) {
+    const activeLink = document.querySelector('.navbar-nav .nav-link.active');
+    
+    if (activeLink) {
+        let targetLink;
+
+        if (direction === 'right') {
+            targetLink = activeLink.parentElement.nextElementSibling?.querySelector('.nav-link');
+        } else if (direction === 'left') {
+            targetLink = activeLink.parentElement.previousElementSibling?.querySelector('.nav-link');
+        }
+
+        if (targetLink) {
+            const sectionId = targetLink.id.replace('nav-', '');
+            jump(sectionId);
+        }
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadMenu();
-    updateNavHighlight();
     window.addEventListener('scroll', updateNavHighlight);
 });
