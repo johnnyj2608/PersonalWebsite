@@ -123,6 +123,7 @@ body {
 .container {
     width: fit-content;
     margin-left: auto;
+    justify-content: center;
 }
 
 .category h2 {
@@ -176,6 +177,12 @@ body {
 @media (max-width: 991.98px) {
     .card {
         height: 150px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .row {
+        width: 450px;
     }
 }
 
