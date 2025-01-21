@@ -12,6 +12,10 @@ html {
   
 body {
     overscroll-behavior: none;
+    max-width: 1200px;
+    justify-content: center;
+    margin: auto;
+    background-color: #f8f9fa;
 }
 
 /* -------------- *
@@ -20,6 +24,7 @@ body {
 .navbar {
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: 1px solid grey;
 }
 
 .navbar-nav .nav-link {
@@ -115,6 +120,11 @@ body {
 /* -------------- *
  * Categories
  * -------------- */
+.container {
+    width: fit-content;
+    margin-left: auto;
+}
+
 .category h2 {
     font-weight: bold;
     color: #333;
@@ -160,12 +170,20 @@ body {
 
 .col-md-6 {
     padding: 10px;
+    max-width: 450px;
 }
 
 @media (max-width: 991.98px) {
     .card {
         height: 150px;
     }
+}
+
+/* -------------- *
+ * Footer
+ * -------------- */
+.footer {
+    padding: 20px;
 }
 
 /* -------------- *
@@ -207,8 +225,7 @@ body {
     }
       
     .container {
-        margin-left: 250px;
-        max-width: calc(100% - 270px);
+        margin-left: 255px;
     }
 
     .search-container {
