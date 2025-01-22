@@ -163,11 +163,8 @@ body.no-scroll {
     color: #333;
 }
 
-.cart-icon {
-    color: rgba(0, 0, 0, 0.5);
-}
-
 .cart-icon i {
+    color: #808080;
     padding: 12.5px;
     font-size: 1.5rem;
 }
@@ -500,5 +497,19 @@ body.no-scroll {
         opacity: 1;
         pointer-events: auto;
         transition: none;
+    }
+
+    .cart-container {
+        position: fixed;
+        left: 1115px;
+        top: -10px;
+        background-color: white;
+        border: 1px solid black;
+        padding-top: 21px;
+    }
+
+    #cart-count {
+        position: absolute;
+        top: 24px;
     }
 }
