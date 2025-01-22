@@ -146,7 +146,26 @@ function toggleSearch() {
 }
 
 function toggleCart() {
-    console.log('Toggle Cart!')
+    const overlay = document.getElementById('black-overlay');
+    const cartPanel = document.getElementById('cart-panel');
+    const body = document.body;
+
+    const isActive = cartPanel.classList.contains('active');
+
+    if (isActive) {
+        cartPanel.classList.remove('active');
+        overlay.style.display = 'none';
+        body.style.overflow = '';
+    } else {
+        cartPanel.classList.add('active');
+        overlay.style.display = 'block';
+        body.style.overflow = 'hidden';
+    }
+}
+
+function submitOrder() {
+    console.log("Order submitted");
+    toggleCart();
 }
 
 function openModal(name, ingredients, cuisine, image) {
@@ -176,6 +195,10 @@ function updateValue(amount) {
     if (currentValue + amount >= 1) {
         currentValueElem.textContent = currentValue + amount;
     }
+}
+
+function addOrder() {
+    console.log("Order added");
 }
 
 document.addEventListener('DOMContentLoaded', () => {

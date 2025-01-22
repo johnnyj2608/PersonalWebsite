@@ -39,7 +39,7 @@
   </head>
   <body>
 
-    <!--Navbar Section-->
+    <!-- Navbar Section -->
     <nav class="navbar navbar-expand navbar-light bg-light sticky-top">
       <div class="container-fluid">
         
@@ -103,8 +103,27 @@
 
       </div>
     </nav>
+
+    <!-- Black Overlay -->
+    <div id="black-overlay" class="black-overlay" onclick="toggleCart()"></div>
+
+    <!-- Cart Details -->
+    <div class="cart-panel" id="cart-panel">
+      <div class="cart-panel-header">
+        Shopping Cart
+        <button class="close" onclick="toggleCart()">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-panel-body">
+        <p>Your cart is currently empty.</p>
+      </div>
+      <div class="cart-panel-footer">
+        <button onclick="submitOrder()">Submit Order</button>
+      </div>
+    </div>    
     
-    <!--Food Section-->
+    <!-- Food Section -->
     <div class="container">
       <div id="menu-container"></div>
       <div class="footer row text-center">
@@ -116,6 +135,7 @@
       </div>
     </div>
 
+    <!-- Food Details -->
     <div class="modal fade" id="modal-details" tabindex="-1">
       <div class="modal-dialog">
           <div class="modal-content">
@@ -135,7 +155,7 @@
                   <span id="current-value">1</span>
                   <span id="plus-btn" onclick="updateValue(1)">+</span>
                 </button>
-                <button id="add-item" data-bs-dismiss="modal">Add Item</button>
+                <button id="add-item" data-bs-dismiss="modal" onclick="addOrder()">Add Item</button>
               </div>
             </div>
           </div>
