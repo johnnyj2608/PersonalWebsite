@@ -166,6 +166,7 @@ function toggleCart() {
     cartPanel.classList.toggle('active');
     blackOverlay.classList.toggle('active');
     body.classList.toggle('no-scroll');
+    cartPanel.scrollTop = 0;
 }
 
 function submitOrder() {
@@ -177,6 +178,7 @@ function toggleFood(name, ingredients, cuisine, image) {
     foodPanel.classList.toggle('active');
     blackOverlay.classList.toggle('active');
     body.classList.toggle('no-scroll');
+    foodPanel.scrollTop = 0;
 
     const foodName = document.getElementById('food-name');
     const foodImage = document.getElementById('food-image');
