@@ -215,7 +215,7 @@ body {
 /* -------------- *
  * Modal
  * -------------- */
- .modal-dialog {
+.modal-dialog {
     width: auto;
     height: calc(100svh - 60px);
     margin: 30px auto;
@@ -244,12 +244,13 @@ button.close:hover {
 
 .modal-content {
     height: 100%;
+    border: none;
+    border-radius: 10px;
 }
 
 .modal-body {
     overflow-y: auto;
     padding: 0;
-    
 }
 
 .modal-body > * {
@@ -266,6 +267,7 @@ button.close:hover {
     display: block;
     padding: 0;
     margin: 0;
+    border-radius: 10px;
 }
 
 #modal-name {
@@ -285,14 +287,17 @@ button.close:hover {
     margin-top: 10px;
 }
 
-.sticky-footer {
-    display: flex;
-    position: sticky;
+.modal-buttons {
+    position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
     padding: 10px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
     justify-content: space-between;
     background-color: #f8f9fa;
+    border-radius: 10px;
 }
 
 #step-counter, #add-item {
