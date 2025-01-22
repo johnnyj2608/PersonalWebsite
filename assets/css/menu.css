@@ -95,7 +95,7 @@ body.no-scroll {
  * -------------- */
 .search-container {
     position: relative;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .search-input {
@@ -444,7 +444,7 @@ body.no-scroll {
         align-items: flex-start;
         width: 230px;
         height: 100%;
-        padding: 10px 0px;
+        padding: 11.5px 0px;
         overflow-y: auto;
     }
 
