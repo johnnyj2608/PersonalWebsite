@@ -52,7 +52,11 @@ async function loadMenu() {
                 col.className = "col-md-6";
 
                 const card = `
-                    <div class="card">
+                    <div class="card" onclick="openModal(
+                        '${item.name}', 
+                        '${item.ingredients}', 
+                        '${item.cuisine}', 
+                        'assets/images/menu/cookoutjohn.png')">
                         <img src="assets/images/menu/cookoutjohn.png" class="card-img" alt="${item.name}">
                         <div class="card-body">
                             <h5 class="card-title">${item.name}</h5>
@@ -157,6 +161,35 @@ function scrollNav(direction) {
             const sectionId = targetLink.id.replace('nav-', '');
             jump(sectionId);
         }
+    }
+}
+
+function openModal(name, ingredients, cuisine, image) {
+    const modalName = document.getElementById('modal-name');
+    const modalImage = document.getElementById('modal-image');
+    const modalIngredients = document.getElementById('modal-ingredients');
+    const modalCuisine = document.getElementById('modal-cuisine');
+    const modalBody = document.querySelector('.modal-body');
+
+    modalName.textContent = name;
+    modalImage.src = image || 'assets/images/menu/default.png';
+    modalIngredients.textContent = `Ingredients: ${ingredients}`;
+    modalCuisine.textContent = `Cuisine: ${cuisine}`;
+
+    modalBody.scrollTop = 0;
+    const currentValueElem = document.getElementById('current-value');
+    currentValueElem.textContent = '1';
+
+    const modal = new bootstrap.Modal(document.getElementById('modal-details'));
+    modal.show();
+}
+
+function updateValue(amount) {
+    const currentValueElem = document.getElementById('current-value');
+    let currentValue = parseInt(currentValueElem.textContent);
+
+    if (currentValue + amount >= 1) {
+        currentValueElem.textContent = currentValue + amount;
     }
 }
 

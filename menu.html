@@ -117,6 +117,32 @@
       </div>
     </div>
 
+    <div class="modal fade" id="modal-details" tabindex="-1">
+      <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="close" data-bs-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-body">
+              <img id="modal-image" src="" class="img-fluid" alt="Item Image">
+              <h2 id="modal-name"></h2>
+              <div class="modal-desc">
+                <p id="modal-ingredients"></p>
+                <p id="modal-cuisine"></p>
+              </div>
+              <div class="sticky-footer">
+                <button id="step-counter">
+                  <span id="minus-btn" onclick="updateValue(-1)">-</span>
+                  <span id="current-value">1</span>
+                  <span id="plus-btn" onclick="updateValue(1)">+</span>
+                </button>
+                <button id="add-item" data-bs-dismiss="modal">Add Item</button>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
     <script src="assets/js/menu.js"></script>
     <script src="https://kit.fontawesome.com/a8eb5cb089.js" crossorigin="anonymous"></script>
     <script
