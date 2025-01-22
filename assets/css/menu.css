@@ -13,9 +13,9 @@ html {
 body {
     overscroll-behavior: none;
     max-width: 1200px;
-    justify-content: center;
     margin: auto;
     background-color: #f8f9fa;
+    position: relative;
 }
 
 body.no-scroll {
@@ -181,16 +181,13 @@ body.no-scroll {
     border-radius: 10px;
     z-index: 1099;
     transition: right 0.3s ease-in-out;
-    overflow-y: auto;
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
 }
   
 .cart-panel.active {
     right: 0;
-}
-
-.cart-panel::-webkit-scrollbar {
-    display: none;
 }
   
 .cart-panel-header {
@@ -199,19 +196,25 @@ body.no-scroll {
     border-bottom: 1px solid #ddd;
     font-size: 1.25rem;
     font-weight: bold;
+    border-radius: 10px;
 }
   
 .cart-panel-body {
-    padding: 20px;
+    padding: 10px 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.cart-panel-body::-webkit-scrollbar {
+    display: none;
 }
   
 .cart-panel-footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     padding: 20px;
     background-color: #f8f9fa;
     border-top: 1px solid #ddd;
+    border-radius: 10px;
 }
   
 .cart-panel-footer button {
@@ -315,19 +318,16 @@ body.no-scroll {
     width: 450px;
     border-radius: 10px;
     z-index: 1100;
-    overflow-y: auto;
     opacity: 0;
     visibility: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .food-panel.active {
     opacity: 1;
     visibility: visible;
     transition: opacity 0.4s ease, visibility 0s ease 0s;
-}
-
-.food-panel::-webkit-scrollbar {
-    display: none;
 }
   
 .food-panel-header {
@@ -336,10 +336,16 @@ body.no-scroll {
     border-bottom: 1px solid #ddd;
     font-size: 1.25rem;
     font-weight: bold;
+    border-radius: 10px;
 }
   
 .food-panel-body {
-    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.food-panel-body::-webkit-scrollbar {
+    display: none;
 }
 
 .food-panel-body img {
@@ -347,22 +353,24 @@ body.no-scroll {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
+}
+
+#food-name {
+    padding: 10px;
 }
   
 .food-desc {
-    margin-bottom: 20px;
+    padding: 0 20px;
 }
 
 .food-panel-footer {
     display: flex;
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     background-color: #f8f9fa;
     border-top: 1px solid #ddd;
     justify-content: space-between;
+    border-radius: 10px;
 }
   
 #step-counter, #add-food  {
@@ -466,9 +474,5 @@ body.no-scroll {
         opacity: 1;
         pointer-events: auto;
         transition: none;
-    }
-    
-    .scroll-arrow {
-        display: none;
     }
 }
