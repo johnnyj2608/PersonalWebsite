@@ -52,7 +52,7 @@ async function loadMenu() {
                 col.className = "col-md-6";
 
                 const card = `
-                    <div class="card" onclick="openModal(
+                    <div class="card" onclick="toggleFood(
                         '${item.name}', 
                         '${item.ingredients}', 
                         '${item.cuisine}', 
@@ -145,60 +145,66 @@ function toggleSearch() {
     document.getElementById('search-input').focus();
 }
 
-function toggleCart() {
-    const overlay = document.getElementById('black-overlay');
-    const cartPanel = document.getElementById('cart-panel');
-    const body = document.body;
+const foodPanel = document.getElementById('food-panel');
+const cartPanel = document.getElementById('cart-panel');
+const blackOverlay = document.getElementById('black-overlay');
+const body = document.body;
 
-    const isActive = cartPanel.classList.contains('active');
-
-    if (isActive) {
-        cartPanel.classList.remove('active');
-        overlay.style.display = 'none';
-        body.style.overflow = '';
-    } else {
-        cartPanel.classList.add('active');
-        overlay.style.display = 'block';
-        body.style.overflow = 'hidden';
+function toggleOverlay() {
+    if (foodPanel.classList.contains('active')) {
+        foodPanel.classList.toggle('active')
+        
+    } else if (cartPanel.classList.contains('active')) {
+        cartPanel.classList.toggle('active')
     }
+
+    blackOverlay.classList.toggle('active');
+    body.classList.toggle('no-scroll');
+}
+
+function toggleCart() {
+    cartPanel.classList.toggle('active');
+    blackOverlay.classList.toggle('active');
+    body.classList.toggle('no-scroll');
 }
 
 function submitOrder() {
     console.log("Order submitted");
-    toggleCart();
+    toggleOverlay();
 }
 
-function openModal(name, ingredients, cuisine, image) {
-    const modalName = document.getElementById('modal-name');
-    const modalImage = document.getElementById('modal-image');
-    const modalIngredients = document.getElementById('modal-ingredients');
-    const modalCuisine = document.getElementById('modal-cuisine');
-    const modalBody = document.querySelector('.modal-body');
+function toggleFood(name, ingredients, cuisine, image) {
+    foodPanel.classList.toggle('active');
+    blackOverlay.classList.toggle('active');
+    body.classList.toggle('no-scroll');
 
-    modalName.textContent = name;
-    modalImage.src = image || 'assets/images/menu/default.png';
-    modalIngredients.textContent = `Ingredients: ${ingredients}`;
-    modalCuisine.textContent = `Cuisine: ${cuisine}`;
-
-    modalBody.scrollTop = 0;
-    const currentValueElem = document.getElementById('current-value');
-    currentValueElem.textContent = '1';
-
-    const modal = new bootstrap.Modal(document.getElementById('modal-details'));
-    modal.show();
+    const foodName = document.getElementById('food-name');
+    const foodImage = document.getElementById('food-image');
+    const foodIngredients = document.getElementById('food-ingredients');
+    const foodCuisine = document.getElementById('food-cuisine');
+    const foodCount = document.getElementById('food-count');
+  
+    foodName.textContent = name;
+    foodImage.src = image || 'assets/images/menu/cookoutjohn.png';
+    foodIngredients.textContent = `Ingredients: ${ingredients}`;
+    foodCuisine.textContent = `Cuisine: ${cuisine}`;
+    foodCount.textContent = '1';
 }
 
-function updateValue(amount) {
-    const currentValueElem = document.getElementById('current-value');
-    let currentValue = parseInt(currentValueElem.textContent);
-
-    if (currentValue + amount >= 1) {
-        currentValueElem.textContent = currentValue + amount;
+function updateCount(amount) {
+    const foodQuantityElem = document.getElementById('food-count');
+    let quantity = parseInt(foodQuantityElem.textContent);
+  
+    if (quantity + amount >= 1) {
+      foodQuantityElem.textContent = quantity + amount;
     }
 }
-
+  
 function addOrder() {
-    console.log("Order added");
+    const foodQuantityElem = document.getElementById('food-count');
+    let quantity = parseInt(foodQuantityElem.textContent);
+    console.log(`${quantity} order added`);
+    toggleFood();
 }
 
 document.addEventListener('DOMContentLoaded', () => {

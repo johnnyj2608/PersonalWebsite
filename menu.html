@@ -105,7 +105,7 @@
     </nav>
 
     <!-- Black Overlay -->
-    <div id="black-overlay" class="black-overlay" onclick="toggleCart()"></div>
+    <div id="black-overlay" class="black-overlay" onclick="toggleOverlay()"></div>
 
     <!-- Cart Details -->
     <div class="cart-panel" id="cart-panel">
@@ -116,6 +116,37 @@
         </button>
       </div>
       <div class="cart-panel-body">
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
         <p>Your cart is currently empty.</p>
       </div>
       <div class="cart-panel-footer">
@@ -135,31 +166,38 @@
       </div>
     </div>
 
-    <!-- Food Details -->
-    <div class="modal fade" id="modal-details" tabindex="-1">
-      <div class="modal-dialog">
-          <div class="modal-content">
-            <button class="close" data-bs-dismiss="modal">
-              <i class="fa fa-times"></i>
-            </button>
-            <div class="modal-body">
-              <img id="modal-image" src="" class="img-fluid" alt="Item Image">
-              <h2 id="modal-name"></h2>
-              <div class="modal-desc">
-                <p id="modal-ingredients"></p>
-                <p id="modal-cuisine"></p>
-              </div>
-              <div class="modal-buttons">
-                <button id="step-counter">
-                  <span id="minus-btn" onclick="updateValue(-1)">-</span>
-                  <span id="current-value">1</span>
-                  <span id="plus-btn" onclick="updateValue(1)">+</span>
-                </button>
-                <button id="add-item" data-bs-dismiss="modal" onclick="addOrder()">Add Item</button>
-              </div>
-            </div>
-          </div>
+    <!-- Food Panel -->
+    <div id="food-panel" class="food-panel">
+      <div class="food-panel-header">
+        Food Details
+        <button class="close" onclick="toggleFood()">
+          <i class="fa fa-times"></i>
+        </button>
       </div>
+      <div class="food-panel-body">
+        <img id="food-image" src="" class="img-fluid" alt="Item Image">
+        <h2 id="food-name"></h2>
+        <div class="food-desc">
+          <p id="food-ingredients"></p>
+          <p id="food-cuisine"></p>
+          <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        <p>Your cart is currently empty.</p>
+        </div>
+      </div>
+      <div class="food-panel-footer">
+        <div id="step-counter">
+          <span id="minus-btn" onclick="updateCount(-1)">-</span>
+          <span id="food-count">1</span>
+          <span id="plus-btn" onclick="updateCount(1)">+</span>
+        </div>
+        <button id="add-food" onclick="addOrder()">Add Item</button>
+      </div>
+    </div>
   </div>
 
     <script src="assets/js/menu.js"></script>
