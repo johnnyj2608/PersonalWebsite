@@ -145,6 +145,10 @@ function toggleSearch() {
     document.getElementById('search-input').focus();
 }
 
+function toggleCart() {
+    console.log('Toggle Cart!')
+}
+
 function openModal(name, ingredients, cuisine, image) {
     const modalName = document.getElementById('modal-name');
     const modalImage = document.getElementById('modal-image');

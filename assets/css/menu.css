@@ -66,6 +66,7 @@ body {
  * -------------- */
 .search-container {
     position: relative;
+    margin-right: 10px;
 }
 
 .search-input {
@@ -104,7 +105,7 @@ body {
     padding: 12.5px;
     border-radius: 10px;
     border: 2px solid transparent;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .search-icon i:hover {
@@ -116,6 +117,40 @@ body {
     border: 2px solid transparent;
 }
 
+/* -------------- *
+ * Cart
+ * -------------- */
+.cart-container {
+    margin-left: 10px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    padding-right: 3px;
+}
+
+.cart-container:hover {
+    border: 2px solid grey;
+    color: #333;
+}
+
+.cart-icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.cart-icon i {
+    padding: 12.5px;
+    font-size: 1.5rem;
+}
+
+#cart-count {
+    position: absolute;
+    top: 3px;
+    right: 7px;
+    color: white;
+    font-size: 0.75rem;
+    border-radius: 50%;
+}
 
 /* -------------- *
  * Categories
