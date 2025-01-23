@@ -245,6 +245,8 @@ function updateCart() {
     const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
     // Cumulative add quantities to calculate total. 0 is initial value
     document.getElementById('cart-count').textContent = cartCount;
+
+    checkSubmitButton();
 }
 
 function updateCartItem(index, amount) {
@@ -262,10 +264,25 @@ function removeCartItem(index) {
     updateCart();
 }
 
+function checkSubmitButton() {
+    const userName = document.getElementById('cart-panel-name').value;
+    const submitButton = document.getElementById('cart-panel-submit');
+
+    if (userName.trim() !== '' && cart.length !== 0) {
+        submitButton.classList.add('active');
+    } else {
+        submitButton.classList.remove('active');
+    }
+}
+
 function submitOrder() {
+    const userName = document.getElementById('cart-panel-name').value;
+
     cart.length = 0;
     updateCart();
     toggleOverlay();
+    
+    alert(`${userName}, you have successfully placed your order!`);
 }
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -115,16 +115,19 @@
           <i class="fa fa-times"></i>
         </button>
       </div>
-      <div class="cart-panel-body">
-      </div>
+      <div class="cart-panel-body"></div>
       <div class="cart-panel-footer">
         <span>
           <h3>Subtotal</h3>
           <h3>$0.00</h3>
         </span>
-        <button onclick="submitOrder()">Submit Order</button>
+        <span class="cart-panel-name">
+          <label for="cart-panel-name">Name:</label>
+          <input type="text" id="cart-panel-name" placeholder="Enter your name" oninput="checkSubmitButton()" />
+        </span>
+        <button id="cart-panel-submit" onclick="submitOrder()">Submit Order</button>
       </div>
-    </div>    
+    </div>
     
     <!-- Food Section -->
     <div class="container">

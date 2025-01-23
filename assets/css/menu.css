@@ -227,21 +227,46 @@ body.no-scroll {
 .cart-panel-footer span {
     display: flex;
     justify-content: space-between;
+    
+}
+
+.cart-panel-name {
+    padding-bottom: 10px;
+}
+
+label {
+    margin: 0;
+    display: flex;
+}
+
+.cart-panel-name label {
+    font-size: 1.5rem;
+}
+
+.cart-panel-name input {
+    width: 50%;
+    font-size: 1.5rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
 }
   
-.cart-panel-footer button {
+#cart-panel-submit {
     width: 100%;
-    background-color: #28a745;
-    color: white;
+    background-color: #e0e0e0;
+    color: #b0b0b0;
     border: none;
     padding: 10px;
     font-size: 1.5rem;
     border-radius: 5px;
     cursor: pointer;
+    pointer-events: none;
 }
-  
-.cart-panel-footer button:hover {
-    background-color: #218838;
+
+#cart-panel-submit.active {
+    background-color: #28a745;
+    color: white;
+    pointer-events: initial;
 }
 
 /* -------------- *
