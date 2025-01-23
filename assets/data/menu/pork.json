@@ -7,7 +7,7 @@
         "instructions": ""
     },
     {
-        "name": "Fried Pork Belly",
+        "name": "Sichuan Fried Pork",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
@@ -21,7 +21,7 @@
         "instructions": ""
     },
     {
-        "name": "Chair Siu",
+        "name": "Char Siu",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
@@ -29,6 +29,13 @@
     },
     {
         "name": "Crispy Pork Belly",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "instructions": ""
+    },
+    {
+        "name": "Lychee Pork",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
@@ -49,7 +56,7 @@
         "instructions": ""
     },
     {
-        "name": "Pork Katsu",
+        "name": "Tonkatsu Pork",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",

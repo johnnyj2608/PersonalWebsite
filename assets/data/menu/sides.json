@@ -56,7 +56,7 @@
         "instructions": ""
     },
     {
-        "name": "Clam Chowder",
+        "name": "Clam Chowder Soup",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
@@ -84,10 +84,10 @@
         "instructions": ""
     },
     {
-        "name": "Sausage",
+        "name": "Lap Cheong Sausage",
         "ingredients": "",
         "addons": "",
-        "cuisine": "Vietnamese",
+        "cuisine": "Chinese",
         "instructions": ""
     },
     {
@@ -126,7 +126,7 @@
         "instructions": ""
     },
     {
-        "name": "Baked Potatoes",
+        "name": "Baked Potato",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",

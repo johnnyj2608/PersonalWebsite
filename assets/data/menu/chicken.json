@@ -14,7 +14,7 @@
         "instructions": ""
     },
     {
-        "name": "Sweet & Sour Chicken",
+        "name": "Sweet and Sour Chicken",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
@@ -63,7 +63,7 @@
         "instructions": ""
     },
     {
-        "name": "Chicken Wings",
+        "name": "Boneless Chicken Wings",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
@@ -84,21 +84,14 @@
         "instructions": ""
     },
     {
-        "name": "Karaage",
+        "name": "Honey Sriracha Chicken",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
         "instructions": ""
     },
     {
-        "name": "Sweet Chili Sriracha Chicken",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Japanese",
-        "instructions": ""
-    },
-    {
-        "name": "Fried Chicken",
+        "name": "Korean Fried Chicken",
         "ingredients": "",
         "addons": "",
         "cuisine": "Korean",

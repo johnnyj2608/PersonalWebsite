@@ -12,8 +12,8 @@ async function loadMenu() {
         "pie": 0,
         "sandwich": 0,
         "sides": 0,
-        "sauce": 0,
         "dessert": 0,
+        "sauce": 0,
     };
 
     const cuisines = {

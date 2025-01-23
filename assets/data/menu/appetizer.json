@@ -77,6 +77,13 @@
         "instructions": ""
     },
     {
+        "name": "Fried Shrimp",
+        "ingredients": "Shrimp",
+        "addons": "",
+        "cuisine": "Chinese",
+        "instructions": ""
+    },
+    {
         "name": "Fried Mantou",
         "ingredients": "",
         "addons": "Condensed Milk",
@@ -85,6 +92,13 @@
     },
     {
         "name": "Rice Rolls",
+        "ingredients": "",
+        "addons": "Soy Sauce",
+        "cuisine": "Chinese",
+        "instructions": ""
+    },
+    {
+        "name": "Youtiao",
         "ingredients": "",
         "addons": "Soy Sauce",
         "cuisine": "Chinese",

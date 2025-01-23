@@ -1,13 +1,13 @@
 [
     {
-        "name": "Stir-Fry Water Spinach",
+        "name": "Stir Fry Water Spinach",
         "ingredients": "Water Spinach, Garlic, Salt, Sugar, Oyster Sauce",
         "addons": "",
         "cuisine": "Fuzhounese",
         "instructions": ""
     },
     {
-        "name": "Stir-Fry Cauliflower",
+        "name": "Stir Fry Cauliflower",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
@@ -21,14 +21,14 @@
         "instructions": ""
     },
     {
-        "name": "Uncle Tofu",
+        "name": "Braised Tofu",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
         "instructions": ""
     },
     {
-        "name": "Ma Po Tofu",
+        "name": "Mapo Tofu",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",

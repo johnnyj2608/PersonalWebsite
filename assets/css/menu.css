@@ -354,6 +354,8 @@ label {
     width: 40%;
     height: 100%;
     border-right: 1px solid #ddd;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-body {
