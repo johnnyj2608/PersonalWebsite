@@ -269,6 +269,10 @@ label {
     pointer-events: initial;
 }
 
+#order-form {
+    display: none;
+}
+
 /* -------------- *
  * Cart Item
  * -------------- */
