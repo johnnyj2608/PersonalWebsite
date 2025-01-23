@@ -6,8 +6,7 @@
         "image": "assets/images/projects/lunarbirthdays.jpg",
         "github": "https://github.com/johnnyj2608/LunarBirthdays",
         "demo": "yANz3VMv6_s",
-        "appStore": "https://apps.apple.com/us/app/lunar-birthdays/id6468920519",
-        "privacyPolicy": "/privacy",
+        "subpage": "/privacy",
         "visible": true
     },
     {

@@ -12,7 +12,8 @@
     {
         "title": "Cooking",
         "description": "I love to eat—who doesn't? I enjoy learning new recipes, cooking for others, and experimenting with wacky ideas. It's so satisfying when my guests want a second plate. I am currently working on a cookbook of all my favorite foods!",
-        "image": "assets/images/hobbies/cooking.jpg"
+        "image": "assets/images/hobbies/cooking.jpg",
+        "subpage": "/menu"
     },
     {
         "title": "Karaoke",

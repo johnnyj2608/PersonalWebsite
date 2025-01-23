@@ -74,10 +74,9 @@ function loadProjects() {
                         <div class="proj-title">${project.title}</div>
                         <div class="proj-desc">${project.subtitle}</div>
                         <p>${project.description}</p>
-                        ${project.privacyPolicy ? `<div class="proj-desc"><a href="${project.privacyPolicy}">Privacy Policy</a></div>` : ''}
+                        ${project.subpage ? `<div class="proj-desc"><a href="${project.subpage}">Privacy Policy</a></div>` : ''}
                         <button class="btn" onclick="window.open('${project.github}','_blank')">GitHub</button>
                         <button class="btn play-video" data-video-id="${project.demo}">Demo</button>
-                        ${project.appStore ? `<button class="btn" onclick="window.open('${project.appStore}','_blank')">App Store</button>` : ''}
                     </div>
                 </div>
             `;
@@ -105,6 +104,7 @@ function loadHobbies() {
                     <div class="col-xs-12 col-lg-6">
                         <div class="proj-title">${hobby.title}</div>
                         <p>${hobby.description}</p>
+                        ${hobby.subpage ? `<div class="proj-desc"><a href="${hobby.subpage}">Interactive Menu</a></div>` : ''}
                     </div>
                     <div class="col-xs-12 col-lg-6 proj-img">
                         <img class="img-fluid" src="${hobby.image}" alt="${hobby.title}" />
