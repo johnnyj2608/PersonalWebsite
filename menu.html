@@ -128,6 +128,14 @@
         <button id="cart-panel-submit" onclick="submitOrder()">Submit Order</button>
       </div>
     </div>
+
+    <!-- Cart Email Submission -->
+    <form id="order-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="b91ff662-221b-4241-8979-470d65a2283c">
+      <input type="hidden" id="email-name" name="name" required>
+      <textarea id="email-message" name="message" required></textarea>
+      <button type="submit" style="display:none;">Submit Form</button>
+    </form>
     
     <!-- Food Section -->
     <div class="container">

@@ -277,12 +277,36 @@ function checkSubmitButton() {
 
 function submitOrder() {
     const userName = document.getElementById('cart-panel-name').value;
+    const emailMessage = cart.map(item => {
+      return `${item.name} x ${item.quantity} - $${(0 * item.quantity).toFixed(2)}`;
+    }).join("\n");
+  
+    document.getElementById('email-name').value = userName;
+    document.getElementById('email-message').value = `Order Details:\n\n${emailMessage}`;
+  
+    const form = document.getElementById('order-form');
+    const formData = new FormData(form);
+  
+    fetch(form.action, {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert(`${userName}, you have successfully placed your order!`);
 
-    cart.length = 0;
-    updateCart();
-    toggleOverlay();
-    
-    alert(`${userName}, you have successfully placed your order!`);
+            cart.length = 0;
+            updateCart();
+            toggleOverlay();
+        } else {
+            alert('There was an error submitting your order. Please try again.');
+        }
+    })
+    .catch(error => {
+        console.error('Error submitting form:', error);
+        alert('There was an error submitting your order. Please try again.');
+    });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
