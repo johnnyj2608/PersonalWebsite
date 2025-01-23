@@ -147,7 +147,7 @@ body.no-scroll {
 }
 
 /* -------------- *
- * Cart
+ * Cart Panel
  * -------------- */
 .cart-container {
     margin-left: 10px;
@@ -245,6 +245,52 @@ body.no-scroll {
 }
 
 /* -------------- *
+ * Cart Item
+ * -------------- */
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.cart-item-image {
+    width: 80px;
+    margin-right: 15px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-quantity {
+    display: flex;
+}
+
+.cart-item-quantity button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item-quantity button:hover {
+    background-color: #e9ecef;
+}
+
+.cart-item-quantity span {
+    font-size: 1.25rem;
+    font-weight: bold;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* -------------- *
  * Categories
  * -------------- */
 .container {
@@ -318,7 +364,7 @@ body.no-scroll {
 }
 
 /* -------------- *
- * Food
+ * Food Panel
  * -------------- */
 .food-panel {
     position: fixed;

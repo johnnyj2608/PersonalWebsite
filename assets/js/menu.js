@@ -201,12 +201,70 @@ function updateCount(amount) {
       foodQuantityElem.textContent = quantity + amount;
     }
 }
-  
+
+const cart = [];
 function addOrder() {
     const foodQuantityElem = document.getElementById('food-count');
-    let quantity = parseInt(foodQuantityElem.textContent);
-    console.log(`${quantity} order added`);
+    const foodName = document.getElementById('food-name').textContent;
+    const foodImage = document.getElementById('food-image').src;
+    const quantity = parseInt(foodQuantityElem.textContent);
+
+    const existingItem = cart.find(item => item.name === foodName);
+    if (existingItem) {
+        existingItem.quantity += quantity;
+    } else {
+        cart.push({
+            name: foodName,
+            image: foodImage,
+            quantity: quantity
+        });
+    }
+    updateCart();
     toggleFood();
+}
+
+function updateCart() {
+    const cartPanelBody = document.querySelector('.cart-panel-body');
+    cartPanelBody.innerHTML = '';
+
+    if (cart.length > 0) {
+        cart.forEach((item, index) => {
+            const cartItem = `
+                <div class="cart-item">
+                    <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+                    <div class="cart-item-details">
+                        <h5>${item.name}</h5>
+                        <div class="cart-item-quantity">
+                            <button onclick="updateCartItem(${index}, -1)">-</button>
+                            <span>${item.quantity}</span>
+                            <button onclick="updateCartItem(${index}, 1)">+</button>
+                        </div>
+                    </div>
+                    <h5>$0.00</h5>
+                </div>
+            `;
+            cartPanelBody.innerHTML += cartItem;
+        });
+    }
+
+    const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+    // Cumulative add quantities to calculate total. 0 is initial value
+    document.getElementById('cart-count').textContent = cartCount;
+}
+
+function updateCartItem(index, amount) {
+    cart[index].quantity += amount;
+
+    if (cart[index].quantity <= 0) {
+        cart.splice(index, 1);  // (Start index, # of items to remove after index)
+    }
+
+    updateCart();
+}
+
+function removeCartItem(index) {
+    cart.splice(index, 1);  // (Start index, # of items to remove after index)
+    updateCart();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
