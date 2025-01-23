@@ -162,18 +162,6 @@ function toggleOverlay() {
     body.classList.toggle('no-scroll');
 }
 
-function toggleCart() {
-    cartPanel.classList.toggle('active');
-    blackOverlay.classList.toggle('active');
-    body.classList.toggle('no-scroll');
-    cartPanel.scrollTop = 0;
-}
-
-function submitOrder() {
-    console.log("Order submitted");
-    toggleOverlay();
-}
-
 function toggleFood(name, ingredients, cuisine, image) {
     foodPanel.classList.toggle('active');
     blackOverlay.classList.toggle('active');
@@ -203,6 +191,13 @@ function updateCount(amount) {
 }
 
 const cart = [];
+function toggleCart() {
+    cartPanel.classList.toggle('active');
+    blackOverlay.classList.toggle('active');
+    body.classList.toggle('no-scroll');
+    cartPanel.scrollTop = 0;
+}
+
 function addOrder() {
     const foodQuantityElem = document.getElementById('food-count');
     const foodName = document.getElementById('food-name').textContent;
@@ -265,6 +260,12 @@ function updateCartItem(index, amount) {
 function removeCartItem(index) {
     cart.splice(index, 1);  // (Start index, # of items to remove after index)
     updateCart();
+}
+
+function submitOrder() {
+    cart.length = 0;
+    updateCart();
+    toggleOverlay();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
