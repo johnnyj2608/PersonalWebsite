@@ -51,13 +51,16 @@ async function loadMenu() {
                 const col = document.createElement("div");
                 col.className = "col-md-6";
 
+                const imageName = item.name.replaceAll(' ', '-').toLowerCase();
+                const imagePath = `assets/images/menu/${category}/${imageName}.jpg`;
+
                 const card = `
                     <div class="card" onclick="toggleFood(
                         '${item.name}', 
                         '${item.ingredients}', 
                         '${item.cuisine}', 
-                        'assets/images/menu/cookoutjohn.png')">
-                        <img src="assets/images/menu/cookoutjohn.png" class="card-img" alt="${item.name}">
+                        '${imagePath}')">
+                        <img src="${imagePath}" class="card-img" alt="${item.name}">
                         <div class="card-body">
                             <h5 class="card-title">${item.name}</h5>
                             <p class="card-text"><strong>Ingredients:</strong> ${item.ingredients}</p>
