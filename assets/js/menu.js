@@ -153,8 +153,20 @@ function updateNavHighlight() {
 }
 
 function toggleSearch() {
-    document.getElementById('search-container').classList.toggle('active');
-    document.getElementById('search-input').focus();
+    const searchContainer = document.getElementById('search-container');
+    const searchInput = document.getElementById('search-input');
+
+    if (searchContainer.classList.contains('active')) {
+        searchContainer.classList.remove('active');
+    } else {
+        searchContainer.classList.add('active');
+        searchInput.focus();
+
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        if (dropdownMenu.classList.contains('active')) {
+            dropdownMenu.classList.remove('active');
+        }
+    }
 }
 
 const foodPanel = document.getElementById('food-panel');
@@ -164,21 +176,26 @@ const body = document.body;
 
 function toggleOverlay() {
     if (foodPanel.classList.contains('active')) {
-        foodPanel.classList.toggle('active')
+        foodPanel.classList.remove('active')
         
     } else if (cartPanel.classList.contains('active')) {
-        cartPanel.classList.toggle('active')
+        cartPanel.classList.remove('active')
     }
 
-    blackOverlay.classList.toggle('active');
-    body.classList.toggle('no-scroll');
+    if (blackOverlay.classList.contains('active')) {
+        blackOverlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+    } else {
+        blackOverlay.classList.add('active');
+        body.classList.add('no-scroll');
+    }
 }
 
 function toggleFood(name, ingredients, cuisine, price, image) {
-    foodPanel.classList.toggle('active');
-    blackOverlay.classList.toggle('active');
-    body.classList.toggle('no-scroll');
+    toggleOverlay();
+
     foodPanel.scrollTop = 0;
+    foodPanel.classList.add('active');
 
     const foodName = document.getElementById('food-name');
     const foodImage = document.getElementById('food-image');
@@ -215,10 +232,9 @@ function updateCount(amount) {
 
 const cart = [];
 function toggleCart() {
-    cartPanel.classList.toggle('active');
-    blackOverlay.classList.toggle('active');
-    body.classList.toggle('no-scroll');
+    toggleOverlay();
     cartPanel.scrollTop = 0;
+    cartPanel.classList.add('active');
 }
 
 function addOrder() {
