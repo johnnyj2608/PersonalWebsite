@@ -196,6 +196,12 @@ body.no-scroll {
     cursor: pointer;
 }
 
+.dropdown-menu label:hover {
+    background-color: #f0f0f0;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
 .dropdown-menu label:last-child {
     margin-bottom: 0;
 }
