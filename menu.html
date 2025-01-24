@@ -48,8 +48,19 @@
           <div class="search-icon" onclick="toggleSearch()">
             <i class="fas fa-search"></i>
           </div>
-          <div class="dropdown-icon">
+
+          <div class="dropdown-icon" onclick="toggleDropdown()">
             <i class="fas fa-caret-down"></i>
+          </div>
+          <div class="dropdown-menu">
+            <label><input type="checkbox" name="American" checked> American</label>
+            <label><input type="checkbox" name="Chinese" checked> Chinese</label>
+            <label><input type="checkbox" name="Fuzhounese" checked> Fuzhounese</label>
+            <label><input type="checkbox" name="Japanese" checked> Japanese</label>
+            <label><input type="checkbox" name="Korean" checked> Korean</label>
+            <label><input type="checkbox" name="Malaysian" checked> Malaysian</label>
+            <label><input type="checkbox" name="Mexican" checked> Mexican</label>
+            <label><input type="checkbox" name="Vietnamese" checked> Vietnamese</label>
           </div>
         </div>
 
@@ -114,7 +125,7 @@
     <div class="cart-panel" id="cart-panel">
       <div class="cart-panel-header">
         Shopping Cart
-        <button class="close" onclick="toggleCart()">
+        <button class="close" onclick="toggleOverlay()">
           <i class="fa fa-times"></i>
         </button>
       </div>
@@ -160,7 +171,7 @@
     <!-- Food Panel -->
     <div id="food-panel" class="food-panel">
       <div class="food-panel-body">
-        <button class="close" onclick="toggleFood()">
+        <button class="close" onclick="toggleOverlay()">
           <i class="fa fa-times"></i>
         </button>
         <img id="food-image" src="" class="img-fluid">

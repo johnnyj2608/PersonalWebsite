@@ -171,6 +171,35 @@ body.no-scroll {
     cursor: pointer;
 }
 
+/* Dropdown menu styles */
+.dropdown-menu {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+
+.dropdown-menu.active {
+    display: flex;
+}
+
+.dropdown-menu label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.dropdown-menu label:last-child {
+    margin-bottom: 0;
+}
+
 /* -------------- *
  * Cart Panel
  * -------------- */

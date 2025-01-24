@@ -162,10 +162,21 @@ function toggleSearch() {
         searchContainer.classList.add('active');
         searchInput.focus();
 
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-        if (dropdownMenu.classList.contains('active')) {
-            dropdownMenu.classList.remove('active');
-        }
+    }
+
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    if (dropdownMenu.classList.contains('active')) {
+        dropdownMenu.classList.remove('active');
+    }
+}
+
+function toggleDropdown() {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    if (dropdownMenu.classList.contains('active')) {
+        dropdownMenu.classList.remove('active');
+    } else {
+        dropdownMenu.classList.add('active');
     }
 }
 
