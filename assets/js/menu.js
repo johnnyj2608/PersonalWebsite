@@ -52,7 +52,13 @@ async function loadMenu() {
                 col.className = "col-md-6";
 
                 const imageName = item.name.replaceAll(' ', '-').toLowerCase();
-                const imagePath = `assets/images/menu/${category}/${imageName}.jpg`;
+                let imagePath;
+
+                if (category !== "sauce") {
+                    imagePath = `/assets/images/menu/${category}/${imageName}.jpg`;
+                } else {
+                    imagePath = '/assets/images/menu/cookoutjohn.png';
+                }
 
                 const card = `
                     <div class="card" onclick="toggleFood(
@@ -176,9 +182,9 @@ function toggleFood(name, ingredients, cuisine, image) {
     const foodIngredients = document.getElementById('food-ingredients');
     const foodCuisine = document.getElementById('food-cuisine');
     const foodCount = document.getElementById('food-count');
-  
-    foodName.textContent = name;
-    foodImage.src = image || 'assets/images/menu/cookoutjohn.png';
+
+    foodName.textContent = name || '';
+    foodImage.src = image || '';
     foodIngredients.textContent = `Ingredients: ${ingredients}`;
     foodCuisine.textContent = `Cuisine: ${cuisine}`;
     foodCount.textContent = '1';
