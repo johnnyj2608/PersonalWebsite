@@ -634,12 +634,15 @@ label {
     .search-container {
         margin-right: 0px;
         margin-bottom: 10px;
-        pointer-events: none;
     }
 
     .search-input {
         padding-left: 40px;
         padding-right: 10px;
+    }
+
+    .search-icon {
+        pointer-events: none;
     }
 
     .search-container .search-input, .search-container.active .search-input {
