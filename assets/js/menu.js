@@ -274,6 +274,15 @@ function addOrder() {
     toggleFood();
 }
 
+function closeDropdown(event) {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const searchContainer = document.getElementById('search-container');
+    
+    if (!searchContainer.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        dropdownMenu.classList.remove('active');
+    }
+}
+
 function updateCart() {
     const cartPanelBody = document.querySelector('.cart-panel-body');
     cartPanelBody.innerHTML = '';
@@ -375,5 +384,6 @@ function submitOrder() {
 
 document.addEventListener('DOMContentLoaded', () => {
     loadMenu();
+    document.addEventListener('click', closeDropdown);
     window.addEventListener('scroll', updateNavHighlight);
 });
