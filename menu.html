@@ -118,12 +118,16 @@
       <div class="cart-panel-body"></div>
       <div class="cart-panel-footer">
         <span>
-          <h3>Total</h3>
+          <h3>Total:</h3>
           <h3>$0.00</h3>
         </span>
         <span class="cart-panel-name">
           <label for="cart-panel-name">Name:</label>
           <input type="text" id="cart-panel-name" placeholder="Enter your name" oninput="checkSubmitButton()" />
+        </span>
+        <span class="cart-panel-note">
+          <label for="cart-panel-note">Note:</label>
+          <input type="text" id="cart-panel-note" placeholder="Optional" />
         </span>
         <button id="cart-panel-submit" onclick="submitOrder()">Submit Order</button>
       </div>
@@ -133,7 +137,8 @@
     <form id="order-form" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="b91ff662-221b-4241-8979-470d65a2283c">
       <input type="text" id="email-name" name="name" required>
-      <textarea id="email-message" name="message" required></textarea>
+      <textarea id="email-order" name="order" required></textarea>
+      <textarea id="email-note" name="note"></textarea>
       <button type="submit" style="display:none;">Submit Form</button>
     </form>
     

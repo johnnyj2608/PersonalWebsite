@@ -230,8 +230,8 @@ body.no-scroll {
     
 }
 
-.cart-panel-name {
-    padding-bottom: 10px;
+.cart-panel-name, .cart-panel-note {
+    padding-bottom: 5px;
 }
 
 label {
@@ -239,13 +239,13 @@ label {
     display: flex;
 }
 
-.cart-panel-name label {
-    font-size: 1.5rem;
+.cart-panel-name label, .cart-panel-note label {
+    font-size: 1.1rem;
 }
 
-.cart-panel-name input {
-    width: 50%;
-    font-size: 1.5rem;
+.cart-panel-name input, .cart-panel-note input {
+    width: 85%;
+    font-size: 1.1rem;
     border: 2px solid #ddd;
     border-radius: 5px;
     background-color: #f8f9fa;

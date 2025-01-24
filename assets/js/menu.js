@@ -297,10 +297,10 @@ function removeCartItem(index) {
 }
 
 function checkSubmitButton() {
-    const userName = document.getElementById('cart-panel-name').value;
+    const orderName = document.getElementById('cart-panel-name').value;
     const submitButton = document.getElementById('cart-panel-submit');
 
-    if (userName.trim() !== '' && cart.length !== 0) {
+    if (orderName.trim() !== '' && cart.length !== 0) {
         submitButton.classList.add('active');
     } else {
         submitButton.classList.remove('active');
@@ -308,14 +308,17 @@ function checkSubmitButton() {
 }
 
 function submitOrder() {
-    const userName = document.getElementById('cart-panel-name').value;
-    const emailMessage = cart.map(item => {
+    const orderName = document.getElementById('cart-panel-name').value;
+    const orderNote = document.getElementById('cart-panel-note').value;
+
+    const orderDetails = cart.map(item => {
         const totalPrice = (item.price * item.quantity).toFixed(2); // 100% Discounts
         return `${item.name} x ${item.quantity} - Free`;
     }).join("\n");
   
-    document.getElementById('email-name').value = userName;
-    document.getElementById('email-message').value = `Order Details:\n\n${emailMessage}`;
+    document.getElementById('email-name').value = orderName;
+    document.getElementById('email-order').value = orderDetails;
+    document.getElementById('email-note').value = orderNote;
   
     const form = document.getElementById('order-form');
     const formData = new FormData(form);
@@ -327,9 +330,10 @@ function submitOrder() {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            alert(`${userName}, you have successfully placed your order!`);
+            alert(`${orderName}, you have successfully placed your order!`);
 
             cart.length = 0;
+            document.getElementById('cart-panel-note').value = '';
             updateCart();
             toggleOverlay();
         } else {
