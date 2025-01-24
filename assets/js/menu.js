@@ -37,7 +37,7 @@ async function loadMenu() {
             const data = await response.json();
 
             const section = document.createElement("div");
-            section.className = "category my-4";
+            section.className = "category py-4";
             section.id = category;
 
             const title = document.createElement("h2");
