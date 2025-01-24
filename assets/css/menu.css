@@ -321,6 +321,21 @@ label {
     text-align: center;
 }
 
+.cart-item-price h5 {
+    display: flex;
+    justify-content: right;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.discounted-price {
+    color: green;
+    font-weight: bold;
+}
+
 /* -------------- *
  * Categories
  * -------------- */
@@ -478,7 +493,7 @@ label {
     border-radius: 10px;
 }
   
-#step-counter, #add-food  {
+#step-counter, #food-add  {
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 10px;
@@ -503,14 +518,16 @@ label {
     transform: scale(1.2);
 }
 
-#add-food {
+#food-add {
+    display: flex;
     width: 65%;
     background-color: #28a745;
     color: white;
     cursor: pointer;
+    justify-content: space-between;
 }
 
-#add-food:hover {
+#food-add:hover {
     background-color: #218838;
 }
 

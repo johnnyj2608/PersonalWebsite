@@ -118,7 +118,7 @@
       <div class="cart-panel-body"></div>
       <div class="cart-panel-footer">
         <span>
-          <h3>Subtotal</h3>
+          <h3>Total</h3>
           <h3>$0.00</h3>
         </span>
         <span class="cart-panel-name">
@@ -158,6 +158,7 @@
         <img id="food-image" src="" class="img-fluid">
         <h3 id="food-name"></h3>
         <div class="food-desc">
+          <p id="food-price"></p>
           <p id="food-ingredients"></p>
           <p id="food-cuisine"></p>
         </div>
@@ -168,7 +169,10 @@
           <span id="food-count">1</span>
           <span id="plus-btn" onclick="updateCount(1)">+</span>
         </div>
-        <button id="add-food" onclick="addOrder()">Add Item</button>
+        <button id="food-add" onclick="addOrder()">
+          <span>Submit</span>
+          <span id="order-price" class="order-price">$0.00</span>
+        </button>
       </div>
     </div>
   </div>

@@ -59,16 +59,19 @@ async function loadMenu() {
                 } else {
                     imagePath = '/assets/images/menu/cookoutjohn.png';
                 }
+                const randomPrice = (Math.random() * (9.99 - 1) + 1).toFixed(2);
 
                 const card = `
                     <div class="card" onclick="toggleFood(
                         '${item.name}', 
                         '${item.ingredients}', 
                         '${item.cuisine}', 
+                        '${randomPrice}', 
                         '${imagePath}')">
                         <img src="${imagePath}" class="card-img" alt="${item.name}">
                         <div class="card-body">
                             <h5 class="card-title">${item.name}</h5>
+                            <p class="card-text"><strong>Price:</strong> $${randomPrice}</p>
                             <p class="card-text"><strong>Ingredients:</strong> ${item.ingredients}</p>
                             <p class="card-text"><strong>Cuisine:</strong> ${item.cuisine}</p>
                         </div>
@@ -171,7 +174,7 @@ function toggleOverlay() {
     body.classList.toggle('no-scroll');
 }
 
-function toggleFood(name, ingredients, cuisine, image) {
+function toggleFood(name, ingredients, cuisine, price, image) {
     foodPanel.classList.toggle('active');
     blackOverlay.classList.toggle('active');
     body.classList.toggle('no-scroll');
@@ -179,23 +182,34 @@ function toggleFood(name, ingredients, cuisine, image) {
 
     const foodName = document.getElementById('food-name');
     const foodImage = document.getElementById('food-image');
+    const foodPrice = document.getElementById('food-price');
     const foodIngredients = document.getElementById('food-ingredients');
     const foodCuisine = document.getElementById('food-cuisine');
     const foodCount = document.getElementById('food-count');
+    const foodOrderPrice = document.getElementById('order-price');
 
     foodName.textContent = name || '';
     foodImage.src = image || '';
+    foodPrice.textContent = `Price: $${price}`;
     foodIngredients.textContent = `Ingredients: ${ingredients}`;
     foodCuisine.textContent = `Cuisine: ${cuisine}`;
     foodCount.textContent = '1';
+    foodOrderPrice.textContent = `$${price}`;
 }
 
 function updateCount(amount) {
-    const foodQuantityElem = document.getElementById('food-count');
-    let quantity = parseInt(foodQuantityElem.textContent);
+    const foodPrice = document.getElementById('food-price');
+    const foodOrderPrice = document.getElementById('order-price');
+    const foodOrderCount = document.getElementById('food-count');
+    let quantity = parseInt(foodOrderCount.textContent);
   
     if (quantity + amount >= 1) {
-      foodQuantityElem.textContent = quantity + amount;
+        foodOrderCount.textContent = quantity + amount;
+
+        const priceString = foodPrice.textContent;
+        const price = parseFloat(priceString.replace(/[^\d.-]/g, ''));
+        const totalPrice = (price * (quantity+amount)).toFixed(2);
+        foodOrderPrice.textContent = `$${totalPrice}`;
     }
 }
 
@@ -208,10 +222,15 @@ function toggleCart() {
 }
 
 function addOrder() {
-    const foodQuantityElem = document.getElementById('food-count');
+    const foodOrderCount = document.getElementById('food-count');
     const foodName = document.getElementById('food-name').textContent;
     const foodImage = document.getElementById('food-image').src;
-    const quantity = parseInt(foodQuantityElem.textContent);
+    const quantity = parseInt(foodOrderCount.textContent);
+
+    const foodPrice = document.getElementById('food-price');
+    const priceString = foodPrice.textContent;
+    const price = parseFloat(priceString.replace(/[^\d.-]/g, ''));
+
 
     const existingItem = cart.find(item => item.name === foodName);
     if (existingItem) {
@@ -220,7 +239,8 @@ function addOrder() {
         cart.push({
             name: foodName,
             image: foodImage,
-            quantity: quantity
+            quantity: quantity,
+            price: price,
         });
     }
     updateCart();
@@ -244,7 +264,10 @@ function updateCart() {
                             <button onclick="updateCartItem(${index}, 1)">+</button>
                         </div>
                     </div>
-                    <h5>$0.00</h5>
+                    <div class="cart-item-price">
+                        <h5 class="original-price">$${(item.price * item.quantity).toFixed(2)}</h5>
+                        <h5 class="discounted-price">Free</h5>
+                    </div>
                 </div>
             `;
             cartPanelBody.innerHTML += cartItem;
@@ -287,7 +310,8 @@ function checkSubmitButton() {
 function submitOrder() {
     const userName = document.getElementById('cart-panel-name').value;
     const emailMessage = cart.map(item => {
-      return `${item.name} x ${item.quantity} - $${(0 * item.quantity).toFixed(2)}`;
+        const totalPrice = (item.price * item.quantity).toFixed(2); // 100% Discounts
+        return `${item.name} x ${item.quantity} - Free`;
     }).join("\n");
   
     document.getElementById('email-name').value = userName;
