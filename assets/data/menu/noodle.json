@@ -4,55 +4,63 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Mei Fun Rice Noodles",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Spaghetti Noodles",
         "ingredients": "",
         "addons": "Meatballs",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Pho Noodles",
         "ingredients": "",
         "addons": "",
         "cuisine": "Vietnamese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Ramen Noodles",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Mi Goreng Ramen",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Peanut Butter Noodles",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Noodle Soup",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     }
 ]

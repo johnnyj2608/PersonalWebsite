@@ -428,6 +428,18 @@ label {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.card-top {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+}
+
+.fav-icon {
+    color: gold;
+    font-size: 1.25rem;
+}
+
 .card-img {
     width: 40%;
     height: 100%;

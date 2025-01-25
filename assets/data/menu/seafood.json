@@ -4,48 +4,55 @@
         "ingredients": "",
         "addons": "Coral Sauce",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Pepper Shrimp",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Shrimp with Broccoli",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Stir Fry Clams",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Marble Goby Fish",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Salmon",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Spicy Kani Sushi Roll",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": ""
+        "instructions": "",
+        "fav": true
     }
 ]

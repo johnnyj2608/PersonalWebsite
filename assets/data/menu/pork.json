@@ -4,69 +4,79 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Sichuan Fried Pork",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""
+        "instructions": "",
+        "fav": true
     },
     {
         "name": "Braised Pork Belly",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""
+        "instructions": "",
+        "fav": true
     },
     {
         "name": "Char Siu",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
-        "name": "Crispy Pork Belly",
+        "name": "Roasted Pork Belly",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Lychee Pork",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Boneless Spare Ribs",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Pork Chop",
         "ingredients": "",
         "addons": "",
         "cuisine": "Vietnamese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Tonkatsu Pork",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Baby Back Ribs",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     }
 ]

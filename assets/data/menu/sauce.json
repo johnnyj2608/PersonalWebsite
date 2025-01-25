@@ -4,55 +4,63 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "General Tso's Sauce",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Coral Sauce",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Sweet & Sour Sauce",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Brown Sauce",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Dumpling Sauce",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Egg Foo Young Sauce",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Peanut Sauce",
         "ingredients": "",
         "addons": "",
         "cuisine": "Malaysian",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     }
 ]

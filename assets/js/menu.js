@@ -61,6 +61,8 @@ async function loadMenu() {
                 }
                 const randomPrice = (Math.random() * (9.99 - 1) + 1).toFixed(2);
 
+                const starIcon = item.fav ? `<i class="fa fa-star fav-icon" title="JJ Certified"></i>` : "";
+
                 const card = `
                     <div class="card" onclick="toggleFood(
                         '${item.name}', 
@@ -69,6 +71,7 @@ async function loadMenu() {
                         '${item.addons}', 
                         '${randomPrice}', 
                         '${imagePath}')">
+                        <div class="card-top">${starIcon}</div>
                         <img src="${imagePath}" class="card-img" alt="${item.name}">
                         <div class="card-body">
                             <h5 class="card-title">${item.name}</h5>
