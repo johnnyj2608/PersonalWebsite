@@ -43,6 +43,7 @@ body.no-scroll {
 .navbar {
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 .navbar::after {
@@ -678,7 +679,7 @@ label {
 
 @media (max-width: 767.98px) {
     .row {
-        width: 450px;
+        max-width: 450px;
     }
 
     .wrap-text {
