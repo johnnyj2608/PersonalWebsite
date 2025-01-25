@@ -541,7 +541,6 @@ label {
 }
   
 #step-counter, #food-add  {
-    font-size: 1.5rem;
     font-weight: bold;
     border-radius: 10px;
     justify-content: space-between;
