@@ -66,6 +66,7 @@ async function loadMenu() {
                         '${item.name}', 
                         '${item.ingredients}', 
                         '${item.cuisine}', 
+                        '${item.addons}', 
                         '${randomPrice}', 
                         '${imagePath}')">
                         <img src="${imagePath}" class="card-img" alt="${item.name}">
@@ -202,7 +203,7 @@ function toggleOverlay() {
     }
 }
 
-function toggleFood(name, ingredients, cuisine, price, image) {
+function toggleFood(name, ingredients, cuisine, addons, price, image) {
     toggleOverlay();
 
     foodPanel.scrollTop = 0;
@@ -213,6 +214,7 @@ function toggleFood(name, ingredients, cuisine, price, image) {
     const foodPrice = document.getElementById('food-price');
     const foodIngredients = document.getElementById('food-ingredients');
     const foodCuisine = document.getElementById('food-cuisine');
+    const foodAddons = document.getElementById('food-addons');
     const foodCount = document.getElementById('food-count');
     const foodOrderPrice = document.getElementById('order-price');
 
@@ -221,6 +223,7 @@ function toggleFood(name, ingredients, cuisine, price, image) {
     foodPrice.textContent = `Price: $${price}`;
     foodIngredients.textContent = `Ingredients: ${ingredients}`;
     foodCuisine.textContent = `Cuisine: ${cuisine}`;
+    foodAddons.textContent = `Goes well with: ${addons}`;
     foodCount.textContent = '1';
     foodOrderPrice.textContent = `$${price}`;
 }
