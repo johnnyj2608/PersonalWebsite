@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Pork Wontons",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "instructions": "",
+        "fav": true
+    },
+    {
+        "name": "Fish Balls",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "instructions": "",
+        "fav": false
+    },
+    {
+        "name": "Wonton Soup",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "instructions": "",
+        "fav": false
+    },
+    {
+        "name": "Egg Drop Soup",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Chinese",
+        "instructions": "",
+        "fav": false
+    },
+    {
+        "name": "Miso Soup",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Japanese",
+        "instructions": "",
+        "fav": false
+    },
+    {
+        "name": "Clam Chowder Soup",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "instructions": "",
+        "fav": false
+    }
+]

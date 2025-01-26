@@ -11,6 +11,7 @@ async function loadMenu() {
         "vegetable": 0,
         "pie": 0,
         "sandwich": 0,
+        "soup": 0,
         "sides": 0,
         "dessert": 0,
         "sauce": 0,
