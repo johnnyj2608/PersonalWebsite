@@ -256,6 +256,8 @@ function toggleCart() {
 }
 
 function addOrder() {
+    toggleOverlay();
+
     const foodOrderCount = document.getElementById('food-count');
     const foodName = document.getElementById('food-name').textContent;
     const foodImage = document.getElementById('food-image').src;
@@ -278,7 +280,6 @@ function addOrder() {
         });
     }
     updateCart();
-    toggleFood();
 }
 
 function updateCart() {
