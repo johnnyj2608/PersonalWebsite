@@ -113,8 +113,8 @@ async function loadMenu() {
 
     for (const category of categories) {
         await fetchCategoryData(category);
+        renderMenu(allMenuItems);
     }
-    renderMenu(allMenuItems);
 }
 
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
