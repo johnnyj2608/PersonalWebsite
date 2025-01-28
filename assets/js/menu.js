@@ -75,6 +75,7 @@ async function loadMenu() {
     const categories = [
         "breakfast",
         "appetizer",
+        "soup",
         "noodle",
         "chicken",
         "beef",
@@ -83,7 +84,6 @@ async function loadMenu() {
         "vegetable",
         "pie",
         "sandwich",
-        "soup",
         "sides",
         "dessert",
         "sauce"
