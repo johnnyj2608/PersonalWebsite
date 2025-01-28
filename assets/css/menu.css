@@ -37,6 +37,11 @@ body.no-scroll {
     display: block;
 }
 
+.container {
+    margin-left: auto;
+    justify-content: center;
+}
+
 .row {
     justify-content: center;
 }
@@ -409,9 +414,12 @@ label {
 /* -------------- *
  * Categories
  * -------------- */
-.container {
-    margin-left: auto;
-    justify-content: center;
+ .category {
+    padding-bottom: 24px;
+}
+
+.category:first-child {
+    padding-top: 12px;
 }
 
 .category h2 {

@@ -16,7 +16,7 @@ function renderMenu(items) {
     for (const category in groupedItems) {
         const section = document.createElement("div");
         
-        section.className = "category py-4";
+        section.className = "category";
         section.id = category;
 
         const title = document.createElement("h2");
@@ -124,7 +124,7 @@ function jump(section) {
     window.removeEventListener('scroll', updateNavHighlight);
 
     var top = document.getElementById(section).offsetTop;
-    window.scrollTo(0, top - 95);
+    window.scrollTo(0, top - 85);
 
     navLinks.forEach(link => link.classList.remove('active'));
 
