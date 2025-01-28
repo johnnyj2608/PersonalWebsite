@@ -37,18 +37,8 @@ body.no-scroll {
     display: block;
 }
 
-.container {
-    margin-left: auto;
-    justify-content: center;
-}
-
-.row {
-    justify-content: center;
-}
-
 .col-md-6 {
     padding: 10px;
-    max-width: 450px;
 }
 
 /* -------------- *
@@ -414,7 +404,7 @@ label {
 /* -------------- *
  * Categories
  * -------------- */
- .category {
+.category {
     padding-bottom: 24px;
 }
 
@@ -650,8 +640,8 @@ label {
         flex-wrap: wrap;
     }
       
-    .container {
-        margin-left: 255px;
+    #menu-container {
+        margin-left: 240px;
     }
 
     .search-container {
@@ -693,10 +683,6 @@ label {
         position: absolute;
         top: 24px;
     }
-
-    .row {
-        justify-content: initial;
-    }
 }
 
 @media (max-width: 991.98px) {
@@ -706,10 +692,6 @@ label {
 }
 
 @media (max-width: 767.98px) {
-    .row {
-        max-width: 450px;
-    }
-
     .wrap-text {
         display: block;
     }
