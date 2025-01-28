@@ -1,35 +1,92 @@
+let allMenuItems = [];
+
+function renderMenu(items) {
+    const menuContainer = document.getElementById("menu-container");
+    menuContainer.innerHTML = "";
+
+    // Group items by category
+    const groupedItems = items.reduce((groups, item) => {
+        if (!groups[item.category]) {
+            groups[item.category] = [];
+        }
+        groups[item.category].push(item);
+        return groups;
+    }, {});
+
+    for (const category in groupedItems) {
+        const section = document.createElement("div");
+        
+        section.className = "category py-4";
+        section.id = category;
+
+        const title = document.createElement("h2");
+        title.textContent = category;
+        section.appendChild(title);
+
+        const row = document.createElement("div");
+        row.className = "row";
+
+        groupedItems[category].forEach((item, index) => {
+            const col = document.createElement("div");
+            col.className = "col-md-6";
+
+            const imageName = item.name.replaceAll(' ', '-').toLowerCase();
+            let imagePath = category !== "sauce" ? `/assets/images/menu/${category}/${imageName}.jpg` : '/assets/images/menu/cookoutjohn.png';
+
+            const starIcon = item.fav ? `<i class="fa fa-star fav-icon" title="JJ Certified"></i>` : "";
+
+            const card = `
+                <div class="card" onclick="toggleFood(
+                    '${item.name}', 
+                    '${item.ingredients}', 
+                    '${item.cuisine}', 
+                    '${item.addons}', 
+                    '${item.price}', 
+                    '${imagePath}')">
+                    <div class="card-top">${starIcon}</div>
+                    <img src="${imagePath}" class="card-img" alt="${item.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.name}</h5>
+                        <p class="card-text"><strong>Price:</strong> $${item.price}</p>
+                        <p class="card-text"><strong>Ingredients:</strong> ${item.ingredients}</p>
+                        <p class="card-text"><strong>Cuisine:</strong> ${item.cuisine}</p>
+                    </div>
+                </div>
+            `;
+            col.innerHTML = card;
+            row.appendChild(col);
+
+            if ((index + 1) % 2 === 0) {
+                section.appendChild(row.cloneNode(true));
+                row.innerHTML = "";
+            }
+        });
+
+        if (row.innerHTML.trim()) {
+            section.appendChild(row);
+        }
+
+        menuContainer.appendChild(section);
+    }
+}
+
 async function loadMenu() {
 
-    const categories = {
-        "breakfast": 0,
-        "appetizer": 0,
-        "noodle": 0,
-        "chicken": 0,
-        "beef": 0,
-        "pork": 0,
-        "seafood": 0,
-        "vegetable": 0,
-        "pie": 0,
-        "sandwich": 0,
-        "soup": 0,
-        "sides": 0,
-        "dessert": 0,
-        "sauce": 0,
-    };
-
-    const cuisines = {
-        "American": 0,
-        "Chinese": 0,
-        "Fuzhounese": 0,
-        "Japanese": 0,
-        "Korean": 0,
-        "Malaysian": 0,
-        "Mexican": 0,
-        "Vietnamese": 0,
-        "Other": 0,
-    };
-
-    const menuContainer = document.getElementById("menu-container");
+    const categories = [
+        "breakfast",
+        "appetizer",
+        "noodle",
+        "chicken",
+        "beef",
+        "pork",
+        "seafood",
+        "vegetable",
+        "pie",
+        "sandwich",
+        "sides",
+        "dessert",
+        "sauce"
+    ];    
 
     async function fetchCategoryData(category) {
         const file = `assets/data/menu/${category}.json`;
@@ -37,77 +94,27 @@ async function loadMenu() {
             const response = await fetch(file);
             const data = await response.json();
 
-            const section = document.createElement("div");
-            section.className = "category py-4";
-            section.id = category;
+            const randomPrice = () => (Math.random() * (9.99 - 1) + 1).toFixed(2);
 
-            const title = document.createElement("h2");
-            title.textContent = category;
-            section.appendChild(title);
-
-            const row = document.createElement("div");
-            row.className = "row";
-
-            data.forEach((item, index) => {
-                const col = document.createElement("div");
-                col.className = "col-md-6";
-
-                const imageName = item.name.replaceAll(' ', '-').toLowerCase();
-                let imagePath;
-
-                if (category !== "sauce") {
-                    imagePath = `/assets/images/menu/${category}/${imageName}.jpg`;
-                } else {
-                    imagePath = '/assets/images/menu/cookoutjohn.png';
-                }
-                const randomPrice = (Math.random() * (9.99 - 1) + 1).toFixed(2);
-
-                const starIcon = item.fav ? `<i class="fa fa-star fav-icon" title="JJ Certified"></i>` : "";
-
-                const card = `
-                    <div class="card" onclick="toggleFood(
-                        '${item.name}', 
-                        '${item.ingredients}', 
-                        '${item.cuisine}', 
-                        '${item.addons}', 
-                        '${randomPrice}', 
-                        '${imagePath}')">
-                        <div class="card-top">${starIcon}</div>
-                        <img src="${imagePath}" class="card-img" alt="${item.name}">
-                        <div class="card-body">
-                            <h5 class="card-title">${item.name}</h5>
-                            <p class="card-text"><strong>Price:</strong> $${randomPrice}</p>
-                            <p class="card-text"><strong>Ingredients:</strong> ${item.ingredients}</p>
-                            <p class="card-text"><strong>Cuisine:</strong> ${item.cuisine}</p>
-                        </div>
-                    </div>
-                `;
-                col.innerHTML = card;
-                row.appendChild(col);
-
-                if ((index + 1) % 2 === 0) {
-                    section.appendChild(row.cloneNode(true));
-                    row.innerHTML = "";
-                }
+            data.forEach(item => {
+                allMenuItems.push({ 
+                    ...item, 
+                    category,
+                    price: randomPrice() 
+                });
             });
 
-            if (row.innerHTML.trim()) {
-                section.appendChild(row);
-            }
-
-            return section;
+            return data;
         } catch (error) {
             console.error("Error loading " + file, error);
             return null;
         }
     }
 
-    for (let category in categories) {
-        const section = await fetchCategoryData(category);
-        if (section) {
-            menuContainer.appendChild(section);
-        }
+    for (const category of categories) {
+        await fetchCategoryData(category);
     }
+    renderMenu(allMenuItems);
 }
 
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
@@ -173,6 +180,16 @@ function toggleSearch() {
     if (dropdownMenu.classList.contains('active')) {
         dropdownMenu.classList.remove('active');
     }
+}
+
+function searchMenu(searchTerm) {
+    searchTerm = searchTerm.toLowerCase();
+
+    const filteredItems = allMenuItems.filter(item =>
+        item.name.toLowerCase().includes(searchTerm)
+    );
+
+    renderMenu(filteredItems);
 }
 
 function toggleDropdown() {
