@@ -401,7 +401,6 @@ label {
  * Categories
  * -------------- */
 .container {
-    width: fit-content;
     margin-left: auto;
     justify-content: center;
 }
