@@ -450,6 +450,7 @@ label {
     width: 40%;
     height: 100%;
     border-right: 1px solid #ddd;
+    border-radius: 0;
 }
 
 .card-body {
