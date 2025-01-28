@@ -1,34 +1,92 @@
+let allMenuItems = [];
+
+function renderMenu(items) {
+    const menuContainer = document.getElementById("menu-container");
+    menuContainer.innerHTML = "";
+
+    // Group items by category
+    const groupedItems = items.reduce((groups, item) => {
+        if (!groups[item.category]) {
+            groups[item.category] = [];
+        }
+        groups[item.category].push(item);
+        return groups;
+    }, {});
+
+    for (const category in groupedItems) {
+        const section = document.createElement("div");
+        
+        section.className = "category";
+        section.id = category;
+
+        const title = document.createElement("h2");
+        title.textContent = category;
+        section.appendChild(title);
+
+        const row = document.createElement("div");
+        row.className = "row";
+
+        groupedItems[category].forEach((item, index) => {
+            const col = document.createElement("div");
+            col.className = "col-md-6";
+
+            const imageName = item.name.replaceAll(' ', '-').toLowerCase();
+            let imagePath = category !== "sauce" ? `/assets/images/menu/${category}/${imageName}.jpg` : '/assets/images/menu/cookoutjohn.png';
+
+            const starIcon = item.fav ? `<i class="fa fa-star fav-icon" title="JJ Certified"></i>` : "";
+
+            const card = `
+                <div class="card" onclick="toggleFood(
+                    '${item.name}', 
+                    '${item.ingredients}', 
+                    '${item.cuisine}', 
+                    '${item.addons}', 
+                    '${item.price}', 
+                    '${imagePath}')">
+                    <div class="card-top">${starIcon}</div>
+                    <img src="${imagePath}" class="card-img" alt="${item.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.name}</h5>
+                        <p class="card-text"><strong>Price:</strong> $${item.price}</p>
+                        <p class="card-text"><strong>Ingredients:</strong> ${item.ingredients}</p>
+                        <p class="card-text"><strong>Cuisine:</strong> ${item.cuisine}</p>
+                    </div>
+                </div>
+            `;
+            col.innerHTML = card;
+            row.appendChild(col);
+
+            if ((index + 1) % 2 === 0) {
+                section.appendChild(row.cloneNode(true));
+                row.innerHTML = "";
+            }
+        });
+
+        if (row.innerHTML.trim()) {
+            section.appendChild(row);
+        }
+
+        menuContainer.appendChild(section);
+    }
+}
+
 async function loadMenu() {
 
-    const categories = {
-        "breakfast": 0,
-        "appetizer": 0,
-        "noodle": 0,
-        "chicken": 0,
-        "beef": 0,
-        "pork": 0,
-        "seafood": 0,
-        "vegetable": 0,
-        "pie": 0,
-        "sandwich": 0,
-        "sides": 0,
-        "dessert": 0,
-        "sauce": 0,
-    };
-
-    const cuisines = {
-        "American": 0,
-        "Chinese": 0,
-        "Fuzhounese": 0,
-        "Japanese": 0,
-        "Korean": 0,
-        "Malaysian": 0,
-        "Mexican": 0,
-        "Vietnamese": 0,
-        "Other": 0,
-    };
-
-    const menuContainer = document.getElementById("menu-container");
+    const categories = [
+        "breakfast",
+        "appetizer",
+        "noodle",
+        "chicken",
+        "beef",
+        "pork",
+        "seafood",
+        "vegetable",
+        "pie",
+        "sandwich",
+        "sides",
+        "dessert",
+        "sauce"
+    ];    
 
     async function fetchCategoryData(category) {
         const file = `assets/data/menu/${category}.json`;
@@ -36,72 +94,26 @@ async function loadMenu() {
             const response = await fetch(file);
             const data = await response.json();
 
-            const section = document.createElement("div");
-            section.className = "category py-4";
-            section.id = category;
+            const randomPrice = () => (Math.random() * (9.99 - 1) + 1).toFixed(2);
 
-            const title = document.createElement("h2");
-            title.textContent = category;
-            section.appendChild(title);
-
-            const row = document.createElement("div");
-            row.className = "row";
-
-            data.forEach((item, index) => {
-                const col = document.createElement("div");
-                col.className = "col-md-6";
-
-                const imageName = item.name.replaceAll(' ', '-').toLowerCase();
-                let imagePath;
-
-                if (category !== "sauce") {
-                    imagePath = `/assets/images/menu/${category}/${imageName}.jpg`;
-                } else {
-                    imagePath = '/assets/images/menu/cookoutjohn.png';
-                }
-                const randomPrice = (Math.random() * (9.99 - 1) + 1).toFixed(2);
-
-                const card = `
-                    <div class="card" onclick="toggleFood(
-                        '${item.name}', 
-                        '${item.ingredients}', 
-                        '${item.cuisine}', 
-                        '${randomPrice}', 
-                        '${imagePath}')">
-                        <img src="${imagePath}" class="card-img" alt="${item.name}">
-                        <div class="card-body">
-                            <h5 class="card-title">${item.name}</h5>
-                            <p class="card-text"><strong>Price:</strong> $${randomPrice}</p>
-                            <p class="card-text"><strong>Ingredients:</strong> ${item.ingredients}</p>
-                            <p class="card-text"><strong>Cuisine:</strong> ${item.cuisine}</p>
-                        </div>
-                    </div>
-                `;
-                col.innerHTML = card;
-                row.appendChild(col);
-
-                if ((index + 1) % 2 === 0) {
-                    section.appendChild(row.cloneNode(true));
-                    row.innerHTML = "";
-                }
+            data.forEach(item => {
+                allMenuItems.push({ 
+                    ...item, 
+                    category,
+                    price: randomPrice() 
+                });
             });
 
-            if (row.innerHTML.trim()) {
-                section.appendChild(row);
-            }
-
-            return section;
+            return data;
         } catch (error) {
             console.error("Error loading " + file, error);
             return null;
         }
     }
 
-    for (let category in categories) {
-        const section = await fetchCategoryData(category);
-        if (section) {
-            menuContainer.appendChild(section);
-        }
+    for (const category of categories) {
+        await fetchCategoryData(category);
+        renderMenu(allMenuItems);
     }
 }
 
@@ -112,7 +124,7 @@ function jump(section) {
     window.removeEventListener('scroll', updateNavHighlight);
 
     var top = document.getElementById(section).offsetTop;
-    window.scrollTo(0, top - 95);
+    window.scrollTo(0, top - 85);
 
     navLinks.forEach(link => link.classList.remove('active'));
 
@@ -180,6 +192,21 @@ function toggleDropdown() {
     }
 }
 
+function filterMenu() {
+    const selectedCuisines = Array.from(document.querySelectorAll('.dropdown-menu input:checked'))
+        .map(input => input.name);
+
+    const searchTerm = document.getElementById('search-input').value.toLowerCase();
+
+    filteredItems = allMenuItems.filter(item => {
+        const matchesCuisine = selectedCuisines.includes(item.cuisine);
+        const matchesSearch = item.name.toLowerCase().includes(searchTerm);
+        return matchesCuisine && matchesSearch;
+    });
+
+    renderMenu(filteredItems);
+}
+
 const foodPanel = document.getElementById('food-panel');
 const cartPanel = document.getElementById('cart-panel');
 const blackOverlay = document.getElementById('black-overlay');
@@ -202,7 +229,7 @@ function toggleOverlay() {
     }
 }
 
-function toggleFood(name, ingredients, cuisine, price, image) {
+function toggleFood(name, ingredients, cuisine, addons, price, image) {
     toggleOverlay();
 
     foodPanel.scrollTop = 0;
@@ -213,6 +240,7 @@ function toggleFood(name, ingredients, cuisine, price, image) {
     const foodPrice = document.getElementById('food-price');
     const foodIngredients = document.getElementById('food-ingredients');
     const foodCuisine = document.getElementById('food-cuisine');
+    const foodAddons = document.getElementById('food-addons');
     const foodCount = document.getElementById('food-count');
     const foodOrderPrice = document.getElementById('order-price');
 
@@ -221,6 +249,7 @@ function toggleFood(name, ingredients, cuisine, price, image) {
     foodPrice.textContent = `Price: $${price}`;
     foodIngredients.textContent = `Ingredients: ${ingredients}`;
     foodCuisine.textContent = `Cuisine: ${cuisine}`;
+    foodAddons.textContent = `Goes well with: ${addons}`;
     foodCount.textContent = '1';
     foodOrderPrice.textContent = `$${price}`;
 }
@@ -249,6 +278,8 @@ function toggleCart() {
 }
 
 function addOrder() {
+    toggleOverlay();
+
     const foodOrderCount = document.getElementById('food-count');
     const foodName = document.getElementById('food-name').textContent;
     const foodImage = document.getElementById('food-image').src;
@@ -271,7 +302,6 @@ function addOrder() {
         });
     }
     updateCart();
-    toggleFood();
 }
 
 function closeDropdown(event) {

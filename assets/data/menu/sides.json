@@ -4,146 +4,119 @@
         "ingredients": "White Rice",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Fried Rice",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Congee",
         "ingredients": "White Rice",
         "addons": "Sweet Potato",
         "cuisine": "Chinese",
-        "instructions": ""
-    },
-    {
-        "name": "Pork Wontons",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Fuzhounese",
-        "instructions": ""
-    },
-    {
-        "name": "Fish Balls",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Fuzhounese",
-        "instructions": ""
-    },
-    {
-        "name": "Wonton Soup",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Chinese",
-        "instructions": ""
-    },
-    {
-        "name": "Egg Drop Soup",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Chinese",
-        "instructions": ""
-    },
-    {
-        "name": "Miso Soup",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Japanese",
-        "instructions": ""
-    },
-    {
-        "name": "Clam Chowder Soup",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Corn Kernels",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Egg Roll",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Spring Roll",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Lap Cheong Sausage",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Onigiri",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Mashed Potatoes",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Waffle Fries",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Shoestring Fries",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Curly Fries",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Baked Potato",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Hash Browns",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Tater Tots",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     }
 ]

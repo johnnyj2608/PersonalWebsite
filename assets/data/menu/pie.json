@@ -4,20 +4,23 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Calzone",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Quesadilla",
         "ingredients": "",
         "addons": "",
         "cuisine": "Mexican",
-        "instructions": ""
+        "instructions": "",
+        "fav": true
     }
 ]

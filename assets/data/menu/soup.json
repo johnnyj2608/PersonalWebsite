@@ -1,6 +1,22 @@
 [
     {
-        "name": "Lo Mein Sauce",
+        "name": "Pork Wontons",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "instructions": "",
+        "fav": true
+    },
+    {
+        "name": "Fish Balls",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Fuzhounese",
+        "instructions": "",
+        "fav": false
+    },
+    {
+        "name": "Wonton Soup",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
@@ -8,7 +24,7 @@
         "fav": false
     },
     {
-        "name": "General Tso's Sauce",
+        "name": "Egg Drop Soup",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
@@ -16,50 +32,18 @@
         "fav": false
     },
     {
-        "name": "Coral Sauce",
+        "name": "Miso Soup",
         "ingredients": "",
         "addons": "",
-        "cuisine": "Chinese",
+        "cuisine": "Japanese",
         "instructions": "",
         "fav": false
     },
     {
-        "name": "Sweet & Sour Sauce",
+        "name": "Clam Chowder Soup",
         "ingredients": "",
         "addons": "",
-        "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
-    },
-    {
-        "name": "Brown Sauce",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
-    },
-    {
-        "name": "Dumpling Sauce",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
-    },
-    {
-        "name": "Egg Foo Young Sauce",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
-    },
-    {
-        "name": "Peanut Sauce",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Malaysian",
+        "cuisine": "American",
         "instructions": "",
         "fav": false
     }

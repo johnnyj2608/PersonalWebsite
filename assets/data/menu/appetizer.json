@@ -4,125 +4,143 @@
         "ingredients": "",
         "addons": "Chips",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Garlic Bread",
         "ingredients": "Garlic, Bread",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Onion Rings",
         "ingredients": "Onions",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Mozzarella Sticks",
         "ingredients": "Cheese",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Chive Pancake",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Scallion Pancake",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Satay Chicken",
         "ingredients": "",
         "addons": "",
         "cuisine": "Malaysian",
-        "instructions": ""
+        "instructions": "",
+        "fav": true
     },
     {
         "name": "Egg Foo Young",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Crab Rangoons",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Fried Dumplings",
         "ingredients": "",
         "addons": "Dumpling Sauce",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Fried Scallops",
         "ingredients": "Scallops",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Fried Shrimp",
         "ingredients": "Shrimp",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Fried Mantou",
         "ingredients": "",
         "addons": "Condensed Milk",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Rice Rolls",
         "ingredients": "",
         "addons": "Soy Sauce",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Youtiao",
         "ingredients": "",
         "addons": "Soy Sauce",
         "cuisine": "Chinese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Meatballs",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Seaweed Salad",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     },
     {
         "name": "Kani Salad",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": ""
+        "instructions": "",
+        "fav": false
     }
 ]
