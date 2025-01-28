@@ -124,7 +124,8 @@ function jump(section) {
     window.removeEventListener('scroll', updateNavHighlight);
 
     var top = document.getElementById(section).offsetTop;
-    window.scrollTo(0, top - 85);
+    var offset = window.innerWidth >= 1200 ? 24 : 85;
+    window.scrollTo(0, top - offset);
 
     navLinks.forEach(link => link.classList.remove('active'));
 
