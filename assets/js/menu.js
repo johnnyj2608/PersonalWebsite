@@ -182,16 +182,6 @@ function toggleSearch() {
     }
 }
 
-function searchMenu(searchTerm) {
-    searchTerm = searchTerm.toLowerCase();
-
-    const filteredItems = allMenuItems.filter(item =>
-        item.name.toLowerCase().includes(searchTerm)
-    );
-
-    renderMenu(filteredItems);
-}
-
 function toggleDropdown() {
     const dropdownMenu = document.querySelector('.dropdown-menu');
 
@@ -200,6 +190,21 @@ function toggleDropdown() {
     } else {
         dropdownMenu.classList.add('active');
     }
+}
+
+function filterMenu() {
+    const selectedCuisines = Array.from(document.querySelectorAll('.dropdown-menu input:checked'))
+        .map(input => input.name);
+
+    const searchTerm = document.getElementById('search-input').value.toLowerCase();
+
+    filteredItems = allMenuItems.filter(item => {
+        const matchesCuisine = selectedCuisines.includes(item.cuisine);
+        const matchesSearch = item.name.toLowerCase().includes(searchTerm);
+        return matchesCuisine && matchesSearch;
+    });
+
+    renderMenu(filteredItems);
 }
 
 const foodPanel = document.getElementById('food-panel');
