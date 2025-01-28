@@ -83,6 +83,7 @@ async function loadMenu() {
         "vegetable",
         "pie",
         "sandwich",
+        "soup",
         "sides",
         "dessert",
         "sauce"
