@@ -37,6 +37,15 @@ body.no-scroll {
     display: block;
 }
 
+.row {
+    justify-content: center;
+}
+
+.col-md-6 {
+    padding: 10px;
+    max-width: 450px;
+}
+
 /* -------------- *
  * Nav Bar
  * -------------- */
@@ -460,11 +469,6 @@ label {
     font-size: 0.9rem;
 }
 
-.col-md-6 {
-    padding: 10px;
-    max-width: 450px;
-}
-
 /* -------------- *
  * Food Panel
  * -------------- */
@@ -679,6 +683,10 @@ label {
     #cart-count {
         position: absolute;
         top: 24px;
+    }
+
+    .row {
+        justify-content: initial;
     }
 }
 
