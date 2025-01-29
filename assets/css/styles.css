@@ -160,6 +160,10 @@ body {
   filter: invert(100%);
 }
 
+.navbar-toggler:focus {
+  outline: 5px auto black;
+}
+
 @media (max-width: 991.98px) {
   .nav-link:not(.navbar-brand) {
     width: 130px;
