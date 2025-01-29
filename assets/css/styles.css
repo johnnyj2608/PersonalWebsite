@@ -296,6 +296,7 @@ body {
 .fa-angles-down {
   background-color: #fff;
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
