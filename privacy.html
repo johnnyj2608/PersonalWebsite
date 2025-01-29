@@ -62,11 +62,14 @@
               disclosed to third parties.
             </p>
             <br />
-            <p>© 2023 Johnny Jiang. All Rights Reserved.</p>
+            <p>Copyright &copy; <span id="current-year"></span> JOHNNY JIANG. All Rights Reserved.</p>
           </div>
           <div class="col"></div>
         </div>
       </div>
     </section>
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

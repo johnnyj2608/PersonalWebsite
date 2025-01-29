@@ -480,4 +480,5 @@ function submitOrder() {
 document.addEventListener('DOMContentLoaded', () => {
     loadMenu();
     window.addEventListener('scroll', updateNavHighlight);
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 });

@@ -1,3 +1,6 @@
+// Update current year for copyright footer
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
 // Anchors
 function jump(h) {
   var top = document.getElementById(h).offsetTop;
