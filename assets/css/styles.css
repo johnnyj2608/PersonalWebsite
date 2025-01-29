@@ -133,11 +133,11 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.navbar-dark .navbar-nav .nav-link, a:not([href]):not([tabindex]) {
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .container-fluid .navbar-brand {
   color: white;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, a:not([href]):not([tabindex]):hover {
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-brand:hover {
   background-color: white;
   color: black;
 }
