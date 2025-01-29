@@ -251,9 +251,28 @@ function toggleFood(name, ingredients, cuisine, addons, price, image) {
     foodPrice.textContent = `Price: $${price}`;
     foodIngredients.textContent = `Ingredients: ${ingredients}`;
     foodCuisine.textContent = `Cuisine: ${cuisine}`;
-    foodAddons.textContent = `Goes well with: ${addons}`;
     foodCount.textContent = '1';
     foodOrderPrice.textContent = `$${price}`;
+
+    foodAddons.innerHTML = '';
+    if (addons) {
+        const addonsArray = addons.split(',').map(addon => addon.trim());
+
+        addonsArray.forEach(addon => {
+            const label = document.createElement('label');
+            label.classList.add('food-addons-label');
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.value = addon;
+            checkbox.name = addon;
+
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(` ${addon}`));
+
+            foodAddons.appendChild(label);
+        });
+    }
 }
 
 function updateCount(amount) {
@@ -291,8 +310,13 @@ function addOrder() {
     const priceString = foodPrice.textContent;
     const price = parseFloat(priceString.replace(/[^\d.-]/g, ''));
 
+    const selectedAddons = Array.from(document.querySelectorAll('#food-addons input[type="checkbox"]:checked'))
+        .map(checkbox => checkbox.value);
 
-    const existingItem = cart.find(item => item.name === foodName);
+    const existingItem = cart.find(item => item.name === foodName && 
+        item.addons && 
+        JSON.stringify(item.addons) === JSON.stringify(selectedAddons))
+
     if (existingItem) {
         existingItem.quantity += quantity;
     } else {
@@ -301,6 +325,7 @@ function addOrder() {
             image: foodImage,
             quantity: quantity,
             price: price,
+            addons: selectedAddons,
         });
     }
     updateCart();
@@ -312,13 +337,22 @@ function updateCart() {
 
     if (cart.length > 0) {
         cart.forEach((item, index) => {
+            const addonsHTML = item.addons && item.addons.length > 0 
+                ? `<p class="cart-item-addons">Add-ons: ${item.addons.join(', ')}</p>` 
+                : '<p class="cart-item-addons" style="visibility: hidden;">Add-ons: </p>';
+
+            const minusButtonHTML = item.quantity === 1 
+                ? `<i onclick="updateCartItem(${index}, -1)" class="fas fa-trash trash-can-icon"></i>`
+                : `<button onclick="updateCartItem(${index}, -1)">-</button>`;
+
             const cartItem = `
                 <div class="cart-item">
                     <img src="${item.image}" alt="${item.name}" class="cart-item-image">
                     <div class="cart-item-details">
                         <h5>${item.name}</h5>
+                        ${addonsHTML}
                         <div class="cart-item-quantity">
-                            <button onclick="updateCartItem(${index}, -1)">-</button>
+                            ${minusButtonHTML}
                             <span>${item.quantity}</span>
                             <button onclick="updateCartItem(${index}, 1)">+</button>
                         </div>
@@ -372,7 +406,12 @@ function submitOrder() {
 
     const orderDetails = cart.map(item => {
         const totalPrice = (item.price * item.quantity).toFixed(2); // 100% Discounts
-        return `${item.name} x ${item.quantity} - Free`;
+        
+        const addons = item.addons && item.addons.length > 0 
+            ? ` (${item.addons.join(', ')})`
+            : '';
+
+        return `${item.quantity} x ${item.name}${addons} - Free`;
     }).join("\n");
   
     document.getElementById('email-name').value = orderName;
