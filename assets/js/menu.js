@@ -40,6 +40,7 @@ function renderMenu(items) {
                     '${item.cuisine}', 
                     '${item.addons}', 
                     '${item.price}', 
+                    '${item.instructions}', 
                     '${imagePath}')">
                     <img src="${imagePath}" class="card-img" alt="${item.name}">
                     <div class="card-body">
@@ -230,7 +231,7 @@ function toggleOverlay() {
     }
 }
 
-function toggleFood(name, ingredients, cuisine, addons, price, image) {
+function toggleFood(name, ingredients, cuisine, addons, price, instructions, image) {
     toggleOverlay();
 
     foodPanel.scrollTop = 0;
@@ -242,16 +243,20 @@ function toggleFood(name, ingredients, cuisine, addons, price, image) {
     const foodIngredients = document.getElementById('food-ingredients');
     const foodCuisine = document.getElementById('food-cuisine');
     const foodAddons = document.getElementById('food-addons');
+    const foodInstructions = document.getElementById('food-instructions');
     const foodCount = document.getElementById('food-count');
     const foodOrderPrice = document.getElementById('order-price');
 
     foodName.textContent = name || '';
     foodImage.src = image || '';
-    foodPrice.textContent = `Price: $${price}`;
-    foodIngredients.textContent = `Ingredients: ${ingredients}`;
-    foodCuisine.textContent = `Cuisine: ${cuisine}`;
+    foodPrice.textContent = `$${price}`;
+    foodIngredients.innerHTML = `<strong>Ingredients:</strong> ${ingredients}`;
+    foodCuisine.innerHTML = `<strong>Cuisine:</strong> ${cuisine}`;
     foodCount.textContent = '1';
     foodOrderPrice.textContent = `$${price}`;
+
+    const instructionSplit = instructions.split(/(?=\d+\))/).filter(Boolean);
+    foodInstructions.innerHTML = `${instructionSplit.join('<br>')}`;
 
     foodAddons.innerHTML = '';
     if (addons) {
@@ -271,6 +276,19 @@ function toggleFood(name, ingredients, cuisine, addons, price, image) {
 
             foodAddons.appendChild(label);
         });
+    }
+}
+
+function toggleInstructions() {
+    const instructionsContainer = document.getElementById('food-instructions');
+    const instructionsButton = document.querySelector('.food-instructions-btn');
+
+    if (instructionsContainer.classList.contains('hidden')) {
+        instructionsContainer.classList.remove('hidden');
+        instructionsButton.textContent = 'Hide Instructions';
+    } else {
+        instructionsContainer.classList.add('hidden');
+        instructionsButton.textContent = 'Show Instructions';
     }
 }
 

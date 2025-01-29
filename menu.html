@@ -54,13 +54,13 @@
           </div>
           <div class="dropdown-menu">
             <label><input type="checkbox" name="American" checked onchange="filterMenu()"> American</label>
-          <label><input type="checkbox" name="Chinese" checked onchange="filterMenu()"> Chinese</label>
-          <label><input type="checkbox" name="Fuzhounese" checked onchange="filterMenu()"> Fuzhounese</label>
-          <label><input type="checkbox" name="Japanese" checked onchange="filterMenu()"> Japanese</label>
-          <label><input type="checkbox" name="Korean" checked onchange="filterMenu()"> Korean</label>
-          <label><input type="checkbox" name="Malaysian" checked onchange="filterMenu()"> Malaysian</label>
-          <label><input type="checkbox" name="Mexican" checked onchange="filterMenu()"> Mexican</label>
-          <label><input type="checkbox" name="Vietnamese" checked onchange="filterMenu()"> Vietnamese</label>
+            <label><input type="checkbox" name="Chinese" checked onchange="filterMenu()"> Chinese</label>
+            <label><input type="checkbox" name="Fuzhounese" checked onchange="filterMenu()"> Fuzhounese</label>
+            <label><input type="checkbox" name="Japanese" checked onchange="filterMenu()"> Japanese</label>
+            <label><input type="checkbox" name="Korean" checked onchange="filterMenu()"> Korean</label>
+            <label><input type="checkbox" name="Malaysian" checked onchange="filterMenu()"> Malaysian</label>
+            <label><input type="checkbox" name="Mexican" checked onchange="filterMenu()"> Mexican</label>
+            <label><input type="checkbox" name="Vietnamese" checked onchange="filterMenu()"> Vietnamese</label>
           </div>
         </div>
 
@@ -184,8 +184,12 @@
           <p id="food-price"></p>
           <p id="food-ingredients"></p>
           <p id="food-cuisine"></p>
+          <div class="food-instructions-container">
+            <button class="food-instructions-btn" onclick="toggleInstructions()">Show Instructions</button>
+            <div id="food-instructions" class="hidden"></div>
+          </div>
           <div id="food-addons-container">
-            <h4>Add-ons:</h4>
+            <h5>Add-ons:</h5>
             <div id="food-addons"></div>
           </div>
         </div>
