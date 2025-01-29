@@ -23,7 +23,7 @@ body.no-scroll {
 }
 
 input[type="checkbox"] {
-    accent-color: #E0E0E0
+    accent-color: #E0E0E0;
 }
 
 label {
@@ -235,6 +235,7 @@ label {
     color: white;
     background-color: black;
     border-radius: 50%;
+    border: 2px solid #000;
     margin-left: 5px;
     position: relative;
 }
@@ -593,10 +594,11 @@ label {
     top: 15px;
     right: 15px;
     z-index: 1101;
-    padding: 5px;
+    width: 30px;
+    height: 30px;
     background-color: white;
-    border-radius: 100%;
-    
+    border-radius: 50%;
+    border: 1px solid #000;
 }
 
 .food-panel-body {
