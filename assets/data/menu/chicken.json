@@ -4,111 +4,97 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Orange Chicken",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Sweet and Sour Chicken",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Coconut Chicken",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Pepper Chicken",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Chicken with Broccoli",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Chicken Parmesan",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Chicken Nuggets",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Chicken Tenders",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Boneless Chicken Wings",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Cola Wings",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Chicken Teriyaki",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Honey Sriracha Chicken",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Korean Fried Chicken",
         "ingredients": "",
         "addons": "",
         "cuisine": "Korean",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     }
 ]

@@ -4,119 +4,104 @@
         "ingredients": "White Rice",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Fried Rice",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Congee",
         "ingredients": "White Rice",
         "addons": "Sweet Potato",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Corn Kernels",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Egg Roll",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Spring Roll",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Lap Cheong Sausage",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Onigiri",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Mashed Potatoes",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Waffle Fries",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Shoestring Fries",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Curly Fries",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Baked Potato",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Hash Browns",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Tater Tots",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     }
 ]

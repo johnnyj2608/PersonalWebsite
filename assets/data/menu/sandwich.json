@@ -4,47 +4,41 @@
         "ingredients": "Beef",
         "addons": "Cheese",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Hot Dog",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Philly Cheesesteak",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": true
+        "instructions": ""    
     },
     {
         "name": "Chicken Sandwich",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Grilled Cheese",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Stromboli",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     }
 ]

@@ -33,8 +33,6 @@ function renderMenu(items) {
             const imageName = item.name.replaceAll(' ', '-').toLowerCase();
             let imagePath = category !== "sauce" ? `/assets/images/menu/${category}/${imageName}.jpg` : '/assets/images/menu/cookoutjohn.png';
 
-            const starIcon = item.fav ? `<i class="fa fa-star fav-icon" title="JJ Certified"></i>` : "";
-
             const card = `
                 <div class="card" onclick="toggleFood(
                     '${item.name}', 
@@ -43,13 +41,14 @@ function renderMenu(items) {
                     '${item.addons}', 
                     '${item.price}', 
                     '${imagePath}')">
-                    <div class="card-top">${starIcon}</div>
                     <img src="${imagePath}" class="card-img" alt="${item.name}">
                     <div class="card-body">
                         <h5 class="card-title">${item.name}</h5>
                         <p class="card-text"><strong>Price:</strong> $${item.price}</p>
                         <p class="card-text"><strong>Ingredients:</strong> ${item.ingredients}</p>
-                        <p class="card-text"><strong>Cuisine:</strong> ${item.cuisine}</p>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="cuisine-triangle" data-tooltip="${item.cuisine}"></div>
                     </div>
                 </div>
             `;
