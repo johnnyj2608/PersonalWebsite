@@ -63,21 +63,14 @@
         "instructions": ""
     },
     {
-        "name": "Waffle Fries",
+        "name": "French Fries",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
         "instructions": ""
     },
     {
-        "name": "Shoestring Fries",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "American",
-        "instructions": ""
-    },
-    {
-        "name": "Curly Fries",
+        "name": "Home Fries",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
@@ -85,20 +78,6 @@
     },
     {
         "name": "Baked Potato",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "American",
-        "instructions": ""
-    },
-    {
-        "name": "Hash Browns",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "American",
-        "instructions": ""
-    },
-    {
-        "name": "Tater Tots",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
