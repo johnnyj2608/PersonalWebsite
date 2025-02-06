@@ -4,47 +4,41 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": "",
-        "fav": true
+        "instructions": ""    
     },
     {
         "name": "Fish Balls",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Wonton Soup",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Egg Drop Soup",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Miso Soup",
         "ingredients": "",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Clam Chowder Soup",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     }
 ]

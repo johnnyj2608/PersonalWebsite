@@ -54,13 +54,13 @@
           </div>
           <div class="dropdown-menu">
             <label><input type="checkbox" name="American" checked onchange="filterMenu()"> American</label>
-          <label><input type="checkbox" name="Chinese" checked onchange="filterMenu()"> Chinese</label>
-          <label><input type="checkbox" name="Fuzhounese" checked onchange="filterMenu()"> Fuzhounese</label>
-          <label><input type="checkbox" name="Japanese" checked onchange="filterMenu()"> Japanese</label>
-          <label><input type="checkbox" name="Korean" checked onchange="filterMenu()"> Korean</label>
-          <label><input type="checkbox" name="Malaysian" checked onchange="filterMenu()"> Malaysian</label>
-          <label><input type="checkbox" name="Mexican" checked onchange="filterMenu()"> Mexican</label>
-          <label><input type="checkbox" name="Vietnamese" checked onchange="filterMenu()"> Vietnamese</label>
+            <label><input type="checkbox" name="Chinese" checked onchange="filterMenu()"> Chinese</label>
+            <label><input type="checkbox" name="Fuzhounese" checked onchange="filterMenu()"> Fuzhounese</label>
+            <label><input type="checkbox" name="Japanese" checked onchange="filterMenu()"> Japanese</label>
+            <label><input type="checkbox" name="Korean" checked onchange="filterMenu()"> Korean</label>
+            <label><input type="checkbox" name="Malaysian" checked onchange="filterMenu()"> Malaysian</label>
+            <label><input type="checkbox" name="Mexican" checked onchange="filterMenu()"> Mexican</label>
+            <label><input type="checkbox" name="Vietnamese" checked onchange="filterMenu()"> Vietnamese</label>
           </div>
         </div>
 
@@ -71,6 +71,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" id="nav-appetizer" onclick="jump('appetizer')">Appetizer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-soup" onclick="jump('soup')">Soup</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="nav-noodle" onclick="jump('noodle')">Noodle</a>
@@ -96,9 +99,7 @@
             <li class="nav-item">
               <a class="nav-link" id="nav-sandwich" onclick="jump('sandwich')">Sandwich</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="nav-soup" onclick="jump('soup')">Soup</a>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link" id="nav-sides" onclick="jump('sides')">Sides</a>
             </li>
@@ -128,6 +129,7 @@
     <div class="cart-panel" id="cart-panel">
       <div class="cart-panel-header">
         Shopping Cart
+        <i class="fa fa-info-circle" data-tooltip="Your order will be sent to my personal email"></i>
         <button class="close" onclick="toggleOverlay()">
           <i class="fa fa-times"></i>
         </button>
@@ -164,7 +166,7 @@
       <div id="menu-container"></div>
       <div class="footer row text-center">
         <div class="col">
-          <h5>Copyright &copy; 2025 JOHNNY JIANG. 
+          <h5>Copyright &copy; <span id="current-year"></span> JOHNNY JIANG. 
             <span class="wrap-text">All rights reserved.</span>
           </h5>
         </div>
@@ -183,7 +185,14 @@
           <p id="food-price"></p>
           <p id="food-ingredients"></p>
           <p id="food-cuisine"></p>
-          <p id="food-addons"></p>
+          <div class="food-instructions-container">
+            <button class="food-instructions-btn" onclick="toggleInstructions()">Show Instructions</button>
+            <div id="food-instructions" class="hidden"></div>
+          </div>
+          <div id="food-addons-container">
+            <h5>Add-ons:</h5>
+            <div id="food-addons"></div>
+          </div>
         </div>
       </div>
       <div class="food-panel-footer">

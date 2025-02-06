@@ -4,55 +4,48 @@
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Mongolian Beef",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Wagyu",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Ribeye",
         "ingredients": "Salt, Pepper",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Sirloin",
         "ingredients": "Salt, Pepper",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "T-Bone",
         "ingredients": "Salt, Pepper",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Porterhouse",
         "ingredients": "Salt, Pepper",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     }
 ]

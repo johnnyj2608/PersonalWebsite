@@ -2,97 +2,78 @@
     {
         "name": "Scrambled Eggs",
         "ingredients": "Eggs, Salt",
-        "addons": "",
+        "addons": "Ketchup, Cheese",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": "1) Whisk egg mixture and pinch of salt. 2) Pan fry and stir around for few mins."
     },
     {
         "name": "Sunny Side Eggs",
         "ingredients": "Eggs, Salt",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
-    },
-    {
-        "name": "Over Easy Eggs",
-        "ingredients": "Eggs, Salt",
-        "addons": "",
-        "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Soft Boiled Eggs",
         "ingredients": "Eggs, Salt",
         "addons": "Soy Sauce",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Western Omelette",
         "ingredients": "Eggs, Salt",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Sweet and Sour Fried Eggs",
         "ingredients": "Eggs, Salt",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Omurice",
         "ingredients": "Eggs, Salt",
         "addons": "",
         "cuisine": "Japanese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Bacon",
         "ingredients": "Bacon",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Sausage",
         "ingredients": "Sausage",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Toast",
         "ingredients": "Bread",
         "addons": "Strawberry Jam, Butter",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Pancake",
         "ingredients": "Pancake",
         "addons": "Maple Syrup, Butter",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Breakfast Burrito",
         "ingredients": "Tortilla Wrap, Eggs, Sausage, Cheese, Salt",
         "addons": "",
         "cuisine": "Mexican",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     }
 ]

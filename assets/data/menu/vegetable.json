@@ -4,47 +4,41 @@
         "ingredients": "Water Spinach, Garlic, Salt, Sugar, Oyster Sauce",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": "",
-        "fav": true
+        "instructions": ""
     },
     {
         "name": "Stir Fry Cauliflower",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Red Wine Bamboo Shoots",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Braised Tofu",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Mapo Tofu",
         "ingredients": "",
         "addons": "",
         "cuisine": "Chinese",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Steamed Broccoli",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     }
 ]

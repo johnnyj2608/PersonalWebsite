@@ -4,31 +4,27 @@
         "ingredients": "Vanilla Pudding, Oreo, Cream Cheese, Cool Whip",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Brownie Sundae",
         "ingredients": "Vanilla Ice Cream, Brownie",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Oreo Milkshake",
         "ingredients": "Cookies & Creme Ice Cream, Milk",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     },
     {
         "name": "Sticky Buns",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
-        "instructions": "",
-        "fav": false
+        "instructions": ""
     }
 ]

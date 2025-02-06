@@ -249,6 +249,8 @@ select {
 button,
 html [type="button"] {
   -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
 }
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -267,6 +269,8 @@ input[type="datetime-local"],
 input[type="month"],
 input[type="time"] {
   -webkit-appearance: listbox;
+  -moz-appearance: listbox;
+  appearance: listbox;
 }
 textarea {
   overflow: auto;
@@ -299,6 +303,8 @@ progress {
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
@@ -3749,8 +3755,8 @@ tbody.collapse.show {
   list-style: none;
 }
 .navbar-nav .nav-link {
-  padding-right: 10;
-  padding-left: 10;
+  padding-right: 0;
+  padding-left: 0;
 }
 .navbar-nav .dropdown-menu {
   position: static;
@@ -4124,13 +4130,12 @@ tbody.collapse.show {
 .navbar-dark .navbar-nav .show > .nav-link {
   color: #fff;
 }
-/* Toggle Colors */
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 129, 119, 1);
 }
 .navbar-dark .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 129, 119, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 .navbar-dark .navbar-text {
   color: rgba(255, 255, 255, 0.5);
@@ -4997,6 +5002,8 @@ button.close {
   background-color: transparent;
   border: 0;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .modal-open {
   overflow: hidden;

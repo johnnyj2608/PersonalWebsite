@@ -33,8 +33,6 @@ function renderMenu(items) {
             const imageName = item.name.replaceAll(' ', '-').toLowerCase();
             let imagePath = category !== "sauce" ? `/assets/images/menu/${category}/${imageName}.jpg` : '/assets/images/menu/cookoutjohn.png';
 
-            const starIcon = item.fav ? `<i class="fa fa-star fav-icon" title="JJ Certified"></i>` : "";
-
             const card = `
                 <div class="card" onclick="toggleFood(
                     '${item.name}', 
@@ -42,14 +40,16 @@ function renderMenu(items) {
                     '${item.cuisine}', 
                     '${item.addons}', 
                     '${item.price}', 
+                    '${item.instructions}', 
                     '${imagePath}')">
-                    <div class="card-top">${starIcon}</div>
                     <img src="${imagePath}" class="card-img" alt="${item.name}">
                     <div class="card-body">
                         <h5 class="card-title">${item.name}</h5>
                         <p class="card-text"><strong>Price:</strong> $${item.price}</p>
                         <p class="card-text"><strong>Ingredients:</strong> ${item.ingredients}</p>
-                        <p class="card-text"><strong>Cuisine:</strong> ${item.cuisine}</p>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="cuisine-triangle" data-tooltip="${item.cuisine}"></div>
                     </div>
                 </div>
             `;
@@ -75,6 +75,7 @@ async function loadMenu() {
     const categories = [
         "breakfast",
         "appetizer",
+        "soup",
         "noodle",
         "chicken",
         "beef",
@@ -124,7 +125,8 @@ function jump(section) {
     window.removeEventListener('scroll', updateNavHighlight);
 
     var top = document.getElementById(section).offsetTop;
-    window.scrollTo(0, top - 85);
+    var offset = window.innerWidth >= 1200 ? 24 : 85;
+    window.scrollTo(0, top - offset);
 
     navLinks.forEach(link => link.classList.remove('active'));
 
@@ -179,6 +181,7 @@ function toggleSearch() {
     const dropdownMenu = document.querySelector('.dropdown-menu');
     if (dropdownMenu.classList.contains('active')) {
         dropdownMenu.classList.remove('active');
+        document.removeEventListener('click', closeDropdownOnOutsideClick);
     }
 }
 
@@ -187,8 +190,23 @@ function toggleDropdown() {
 
     if (dropdownMenu.classList.contains('active')) {
         dropdownMenu.classList.remove('active');
+        document.removeEventListener('click', closeDropdownOnOutsideClick);
     } else {
         dropdownMenu.classList.add('active');
+        document.addEventListener('click', closeDropdownOnOutsideClick);
+    }
+}
+
+function closeDropdownOnOutsideClick(event) {
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const searchContainer = document.getElementById('search-container');
+    const dropdownIcon = document.querySelector('.dropdown-icon');
+    
+    if (!searchContainer.contains(event.target) && !dropdownIcon.contains(event.target)) {
+        if (dropdownMenu.classList.contains('active')) {
+            dropdownMenu.classList.remove('active');
+            document.removeEventListener('click', closeDropdownOnOutsideClick);
+        }
     }
 }
 
@@ -229,7 +247,7 @@ function toggleOverlay() {
     }
 }
 
-function toggleFood(name, ingredients, cuisine, addons, price, image) {
+function toggleFood(name, ingredients, cuisine, addons, price, instructions, image) {
     toggleOverlay();
 
     foodPanel.scrollTop = 0;
@@ -241,17 +259,53 @@ function toggleFood(name, ingredients, cuisine, addons, price, image) {
     const foodIngredients = document.getElementById('food-ingredients');
     const foodCuisine = document.getElementById('food-cuisine');
     const foodAddons = document.getElementById('food-addons');
+    const foodInstructions = document.getElementById('food-instructions');
     const foodCount = document.getElementById('food-count');
     const foodOrderPrice = document.getElementById('order-price');
 
     foodName.textContent = name || '';
     foodImage.src = image || '';
-    foodPrice.textContent = `Price: $${price}`;
-    foodIngredients.textContent = `Ingredients: ${ingredients}`;
-    foodCuisine.textContent = `Cuisine: ${cuisine}`;
-    foodAddons.textContent = `Goes well with: ${addons}`;
+    foodPrice.textContent = `$${price}`;
+    foodIngredients.innerHTML = `<strong>Ingredients:</strong> ${ingredients}`;
+    foodCuisine.innerHTML = `<strong>Cuisine:</strong> ${cuisine}`;
     foodCount.textContent = '1';
     foodOrderPrice.textContent = `$${price}`;
+
+    const instructionSplit = instructions.split(/(?=\d+\))/).filter(Boolean);
+    foodInstructions.innerHTML = `${instructionSplit.join('<br>')}`;
+
+    foodAddons.innerHTML = '';
+    if (addons) {
+        const addonsArray = addons.split(',').map(addon => addon.trim());
+
+        addonsArray.forEach(addon => {
+            const label = document.createElement('label');
+            label.classList.add('food-addons-label');
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.value = addon;
+            checkbox.name = addon;
+
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(` ${addon}`));
+
+            foodAddons.appendChild(label);
+        });
+    }
+}
+
+function toggleInstructions() {
+    const instructionsContainer = document.getElementById('food-instructions');
+    const instructionsButton = document.querySelector('.food-instructions-btn');
+
+    if (instructionsContainer.classList.contains('hidden')) {
+        instructionsContainer.classList.remove('hidden');
+        instructionsButton.textContent = 'Hide Instructions';
+    } else {
+        instructionsContainer.classList.add('hidden');
+        instructionsButton.textContent = 'Show Instructions';
+    }
 }
 
 function updateCount(amount) {
@@ -289,8 +343,13 @@ function addOrder() {
     const priceString = foodPrice.textContent;
     const price = parseFloat(priceString.replace(/[^\d.-]/g, ''));
 
+    const selectedAddons = Array.from(document.querySelectorAll('#food-addons input[type="checkbox"]:checked'))
+        .map(checkbox => checkbox.value);
 
-    const existingItem = cart.find(item => item.name === foodName);
+    const existingItem = cart.find(item => item.name === foodName && 
+        item.addons && 
+        JSON.stringify(item.addons) === JSON.stringify(selectedAddons))
+
     if (existingItem) {
         existingItem.quantity += quantity;
     } else {
@@ -299,6 +358,7 @@ function addOrder() {
             image: foodImage,
             quantity: quantity,
             price: price,
+            addons: selectedAddons,
         });
     }
     updateCart();
@@ -319,13 +379,22 @@ function updateCart() {
 
     if (cart.length > 0) {
         cart.forEach((item, index) => {
+            const addonsHTML = item.addons && item.addons.length > 0 
+                ? `<p class="cart-item-addons">Add-ons: ${item.addons.join(', ')}</p>` 
+                : '<p class="cart-item-addons" style="visibility: hidden;">Add-ons: </p>';
+
+            const minusButtonHTML = item.quantity === 1 
+                ? `<i onclick="updateCartItem(${index}, -1)" class="fas fa-trash trash-can-icon"></i>`
+                : `<button onclick="updateCartItem(${index}, -1)">-</button>`;
+
             const cartItem = `
                 <div class="cart-item">
                     <img src="${item.image}" alt="${item.name}" class="cart-item-image">
                     <div class="cart-item-details">
                         <h5>${item.name}</h5>
+                        ${addonsHTML}
                         <div class="cart-item-quantity">
-                            <button onclick="updateCartItem(${index}, -1)">-</button>
+                            ${minusButtonHTML}
                             <span>${item.quantity}</span>
                             <button onclick="updateCartItem(${index}, 1)">+</button>
                         </div>
@@ -379,7 +448,12 @@ function submitOrder() {
 
     const orderDetails = cart.map(item => {
         const totalPrice = (item.price * item.quantity).toFixed(2); // 100% Discounts
-        return `${item.name} x ${item.quantity} - Free`;
+        
+        const addons = item.addons && item.addons.length > 0 
+            ? ` (${item.addons.join(', ')})`
+            : '';
+
+        return `${item.quantity} x ${item.name}${addons} - Free`;
     }).join("\n");
   
     document.getElementById('email-name').value = orderName;
@@ -416,4 +490,5 @@ document.addEventListener('DOMContentLoaded', () => {
     loadMenu();
     document.addEventListener('click', closeDropdown);
     window.addEventListener('scroll', updateNavHighlight);
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 });

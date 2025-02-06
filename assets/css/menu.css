@@ -22,6 +22,14 @@ body.no-scroll {
     overflow: hidden;
 }
 
+input[type="checkbox"] {
+    accent-color: #E0E0E0;
+}
+
+label {
+    padding-left: 5px;
+}
+
 .black-overlay {
     display: none;
     position: fixed;
@@ -37,18 +45,8 @@ body.no-scroll {
     display: block;
 }
 
-.container {
-    margin-left: auto;
-    justify-content: center;
-}
-
-.row {
-    justify-content: center;
-}
-
 .col-md-6 {
     padding: 10px;
-    max-width: 450px;
 }
 
 /* -------------- *
@@ -85,7 +83,7 @@ body.no-scroll {
 }
 
 .navbar-nav .nav-item {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .navbar-nav .nav-item:last-child {
@@ -233,6 +231,40 @@ body.no-scroll {
     padding-right: 3px;
 }
 
+.fa-info-circle {
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid #000;
+    margin-left: 5px;
+    position: relative;
+}
+
+.fa-info-circle::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-40%);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.fa-info-circle:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 .cart-container:hover {
     border: 2px solid grey;
     color: #333;
@@ -369,20 +401,41 @@ label {
     flex-grow: 1;
 }
 
+.cart-item-details * {
+    margin-bottom: 0.25rem;
+}
+
 .cart-item-quantity {
     display: flex;
 }
 
 .cart-item-quantity button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
+    color: black;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1.25rem;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-item-quantity i {
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: scaleX(1.4) scaleY(1.2);
+    padding-right: 5px;
+    padding-left: 7px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.cart-item-quantity i:hover {
+    color: red;
 }
 
 .cart-item-quantity button:hover {
@@ -394,6 +447,10 @@ label {
     font-weight: bold;
     min-width: 30px;
     text-align: center;
+}
+
+.cart-item-addons {
+    color: gray
 }
 
 .cart-item-price h5 {
@@ -414,12 +471,12 @@ label {
 /* -------------- *
  * Categories
  * -------------- */
- .category {
+.category {
     padding-bottom: 24px;
 }
 
 .category:first-child {
-    padding-top: 12px;
+    padding-top: 24px;
 }
 
 .category h2 {
@@ -435,7 +492,7 @@ label {
     border-radius: 5px;
     height: 175px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
     cursor: pointer;
 }
 
@@ -444,22 +501,11 @@ label {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card-top {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    z-index: 10;
-}
-
-.fav-icon {
-    color: gold;
-    font-size: 1.25rem;
-}
-
 .card-img {
     width: 40%;
     height: 100%;
     border-right: 1px solid #ddd;
+    border-radius: 0;
 }
 
 .card-body {
@@ -475,6 +521,47 @@ label {
 
 .card-text {
     font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.cuisine-triangle {
+    border-top: 10px solid transparent;
+    border-right: 10px solid #FF6347;
+    border-bottom: 10px solid #FF6347;
+    border-left: 10px solid transparent;
+    position: relative;
+}
+
+.cuisine-triangle::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-100%);
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none;
+}
+
+.cuisine-triangle:hover::after {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* -------------- *
@@ -507,10 +594,11 @@ label {
     top: 15px;
     right: 15px;
     z-index: 1101;
-    padding: 5px;
+    width: 30px;
+    height: 30px;
     background-color: white;
-    border-radius: 100%;
-    
+    border-radius: 50%;
+    border: 1px solid #000;
 }
 
 .food-panel-body {
@@ -552,6 +640,36 @@ label {
 
 #food-price {
     display: none;
+}
+
+.food-instructions-container {
+    margin-bottom: 1rem;
+}
+
+.food-instructions-container .hidden {
+    display: none;
+}
+
+.food-instructions-btn {
+    background-color: #E0E0E0;
+    color: black;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.food-instructions-btn:hover {
+    background-color: #E0E0E0;
+}
+
+.food-addons-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
 }
 
 .food-panel-footer {
@@ -650,8 +768,8 @@ label {
         flex-wrap: wrap;
     }
       
-    .container {
-        margin-left: 255px;
+    #menu-container {
+        margin-left: 240px;
     }
 
     .search-container {
@@ -693,10 +811,6 @@ label {
         position: absolute;
         top: 24px;
     }
-
-    .row {
-        justify-content: initial;
-    }
 }
 
 @media (max-width: 991.98px) {
@@ -706,15 +820,17 @@ label {
 }
 
 @media (max-width: 767.98px) {
-    .row {
-        max-width: 450px;
-    }
-
     .wrap-text {
         display: block;
     }
+}
 
+@media (max-width: 575.98px) {
     .cart-panel, .food-panel {
         width: 80%;
+    }
+
+    .fa-info-circle::after {
+        transform: translateX(50%);
     }
 }
