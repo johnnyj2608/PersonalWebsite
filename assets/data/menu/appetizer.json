@@ -117,5 +117,12 @@
         "addons": "",
         "cuisine": "Japanese",
         "instructions": ""
+    },
+    {
+        "name": "Corn Dog",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "Korean",
+        "instructions": ""
     }
 ]

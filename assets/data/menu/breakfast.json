@@ -63,13 +63,6 @@
         "instructions": ""
     },
     {
-        "name": "Pancake",
-        "ingredients": "Pancake",
-        "addons": "Maple Syrup, Butter",
-        "cuisine": "American",
-        "instructions": ""
-    },
-    {
         "name": "Breakfast Burrito",
         "ingredients": "Tortilla Wrap, Eggs, Sausage, Cheese, Salt",
         "addons": "",
