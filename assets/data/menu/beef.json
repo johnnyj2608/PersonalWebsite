@@ -14,36 +14,15 @@
         "instructions": ""
     },
     {
-        "name": "Wagyu",
+        "name": "Beef with Broccoli",
         "ingredients": "",
         "addons": "",
-        "cuisine": "American",
+        "cuisine": "Chinese",
         "instructions": ""
     },
     {
-        "name": "Ribeye",
-        "ingredients": "Salt, Pepper",
-        "addons": "",
-        "cuisine": "American",
-        "instructions": ""
-    },
-    {
-        "name": "Sirloin",
-        "ingredients": "Salt, Pepper",
-        "addons": "",
-        "cuisine": "American",
-        "instructions": ""
-    },
-    {
-        "name": "T-Bone",
-        "ingredients": "Salt, Pepper",
-        "addons": "",
-        "cuisine": "American",
-        "instructions": ""
-    },
-    {
-        "name": "Porterhouse",
-        "ingredients": "Salt, Pepper",
+        "name": "Steak",
+        "ingredients": "",
         "addons": "",
         "cuisine": "American",
         "instructions": ""

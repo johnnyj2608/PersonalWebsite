@@ -7,13 +7,6 @@
         "instructions": ""    
     },
     {
-        "name": "Fish Balls",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Fuzhounese",
-        "instructions": ""
-    },
-    {
         "name": "Wonton Soup",
         "ingredients": "",
         "addons": "",
@@ -35,7 +28,7 @@
         "instructions": ""
     },
     {
-        "name": "Clam Chowder Soup",
+        "name": "Baked Potato Soup",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",

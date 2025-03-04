@@ -14,7 +14,7 @@
         "instructions": ""
     },
     {
-        "name": "Philly Cheesesteak",
+        "name": "Cheesesteak",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",
@@ -35,10 +35,10 @@
         "instructions": ""
     },
     {
-        "name": "Stromboli",
+        "name": "Quesadilla",
         "ingredients": "",
         "addons": "",
-        "cuisine": "American",
-        "instructions": ""
+        "cuisine": "Mexican",
+        "instructions": ""    
     }
 ]
