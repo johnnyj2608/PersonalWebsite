@@ -35,20 +35,6 @@
         "instructions": ""
     },
     {
-        "name": "Lap Cheong Sausage",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Chinese",
-        "instructions": ""
-    },
-    {
-        "name": "Onigiri",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "Japanese",
-        "instructions": ""
-    },
-    {
         "name": "Mashed Potatoes",
         "ingredients": "",
         "addons": "",
@@ -57,13 +43,6 @@
     },
     {
         "name": "French Fries",
-        "ingredients": "",
-        "addons": "",
-        "cuisine": "American",
-        "instructions": ""
-    },
-    {
-        "name": "Home Fries",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",

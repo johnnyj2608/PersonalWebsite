@@ -1,13 +1,13 @@
 [
     {
-        "name": "Stir Fry Water Spinach",
+        "name": "Stir Fried Water Spinach",
         "ingredients": "Water Spinach, Garlic, Salt, Sugar, Oyster Sauce",
         "addons": "",
         "cuisine": "Fuzhounese",
         "instructions": ""
     },
     {
-        "name": "Stir Fry Cauliflower",
+        "name": "Stir Fried Cauliflower",
         "ingredients": "",
         "addons": "",
         "cuisine": "Fuzhounese",
@@ -42,7 +42,21 @@
         "instructions": ""
     },
     {
-        "name": "Steamed Broccoli",
+        "name": "Stir Fried Broccoli",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "instructions": ""
+    },
+    {
+        "name": "Stir Fried Snow Peas",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "instructions": ""
+    },
+    {
+        "name": "Stir Fried String Beans",
         "ingredients": "",
         "addons": "",
         "cuisine": "American",

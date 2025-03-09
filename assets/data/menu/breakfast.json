@@ -21,7 +21,21 @@
         "instructions": ""
     },
     {
-        "name": "Western Omelette",
+        "name": "Poached Eggs",
+        "ingredients": "Eggs, Salt",
+        "addons": "",
+        "cuisine": "American",
+        "instructions": ""
+    },
+    {
+        "name": "Braised Eggs",
+        "ingredients": "Eggs, Salt",
+        "addons": "",
+        "cuisine": "Chinese",
+        "instructions": ""
+    },
+    {
+        "name": "Omelette",
         "ingredients": "Eggs, Salt",
         "addons": "",
         "cuisine": "American",
@@ -59,6 +73,20 @@
         "name": "Toast",
         "ingredients": "Bread",
         "addons": "Strawberry Jam, Butter",
+        "cuisine": "American",
+        "instructions": ""
+    },
+    {
+        "name": "Home Fries",
+        "ingredients": "",
+        "addons": "",
+        "cuisine": "American",
+        "instructions": ""
+    },
+    {
+        "name": "Breakfast Skillet",
+        "ingredients": "",
+        "addons": "",
         "cuisine": "American",
         "instructions": ""
     },
