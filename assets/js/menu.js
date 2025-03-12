@@ -34,14 +34,7 @@ function renderMenu(items) {
             let imagePath = category !== "sauce" ? `/assets/images/menu/${category}/${imageName}.jpg` : '/assets/images/menu/cookoutjohn.png';
 
             const card = `
-                <div class="card" onclick="toggleFood(
-                    '${item.name}', 
-                    '${item.ingredients}', 
-                    '${item.cuisine}', 
-                    '${item.addons}', 
-                    '${item.price}', 
-                    '${item.instructions}', 
-                    '${imagePath}')">
+                <div class="card" onclick="toggleFood(${JSON.stringify(item)})">
                     <img src="${imagePath}" class="card-img" alt="${item.name}">
                     <div class="card-body">
                         <h5 class="card-title">${item.name}</h5>
@@ -82,11 +75,9 @@ async function loadMenu() {
         "pork",
         "seafood",
         "vegetable",
-        "pie",
         "sandwich",
         "sides",
         "dessert",
-        "sauce"
     ];    
 
     async function fetchCategoryData(category) {
@@ -247,7 +238,8 @@ function toggleOverlay() {
     }
 }
 
-function toggleFood(name, ingredients, cuisine, addons, price, instructions, image) {
+function toggleFood(item) {
+    console.log(item);
     toggleOverlay();
 
     foodPanel.scrollTop = 0;
@@ -263,16 +255,17 @@ function toggleFood(name, ingredients, cuisine, addons, price, instructions, ima
     const foodCount = document.getElementById('food-count');
     const foodOrderPrice = document.getElementById('order-price');
 
-    foodName.textContent = name || '';
-    foodImage.src = image || '';
-    foodPrice.textContent = `$${price}`;
-    foodIngredients.innerHTML = `<strong>Ingredients:</strong> ${ingredients}`;
-    foodCuisine.innerHTML = `<strong>Cuisine:</strong> ${cuisine}`;
+    foodName.textContent = item.name || '';
+    foodImage.src = item.image || '';
+    foodPrice.textContent = `$${item.price}`;
+    foodIngredients.innerHTML = `<strong>Ingredients:</strong> ${item.ingredients}`;
+    foodCuisine.innerHTML = `<strong>Cuisine:</strong> ${item.cuisine}`;
     foodCount.textContent = '1';
-    foodOrderPrice.textContent = `$${price}`;
+    foodOrderPrice.textContent = `$${item.price}`;
 
-    const instructionSplit = instructions.split(/(?=\d+\))/).filter(Boolean);
-    foodInstructions.innerHTML = `${instructionSplit.join('<br>')}`;
+    const sentences = item.instructions.split(/(?<=[.!?])\s+/).filter(Boolean);
+    const numberedInstructions = sentences.map((sentence, index) => `${index + 1}) ${sentence}`);
+    foodInstructions.innerHTML = numberedInstructions.join('<br>');
 
     foodAddons.innerHTML = '';
     if (addons) {

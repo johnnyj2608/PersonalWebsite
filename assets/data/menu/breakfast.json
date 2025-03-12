@@ -4,7 +4,7 @@
         "ingredients": "Eggs, Salt",
         "addons": "Ketchup, Cheese",
         "cuisine": "American",
-        "instructions": "1) Whisk egg mixture and pinch of salt. 2) Pan fry and stir around for few mins."
+        "instructions": "Whisk egg mixture and pinch of salt. Pan fry and stir around for few mins."
     },
     {
         "name": "Sunny Side Eggs",
@@ -25,13 +25,6 @@
         "ingredients": "Eggs, Salt",
         "addons": "",
         "cuisine": "American",
-        "instructions": ""
-    },
-    {
-        "name": "Braised Eggs",
-        "ingredients": "Eggs, Salt",
-        "addons": "",
-        "cuisine": "Chinese",
         "instructions": ""
     },
     {
@@ -73,13 +66,6 @@
         "name": "Toast",
         "ingredients": "Bread",
         "addons": "Strawberry Jam, Butter",
-        "cuisine": "American",
-        "instructions": ""
-    },
-    {
-        "name": "Home Fries",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
         "instructions": ""
     },

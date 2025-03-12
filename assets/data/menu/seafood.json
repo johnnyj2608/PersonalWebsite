@@ -40,5 +40,12 @@
         "addons": "",
         "cuisine": "American",
         "instructions": ""
+    },
+    {
+        "name": "Garlic Butter Shrimp",
+        "ingredients": "Shrimp",
+        "addons": "",
+        "cuisine": "American",
+        "instructions": ""
     }
 ]
