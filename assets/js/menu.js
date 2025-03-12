@@ -114,12 +114,47 @@ async function loadMenu() {
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 const navbarCollapse = document.querySelector('.navbar-collapse');
 
-function jump(section) {
+const instructionsContainer = document.getElementById('food-instructions');
+const instructionsButton = document.querySelector('.food-instructions-btn');
+
+const foodPanel = document.getElementById('food-panel');
+const cartPanel = document.getElementById('cart-panel');
+const blackOverlay = document.getElementById('black-overlay');
+const body = document.body;
+
+function toggleOverlay() {
+    if (foodPanel.classList.contains('active')) {
+        foodPanel.classList.remove('active')
+    }
+
+    if (!instructionsContainer.classList.contains('hidden')) {
+        instructionsContainer.classList.add('hidden');
+        instructionsButton.textContent = 'Show Instructions';
+    }
+        
+    if (cartPanel.classList.contains('active')) {
+        cartPanel.classList.remove('active')
+    }
+
+    if (blackOverlay.classList.contains('active')) {
+        blackOverlay.classList.remove('active');
+        body.classList.remove('no-scroll');
+    } else {
+        blackOverlay.classList.add('active');
+        body.classList.add('no-scroll');
+    }
+}
+
+function jump(section, item = '') {
+    blackOverlay.classList.add('active');
+    toggleOverlay();
+
     window.removeEventListener('scroll', updateNavHighlight);
 
-    var top = document.getElementById(section).offsetTop;
-    var offset = window.innerWidth >= 1200 ? 24 : 85;
-    window.scrollTo(0, top - offset);
+    const targetSection = document.getElementById(item) || document.getElementById(section);
+    targetSection.scrollIntoView({
+        behavior: 'smooth',
+    });
 
     navLinks.forEach(link => link.classList.remove('active'));
 
@@ -218,28 +253,6 @@ function filterMenu() {
     renderMenu(filteredItems);
 }
 
-const foodPanel = document.getElementById('food-panel');
-const cartPanel = document.getElementById('cart-panel');
-const blackOverlay = document.getElementById('black-overlay');
-const body = document.body;
-
-function toggleOverlay() {
-    if (foodPanel.classList.contains('active')) {
-        foodPanel.classList.remove('active')
-        
-    } else if (cartPanel.classList.contains('active')) {
-        cartPanel.classList.remove('active')
-    }
-
-    if (blackOverlay.classList.contains('active')) {
-        blackOverlay.classList.remove('active');
-        body.classList.remove('no-scroll');
-    } else {
-        blackOverlay.classList.add('active');
-        body.classList.add('no-scroll');
-    }
-}
-
 function toggleFood(itemID) {
     const item = itemNameMap.get(itemID.toLowerCase());
     toggleOverlay();
@@ -265,9 +278,7 @@ function toggleFood(itemID) {
     foodCount.textContent = '1';
     foodOrderPrice.textContent = `$${item.price}`;
 
-    const sentences = item.instructions.split(/(?<=[.!?])\s+/).filter(Boolean);
-    const numberedInstructions = sentences.map((sentence, index) => `${index + 1}) ${sentence}`);
-    foodInstructions.innerHTML = numberedInstructions.join('<br>');
+    foodInstructions.innerHTML = processInstructions(item.instructions);
 
     foodAddons.innerHTML = '';
     if (item.addons) {
@@ -288,6 +299,25 @@ function toggleFood(itemID) {
             foodAddons.appendChild(label);
         });
     }
+}
+
+function processInstructions(instructions) {
+    const sentences = instructions.split(/(?<=[.!?])\s+/).filter(Boolean);
+
+    const numberedInstructions = sentences.map((sentence, index) => {
+        sentence = sentence.replace(/{([^}]+)}/g, (match, foodItem) => {
+            const foodItemID = foodItem
+                .split(' ')
+                .join('-')
+                .toLowerCase();
+                const item = itemNameMap.get(foodItemID);
+            return `<a class="food-link" onclick="jump('${item.category}', '${foodItemID}');">${item.name}</a>`;
+        });
+        return `${index + 1}) ${sentence}`;
+    });
+    
+    
+    return numberedInstructions.join('<br>');
 }
 
 function toggleInstructions() {

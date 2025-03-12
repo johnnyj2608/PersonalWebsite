@@ -8,6 +8,7 @@
   
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 85px;
 }
   
 body {
@@ -638,6 +639,15 @@ label {
     padding: 0 20px;
 }
 
+.food-link {
+    color: blue !important;
+    cursor: pointer;
+}
+
+.food-link:hover {
+    color: darkblue !important;
+}
+
 #food-price {
     display: none;
 }
@@ -730,6 +740,10 @@ label {
  * Nav Bar Wide
  * -------------- */
 @media (min-width: 1200px) {
+    html {
+        scroll-padding-top: 20px;
+    }
+
     .navbar {
         position: fixed;
         align-items: flex-start;
