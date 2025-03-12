@@ -1,4 +1,4 @@
-let allMenuItems = [];
+let itemNameMap = new Map();
 
 function renderMenu(items) {
     const menuContainer = document.getElementById("menu-container");
@@ -34,7 +34,7 @@ function renderMenu(items) {
             let imagePath = category !== "sauce" ? `/assets/images/menu/${category}/${imageName}.jpg` : '/assets/images/menu/cookoutjohn.png';
 
             const card = `
-                <div class="card" onclick="toggleFood(${JSON.stringify(item)})">
+                <div class="card" onclick="toggleFood(${item.name})">
                     <img src="${imagePath}" class="card-img" alt="${item.name}">
                     <div class="card-body">
                         <h5 class="card-title">${item.name}</h5>
@@ -89,7 +89,7 @@ async function loadMenu() {
             const randomPrice = () => (Math.random() * (9.99 - 1) + 1).toFixed(2);
 
             data.forEach(item => {
-                allMenuItems.push({ 
+                itemNameMap.set(item.name.toLowerCase(), {
                     ...item, 
                     category,
                     price: randomPrice() 
@@ -105,7 +105,7 @@ async function loadMenu() {
 
     for (const category of categories) {
         await fetchCategoryData(category);
-        renderMenu(allMenuItems);
+        renderMenu(Array.from(itemNameMap.values()));
     }
 }
 
@@ -207,7 +207,7 @@ function filterMenu() {
 
     const searchTerm = document.getElementById('search-input').value.toLowerCase();
 
-    filteredItems = allMenuItems.filter(item => {
+    const filteredItems = Array.from(itemNameMap.values()).filter(item => {
         const matchesCuisine = selectedCuisines.includes(item.cuisine);
         const matchesSearch = item.name.toLowerCase().includes(searchTerm);
         return matchesCuisine && matchesSearch;
