@@ -30,11 +30,12 @@ function renderMenu(items) {
             const col = document.createElement("div");
             col.className = "col-md-6";
 
+            const itemID = item.name.toLowerCase().replace(/\s+/g, '-');
             const imageName = item.name.replaceAll(' ', '-').toLowerCase();
-            let imagePath = category !== "sauce" ? `/assets/images/menu/${category}/${imageName}.jpg` : '/assets/images/menu/cookoutjohn.png';
+            let imagePath = `/assets/images/menu/${category}/${imageName}.jpg`;
 
             const card = `
-                <div class="card" onclick="toggleFood(${item.name})">
+                <div id="${itemID}" class="card" onclick="toggleFood('${itemID}')">
                     <img src="${imagePath}" class="card-img" alt="${item.name}">
                     <div class="card-body">
                         <h5 class="card-title">${item.name}</h5>
@@ -89,7 +90,8 @@ async function loadMenu() {
             const randomPrice = () => (Math.random() * (9.99 - 1) + 1).toFixed(2);
 
             data.forEach(item => {
-                itemNameMap.set(item.name.toLowerCase(), {
+                const key = item.name.toLowerCase().replace(/\s+/g, '-');
+                itemNameMap.set(key, {
                     ...item, 
                     category,
                     price: randomPrice() 
@@ -238,8 +240,8 @@ function toggleOverlay() {
     }
 }
 
-function toggleFood(item) {
-    console.log(item);
+function toggleFood(itemID) {
+    const item = itemNameMap.get(itemID.toLowerCase());
     toggleOverlay();
 
     foodPanel.scrollTop = 0;
@@ -256,7 +258,7 @@ function toggleFood(item) {
     const foodOrderPrice = document.getElementById('order-price');
 
     foodName.textContent = item.name || '';
-    foodImage.src = item.image || '';
+    foodImage.src = `/assets/images/menu/${item.category}/${itemID}.jpg`;
     foodPrice.textContent = `$${item.price}`;
     foodIngredients.innerHTML = `<strong>Ingredients:</strong> ${item.ingredients}`;
     foodCuisine.innerHTML = `<strong>Cuisine:</strong> ${item.cuisine}`;
@@ -268,8 +270,8 @@ function toggleFood(item) {
     foodInstructions.innerHTML = numberedInstructions.join('<br>');
 
     foodAddons.innerHTML = '';
-    if (addons) {
-        const addonsArray = addons.split(',').map(addon => addon.trim());
+    if (item.addons) {
+        const addonsArray = item.addons.split(',').map(addon => addon.trim());
 
         addonsArray.forEach(addon => {
             const label = document.createElement('label');
