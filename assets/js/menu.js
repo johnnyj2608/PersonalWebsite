@@ -1,5 +1,28 @@
 let itemNameMap = new Map();
 
+function renderNav(categories) {
+    const navLinks = document.querySelector("#navbarNav .navbar-nav");
+    navLinks.innerHTML = "";
+
+    categories.forEach((category, index) => {
+        const navItem = document.createElement("li");
+        navItem.classList.add("nav-item");
+
+        const navLink = document.createElement("a");
+        navLink.classList.add("nav-link");
+        navLink.id = `nav-${category}`;
+        navLink.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+        navLink.setAttribute("onclick", `jump('${category}')`);
+
+        if (index === 0) {
+            navLink.classList.add("active");
+        }
+
+        navItem.appendChild(navLink);
+        navLinks.appendChild(navItem);
+    });
+}
+
 function renderMenu(items) {
     const menuContainer = document.getElementById("menu-container");
     menuContainer.innerHTML = "";
@@ -105,14 +128,12 @@ async function loadMenu() {
         }
     }
 
+    renderNav(categories);
     for (const category of categories) {
         await fetchCategoryData(category);
         renderMenu(Array.from(itemNameMap.values()));
     }
 }
-
-const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-const navbarCollapse = document.querySelector('.navbar-collapse');
 
 const instructionsContainer = document.getElementById('food-instructions');
 const instructionsButton = document.querySelector('.food-instructions-btn');
@@ -146,6 +167,9 @@ function toggleOverlay() {
 }
 
 function jump(section, item = '') {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
     blackOverlay.classList.add('active');
     toggleOverlay();
 
@@ -153,7 +177,7 @@ function jump(section, item = '') {
     
     const targetSection = document.getElementById(item) || document.getElementById(section);
     if (!targetSection) return;
-    
+
     const offset = window.innerWidth >= 1200 ? 20 : 85;
     const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - offset;
 
@@ -168,6 +192,7 @@ function jump(section, item = '') {
 
     navbarCollapse.scrollTo({
         left: navLink.offsetLeft - navbarCollapse.offsetLeft,
+        behavior: 'smooth'
     });
 
     window.addEventListener('scrollend', () => {
@@ -176,6 +201,9 @@ function jump(section, item = '') {
 }
 
 function updateNavHighlight() {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+
     const scrollPosition = window.scrollY + window.innerHeight / 2;
 
     const sections = document.querySelectorAll('.category');
@@ -192,7 +220,6 @@ function updateNavHighlight() {
 
             navbarCollapse.scrollTo({
                 left: navLink.offsetLeft - navbarCollapse.offsetLeft,
-                behavior: 'smooth'
             });
         }
     });
@@ -254,6 +281,11 @@ function filterMenu() {
     });
 
     renderMenu(filteredItems);
+
+    const filteredCategories = [...new Set(filteredItems.map(item => item.category))];
+    renderNav(filteredCategories);
+
+    updateNavHighlight();
 }
 
 function toggleFood(itemID) {
