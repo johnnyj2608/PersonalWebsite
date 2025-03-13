@@ -8,7 +8,6 @@
   
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 85px;
 }
   
 body {
@@ -740,10 +739,6 @@ label {
  * Nav Bar Wide
  * -------------- */
 @media (min-width: 1200px) {
-    html {
-        scroll-padding-top: 20px;
-    }
-
     .navbar {
         position: fixed;
         align-items: flex-start;

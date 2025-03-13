@@ -150,10 +150,15 @@ function jump(section, item = '') {
     toggleOverlay();
 
     window.removeEventListener('scroll', updateNavHighlight);
-
+    
     const targetSection = document.getElementById(item) || document.getElementById(section);
-    targetSection.scrollIntoView({
-        behavior: 'smooth',
+    if (!targetSection) return;
+    
+    const offset = window.innerWidth >= 1200 ? 20 : 85;
+    const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({
+        top: targetPosition,
     });
 
     navLinks.forEach(link => link.classList.remove('active'));
@@ -163,7 +168,6 @@ function jump(section, item = '') {
 
     navbarCollapse.scrollTo({
         left: navLink.offsetLeft - navbarCollapse.offsetLeft,
-        behavior: 'smooth'
     });
 
     window.addEventListener('scrollend', () => {
@@ -203,7 +207,6 @@ function toggleSearch() {
     } else {
         searchContainer.classList.add('active');
         searchInput.focus();
-
     }
 
     const dropdownMenu = document.querySelector('.dropdown-menu');
