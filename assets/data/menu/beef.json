@@ -1,37 +1,32 @@
 [
     {
         "name": "Pepper Steak with Onions",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Mongolian Beef",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Beef with Broccoli",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Bulgogi",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Korean",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Steak",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
+        "ingredients": "",
         "instructions": ""
     }
 ]

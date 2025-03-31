@@ -1,93 +1,80 @@
 [
     {
         "name": "Buffalo Chicken Dip",
-        "ingredients": "",
-        "addons": "Chips",
         "cuisine": "American",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Garlic Bread",
-        "ingredients": "Garlic, Bread",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Bread, Butter, Parsley, Garlic, Parmesan Cheese, Salt",
+        "instructions": "Melt butter. Mince garlic. Mix butter, salt, garlic, Parmesan cheese, and parsley flakes. Spread the garlic butter mixture onto the bread. Broil or toast until cheese melts"
     },
     {
         "name": "Chive Pancake",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""
+        "ingredients": "Chives, Flour, Eggs, Salt",
+        "instructions": "Rinse and chop the greens of chives into small pieces. Mix chives, flour, egg(s), a lot of salt, and cold water until well combined. Pan fry oth sides with oil until golden brown spots. Optionally cook with {Bacon} bits"
     },
     {
         "name": "Scallion Pancake",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Fuzhounese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Sweet Potato Pancake",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Fuzhounese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Satay Chicken",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Malaysian",
+        "ingredients": "",
         "instructions": ""    
     },
     {
         "name": "Egg Foo Young",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Crab Rangoons",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Pan Fried Dumplings",
-        "ingredients": "",
-        "addons": "Dumpling Sauce",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Pan Fried Scallops",
-        "ingredients": "Scallops",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Scallops, Salt, Pepper, Butter",
+        "instructions": "Remove side muscle, pat dry, and season both sides with salt and pepper. Pan fry in oil until golden brown. Reduce to simmer, flip, and baste in butter for a minute. Serve with residual butter"
     },
     {
         "name": "Meatballs",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Ground Beef, Sausage, Onions, Garlic, Parsley, Breadcrumbs, Eggs, Milk, Salt, Pepper, Parmesan Cheese, Marinara Sauce",
+        "instructions": "Mince onions and garlic. Mix beef, sausage, onions, garlic, parsley, breadcrumbs, eggs, milk, salt, pepper, and Parmesan cheese. Form balls without over-mixing. Shallow fry the balls until brown. Simmer balls in marinara sauce with lid (~10 mins)"
     },
     {
         "name": "Bacon Wrapped Smokies",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Mini Hot Dog, Bacon, Brown Sugar, Toothpicks",
+        "instructions": "Slice bacon into thirds. Wrap each dog with bacon and secure with a toothpick. Sprinkle with brown sugar and bake until carmelized"
     },
     {
         "name": "Kani Salad",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Japanese",
-        "instructions": ""
+        "ingredients": "Imitation Crab, Mayonnaise, Sriracha",
+        "instructions": "Shred imitation crab by rolling sticks between hands. Mix with mayonnaise and Sriracha in a 2:1 ratio"
     }
 ]

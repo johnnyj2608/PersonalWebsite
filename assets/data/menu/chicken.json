@@ -1,86 +1,74 @@
 [
     {
         "name": "General Tso's Chicken",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Orange Chicken",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Sweet and Sour Chicken",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Coconut Chicken",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Pepper Chicken",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Chicken with Broccoli",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Chicken Parmesan",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Chicken Breast, Salt, Pepper, Garlic Powder, Onion Powder, Flour, Eggs, Breadcrumbs, Parmesan Cheese, Marinara Sauce, Parsley",
+        "instructions": "Butterfly, flatten, and season chicken with salt, pepper, garlic powder, and onion powder. Dredge in flour > egg > crumbs. Shallow fry both sides until golden brown (~4 min). Top with marinara and cheese, then broil or toast until melted. Top with parsley"
     },
     {
         "name": "Pan Fried Chicken",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Chicken, Salt, Pepper, Garlic Powder, Onion Powder, Paprika, Mayonnaise, Parsley",
+        "instructions": "Flatten and marinate the chicken with mayonnaise. Then season both sides with salt, pepper, garlic powder, onion powder, and paprika. Pan fry in oil for about 5 minutes per side until golden brown. Top with parsley"
     },
     {
         "name": "Cola Wings",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Fuzhounese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Chicken Teriyaki",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Japanese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Honey Sriracha Chicken",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Japanese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Korean Fried Chicken",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Korean",
+        "ingredients": "",
         "instructions": ""
     }
 ]

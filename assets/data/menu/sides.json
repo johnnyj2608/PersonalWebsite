@@ -1,72 +1,62 @@
 [
     {
         "name": "White Rice",
-        "ingredients": "White Rice",
-        "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "ingredients": "White Rice",
+        "instructions": "Add rice and water in a 1:2 ratio to a rice cooker and cook. Optionally serve with furikake"
     },
     {
         "name": "Fried Rice",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Congee",
-        "ingredients": "White Rice",
-        "addons": "Sweet Potato",
         "cuisine": "Chinese",
-        "instructions": ""
+        "ingredients": "White Rice",
+        "instructions": "Add rice and water in a 1:3 ratio to a rice cooker with the lid open. Optionally cook with sweet potato or serve with dried pork"
     },
     {
         "name": "Egg Roll",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Spring Roll",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Mashed Potatoes",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Potato, Butter, Milk, Salt, Pepper, Parmesan Cheese",
+        "instructions": "Wash, peel, and cut the potato into chunks. Parboil with salted water, then simmer until fork-tender. Drain, mash, and mix with warm butter, milk, salt, and pepper. Stir under heat, then mix in Parmesan off heat"
     },
     {
         "name": "French Fries",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Potato, Salt",
+        "instructions": "Wash, peel, and slice into sticks. Soak in ice water. Parboil with salted water, drain, and freeze until firm. Deep fry until golden brown. Sprinkle salt on top. Optionally serve with onion powder, garlic powder, paprika, or ketchup"
     },
     {
         "name": "Home Fries",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Potatoes, Onions, Salt, Pepper, Onion Powder, Garlic Powder, Paprika, Parsley",
+        "instructions": "Dice the onions. Rinse the potatoes and cut them into cubes. Parboil with salted water and drain. Stir fry potatoes in oil. Add seasoning and onions. Cook until golden brown. Top with parsley. Optionally serve with ketchup"
     },
     {
         "name": "Baked Potato",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Scalloped Potatoes",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
+        "ingredients": "",
         "instructions": ""
     }
 ]

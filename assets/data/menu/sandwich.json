@@ -1,37 +1,32 @@
 [
     {
         "name": "Burger",
-        "ingredients": "Beef",
-        "addons": "Cheese",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Burger Bun, Ground Beef, Cheese",
+        "instructions": "Toast the buns. Form beef into balls and keep them refrigerated. Place beef in pan, smash flat, and dimple the center. Season with salt and pepper. Flip once browned. Add cheese in the last few seconds. Optionally serve with lettuce, {Bacon}, onions, or sauces"
     },
     {
         "name": "Hot Dog",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Hot Dog Bun, Hot Dog",
+        "instructions": "Toast buns. Cut X slits in hot dog. Cook in oil until crispy on all sides. Optionally serve with cheese or ketchup"
     },
     {
         "name": "Cheesesteak",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""    
+        "ingredients": "Sliced Beef, Provolone, Onions, Salt, Pepper, Hoagie Roll",
+        "instructions": "Dice onions. Stir fry onions in oil, then add beef and season with salt and pepper. Cook until browned, then lay cheese on top until melted. Transfer to roll"    
     },
     {
         "name": "Grilled Cheese",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Bread, Cheese",
+        "instructions": "Put 2-3 slices of cheese between 2 slices of bread. Toast both sides until golden brown"
     },
     {
         "name": "Quesadilla",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Mexican",
-        "instructions": ""    
+        "ingredients": "Tortilla, Meat, Shredded Cheese",
+        "instructions": "Cook meat of choice separately. Layer cheese, then meat, then more cheese on one half of the tortilla. Fold and toast both sides until golden brown"    
     }
 ]

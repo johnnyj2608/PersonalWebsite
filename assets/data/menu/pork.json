@@ -1,72 +1,62 @@
 [
     {
         "name": "Eggs with Minced Pork",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""
+        "ingredients": "Eggs, Ground Pork, Salt, Soy Sauce",
+        "instructions": "Mash ground pork onto a lip plate. In a separate bowl, mix eggs, water, soy sauce, and salt. Pour wet ingredients onto the pork and steam/simmer until set (~15 mins)"
     },
     {
         "name": "Sichuan Crispy Pork",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""    
+        "ingredients": "Pork Belly, Egg, Salt, Sugar, Oyster Sauce, Water Chestnut Powder",
+        "instructions": "Rinse the pork. Remove skin and excess fat, leaving a thin layer. Slice into small pieces. Mix 1 egg, salt, sugar (3x), and oyster sauce. Marinate for at least 3 hours. Coat in water chestnut powder and deep fry until golden brown"    
     },
     {
         "name": "Braised Pork Belly",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""    
+        "ingredients": "Pork Belly, Ginger, Soy Sauce, Star Anise, 5 Spice Powder, Sugar, Salt",
+        "instructions": "Slice ginger into coins. Slice pork into small pieces. Parboil in salted water and drain. Caramelize rock sugar or infuse ginger with oil. Add pork and brown. Mix soy sauce, star anise, 5 spice powder, sugar, salt, and enough cold water to cover the pork. Simmer for at least 25 mins"    
     },
     {
         "name": "Char Siu",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Roasted Pork Belly",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Lychee Pork",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Boneless Spare Ribs",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Lemongrass Pork Chop",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Vietnamese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Tonkatsu Pork",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Japanese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Baby Back Ribs",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
+        "ingredients": "",
         "instructions": ""
     }
 ]

@@ -57,13 +57,18 @@ function renderMenu(items) {
             const imageName = item.name.replaceAll(' ', '-').toLowerCase();
             let imagePath = `/assets/images/menu/${category}/${imageName}.jpg`;
 
+            const capitalizedIngredients = item.ingredients
+                .split(' ')
+                .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+                .join(' ');
+
             const card = `
                 <div id="${itemID}" class="card" onclick="toggleFood('${itemID}')">
                     <img src="${imagePath}" class="card-img" alt="${item.name}">
                     <div class="card-body">
                         <h5 class="card-title">${item.name}</h5>
                         <p class="card-text"><strong>Price:</strong> $${item.price}</p>
-                        <p class="card-text"><strong>Ingredients:</strong> ${item.ingredients}</p>
+                        <p class="card-text"><strong>Ingredients:</strong> ${capitalizedIngredients}</p>
                     </div>
                     <div class="card-bottom">
                         <div class="cuisine-triangle" data-tooltip="${item.cuisine}"></div>

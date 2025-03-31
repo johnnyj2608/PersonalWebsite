@@ -1,65 +1,56 @@
 [
     {
         "name": "Stir Fried Water Spinach",
-        "ingredients": "Water Spinach, Garlic, Salt, Sugar, Oyster Sauce",
-        "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""
+        "ingredients": "Water Spinach, Salt, Sugar, Oyster Sauce, Garlic",
+        "instructions": "Mince garlic. Trim the stems and wash the spinach. Infuse oil with garlic. Stir fry spinach with salt, sugar, and oyster sauce"
     },
     {
         "name": "Stir Fried Cauliflower",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Fuzhounese",
-        "instructions": ""
+        "ingredients": "Cauliflower, Scallion, Salt, Sugar, Oyster Sauce",
+        "instructions": "Chop cauliflower into florets and rinse. Infuse oil with scallion. Put cauliflower in and add salt, sugar, oyster sauce, and cold water. Stir until soft. Optionally cook with {Bacon} bits"
     },
     {
         "name": "Cauliflower with eggs",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Fuzhounese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Red Wine Bamboo Shoots",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Fuzhounese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Braised Tofu",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Fuzhounese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Mapo Tofu",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Stir Fried Broccoli",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Broccoli, Garlic, Soy Sauce, Oyster Sauce, Salt, Corn Starch",
+        "instructions": "Mince garlic. Chop broccoli into florets and boil briefly. Infuse oil with minced garlic. Mix soy sauce, oyster sauce, salt, and cornstarch. Add broccoli and stir"
     },
     {
         "name": "Stir Fried Snow Peas",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Stir Fried String Beans",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
+        "ingredients": "",
         "instructions": ""
     }
 ]

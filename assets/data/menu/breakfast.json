@@ -1,86 +1,74 @@
 [
     {
         "name": "Scrambled Eggs",
-        "ingredients": "Eggs, Salt",
-        "addons": "Ketchup, Cheese",
         "cuisine": "American",
-        "instructions": "Whisk egg mixture and pinch of salt. Pan fry and stir around for few mins. {Pan Fried Scallops} (test)"
+        "ingredients": "Eggs, Salt",
+        "instructions": "Beat eggs with salt. Pour eggs into pan and stir until solid. Optionally serve with pepper, cheese, or ketchup"
     },
     {
         "name": "Sunny Side Eggs",
-        "ingredients": "Eggs, Salt",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Eggs",
+        "instructions": "Crack the egg into a pan with oil. Pan fry for 2-3 minutes until whites are set"
     },
     {
         "name": "Soft Boiled Eggs",
-        "ingredients": "Eggs, Salt",
-        "addons": "Soy Sauce",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Eggs, Salt",
+        "instructions": "Boil eggs in salted water for 7 mins. Soak in cold water to stop the cooking process. Crack all sides, then peel under the membrane. Optionally serve with soy sauce"
     },
     {
         "name": "Poached Eggs",
-        "ingredients": "Eggs, Salt",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Eggs, Salt",
+        "instructions": "Crack egg into a cup. Bring salted water to a simmer and create a vortex. Gently pour egg in and maintain the vortex. Simmer for 3-4 minutes until whites are set"
     },
     {
         "name": "Omelette",
-        "ingredients": "Eggs, Salt",
-        "addons": "",
         "cuisine": "American",
+        "ingredients": "Eggs, Salt",
         "instructions": ""
     },
     {
         "name": "Sweet and Sour Fried Eggs",
-        "ingredients": "Eggs, Salt",
-        "addons": "",
         "cuisine": "Fuzhounese",
+        "ingredients": "Eggs, Salt",
         "instructions": ""
     },
     {
         "name": "Omurice",
-        "ingredients": "Eggs, Salt",
-        "addons": "",
         "cuisine": "Japanese",
+        "ingredients": "Eggs, Salt",
         "instructions": ""
     },
     {
         "name": "Bacon",
-        "ingredients": "Bacon",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Bacon",
+        "instructions": "Pan fry each side until light brown (~1 min) "
     },
     {
         "name": "Sausage",
-        "ingredients": "Sausage",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Sausage",
+        "instructions": "Parboil with cold water measured half the height of the sausage (~7 mins). Flip halfway through to boil both sides. Pan fry with oil on both sides until golden brown"
     },
     {
         "name": "Toast",
-        "ingredients": "Bread",
-        "addons": "Strawberry Jam, Butter",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Bread",
+        "instructions": "Toast each side until golden brown (~45 secs). Optionally serve with butter or jam"
     },
     {
         "name": "Breakfast Skillet",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Meat, potatoes, onions, salt, pepper, garlic powder, onion powder, paprika, eggs, shredded cheese, green onions",
+        "instructions": "Cook meat of choice separately. Prepare homefries, then add meat back in, make wells for eggs, and crack eggs into them. Sprinkle with cheese and green onions. Cook until eggs are set."
     },
     {
         "name": "Breakfast Burrito",
-        "ingredients": "Tortilla Wrap, Eggs, Sausage, Cheese, Salt",
-        "addons": "",
         "cuisine": "Mexican",
-        "instructions": ""
+        "ingredients": "Tortilla, Eggs, Salt, Sausage, Shredded Cheese",
+        "instructions": "Cook {Scrambled Eggs}. Cook ground sausage until browned. Put everything plus cheese into the tortilla and roll it up. Toast both sides of the burrito in a pan until golden brown, optionally with more cheese. Optionally serve with {Home Fries} or onions"
     }
 ]

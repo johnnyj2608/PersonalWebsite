@@ -1,51 +1,44 @@
 [
     {
         "name": "Coconut Shrimp",
-        "ingredients": "",
-        "addons": "Coral Sauce",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Pepper Shrimp",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Shrimp with Broccoli",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Stir Fried Clams",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
-        "instructions": ""
+        "ingredients": "Little Neck Clams, Scallions, Salt",
+        "instructions": "Soak clams in water to clean. Infuse oil with a scallion bulb. Put clams in, sprinkle with salt, and stir gently. Add green onions when clams open"
     },
     {
         "name": "Marble Goby Fish",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "Chinese",
+        "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Pan Fried Salmon",
-        "ingredients": "",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Salmon, Salt, Pepper, Butter",
+        "instructions": "Pat dry the salmon and season both sides with salt and pepper. Pan fry in oil, skin side down, and hold for 10 seconds to prevent curling. Reduce to simmer, flip, and baste in butter for a minute. Serve with residual butter"
     },
     {
         "name": "Garlic Butter Shrimp",
-        "ingredients": "Shrimp",
-        "addons": "",
         "cuisine": "American",
+        "ingredients": "",
         "instructions": ""
     }
 ]

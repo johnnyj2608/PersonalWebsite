@@ -1,23 +1,20 @@
 [
     {
         "name": "Oreo Pudding",
-        "ingredients": "Vanilla Pudding, Oreo, Cream Cheese, Cool Whip",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Instant Vanilla Pudding, Milk, Cream Cheese, Cool Whip, Thin Oreos",
+        "instructions": "Follow instant vanilla pudding instructions. Crush oreos. Mix all ingredients. Layer like a casserole"
     },
     {
         "name": "Brownie Sundae",
-        "ingredients": "Vanilla Ice Cream, Brownie",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Brownie Mix, Egg, Ice Cream",
+        "instructions": "Follow brownie instructions. Place a scoop of ice cream on top"
     },
     {
         "name": "Oreo Milkshake",
-        "ingredients": "Cookies & Creme Ice Cream, Milk",
-        "addons": "",
         "cuisine": "American",
-        "instructions": ""
+        "ingredients": "Milk, Oreo Ice Cream",
+        "instructions": "Mix multiple scoops of ice cream and a little bit of milk until creamy and thick"
     }
 ]
