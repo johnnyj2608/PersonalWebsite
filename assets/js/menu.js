@@ -347,6 +347,10 @@ function processInstructions(instructions) {
     const sentences = instructions.split(/(?<=[.!?])\s+/).filter(Boolean);
 
     const numberedInstructions = sentences.map((sentence, index) => {
+        if (!/[.!?]$/.test(sentence)) { // Ensures sentenes end in a period
+            sentence += '.';
+        }
+
         sentence = sentence.replace(/{([^}]+)}/g, (match, foodItem) => {
             const foodItemID = foodItem
                 .split(' ')
@@ -355,9 +359,8 @@ function processInstructions(instructions) {
                 const item = itemNameMap.get(foodItemID);
             return `<a class="food-link" onclick="jump('${item.category}', '${foodItemID}');">${item.name}</a>`;
         });
-        return `${index + 1}) ${sentence}`;
+        return `<strong>${index + 1})</strong> ${sentence}`;
     });
-    
     
     return numberedInstructions.join('<br>');
 }
