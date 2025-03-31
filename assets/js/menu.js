@@ -1,5 +1,13 @@
 let itemNameMap = new Map();
 
+function capitalizeIngredients(ingredients) {
+    return ingredients
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+}
+
+
 function renderNav(categories) {
     const navLinks = document.querySelector("#navbarNav .navbar-nav");
     navLinks.innerHTML = "";
@@ -57,18 +65,13 @@ function renderMenu(items) {
             const imageName = item.name.replaceAll(' ', '-').toLowerCase();
             let imagePath = `/assets/images/menu/${category}/${imageName}.jpg`;
 
-            const capitalizedIngredients = item.ingredients
-                .split(' ')
-                .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-                .join(' ');
-
             const card = `
                 <div id="${itemID}" class="card" onclick="toggleFood('${itemID}')">
                     <img src="${imagePath}" class="card-img" alt="${item.name}">
                     <div class="card-body">
                         <h5 class="card-title">${item.name}</h5>
                         <p class="card-text"><strong>Price:</strong> $${item.price}</p>
-                        <p class="card-text"><strong>Ingredients:</strong> ${capitalizedIngredients}</p>
+                        <p class="card-text"><strong>Ingredients:</strong> ${capitalizeIngredients(item.ingredients)}</p>
                     </div>
                     <div class="card-bottom">
                         <div class="cuisine-triangle" data-tooltip="${item.cuisine}"></div>
@@ -312,7 +315,7 @@ function toggleFood(itemID) {
     foodName.textContent = item.name || '';
     foodImage.src = `/assets/images/menu/${item.category}/${itemID}.jpg`;
     foodPrice.textContent = `$${item.price}`;
-    foodIngredients.innerHTML = `<strong>Ingredients:</strong> ${item.ingredients}`;
+    foodIngredients.innerHTML = `<strong>Ingredients:</strong> ${capitalizeIngredients(item.ingredients)}`;
     foodCuisine.innerHTML = `<strong>Cuisine:</strong> ${item.cuisine}`;
     foodCount.textContent = '1';
     foodOrderPrice.textContent = `$${item.price}`;
