@@ -129,7 +129,7 @@ async function loadMenu() {
         "sandwich",
         "sides",
         "dessert",
-    ];    
+    ];
 
     async function fetchCategoryData(category) {
         const file = `assets/data/menu/${category}.json`;
@@ -369,6 +369,8 @@ function toggleInstructions() {
     if (instructionsContainer.classList.contains('hidden')) {
         instructionsContainer.classList.remove('hidden');
         instructionsButton.textContent = 'Hide Instructions';
+        
+        instructionsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
         instructionsContainer.classList.add('hidden');
         instructionsButton.textContent = 'Show Instructions';
