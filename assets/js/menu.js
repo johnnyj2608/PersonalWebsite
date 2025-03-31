@@ -305,7 +305,6 @@ function toggleFood(itemID) {
     const foodPrice = document.getElementById('food-price');
     const foodIngredients = document.getElementById('food-ingredients');
     const foodCuisine = document.getElementById('food-cuisine');
-    const foodAddons = document.getElementById('food-addons');
     const foodInstructions = document.getElementById('food-instructions');
     const foodCount = document.getElementById('food-count');
     const foodOrderPrice = document.getElementById('order-price');
@@ -319,26 +318,6 @@ function toggleFood(itemID) {
     foodOrderPrice.textContent = `$${item.price}`;
 
     foodInstructions.innerHTML = processInstructions(item.instructions);
-
-    foodAddons.innerHTML = '';
-    if (item.addons) {
-        const addonsArray = item.addons.split(',').map(addon => addon.trim());
-
-        addonsArray.forEach(addon => {
-            const label = document.createElement('label');
-            label.classList.add('food-addons-label');
-
-            const checkbox = document.createElement('input');
-            checkbox.type = 'checkbox';
-            checkbox.value = addon;
-            checkbox.name = addon;
-
-            label.appendChild(checkbox);
-            label.appendChild(document.createTextNode(` ${addon}`));
-
-            foodAddons.appendChild(label);
-        });
-    }
 }
 
 function processInstructions(instructions) {
@@ -408,12 +387,7 @@ function addOrder() {
     const priceString = foodPrice.textContent;
     const price = parseFloat(priceString.replace(/[^\d.-]/g, ''));
 
-    const selectedAddons = Array.from(document.querySelectorAll('#food-addons input[type="checkbox"]:checked'))
-        .map(checkbox => checkbox.value);
-
-    const existingItem = cart.find(item => item.name === foodName && 
-        item.addons && 
-        JSON.stringify(item.addons) === JSON.stringify(selectedAddons))
+    const existingItem = cart.find(item => item.name === foodName)
 
     if (existingItem) {
         existingItem.quantity += quantity;
@@ -423,7 +397,6 @@ function addOrder() {
             image: foodImage,
             quantity: quantity,
             price: price,
-            addons: selectedAddons,
         });
     }
     updateCart();
@@ -444,10 +417,6 @@ function updateCart() {
 
     if (cart.length > 0) {
         cart.forEach((item, index) => {
-            const addonsHTML = item.addons && item.addons.length > 0 
-                ? `<p class="cart-item-addons">Add-ons: ${item.addons.join(', ')}</p>` 
-                : '<p class="cart-item-addons" style="visibility: hidden;">Add-ons: </p>';
-
             const minusButtonHTML = item.quantity === 1 
                 ? `<i onclick="updateCartItem(${index}, -1)" class="fas fa-trash trash-can-icon"></i>`
                 : `<button onclick="updateCartItem(${index}, -1)">-</button>`;
@@ -457,7 +426,6 @@ function updateCart() {
                     <img src="${item.image}" alt="${item.name}" class="cart-item-image">
                     <div class="cart-item-details">
                         <h5>${item.name}</h5>
-                        ${addonsHTML}
                         <div class="cart-item-quantity">
                             ${minusButtonHTML}
                             <span>${item.quantity}</span>
@@ -513,12 +481,8 @@ function submitOrder() {
 
     const orderDetails = cart.map(item => {
         const totalPrice = (item.price * item.quantity).toFixed(2); // 100% Discounts
-        
-        const addons = item.addons && item.addons.length > 0 
-            ? ` (${item.addons.join(', ')})`
-            : '';
 
-        return `${item.quantity} x ${item.name}${addons} - Free`;
+        return `${item.quantity} x ${item.name} - Free`;
     }).join("\n");
   
     document.getElementById('email-name').value = orderName;

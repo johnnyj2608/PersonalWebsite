@@ -449,10 +449,6 @@ label {
     text-align: center;
 }
 
-.cart-item-addons {
-    color: gray
-}
-
 .cart-item-price h5 {
     display: flex;
     justify-content: right;
@@ -672,13 +668,6 @@ label {
 
 .food-instructions-btn:hover {
     background-color: #E0E0E0;
-}
-
-.food-addons-label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 5px;
 }
 
 .food-panel-footer {
