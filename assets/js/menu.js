@@ -95,6 +95,25 @@ function renderMenu(items) {
     }
 }
 
+async function renderNotes() {
+    const popupContainer = document.querySelectorAll(".info-popup")[0];
+
+    try {
+        const response = await fetch('assets/data/menu/notes.json');
+        const notes = await response.json();
+
+        popupContainer.innerHTML = "<h3>Cooking Notes</h3>";
+
+        for (const [key, value] of Object.entries(notes)) {
+            const noteItem = document.createElement('p');
+            noteItem.innerHTML = `<strong>${key}: </strong>${value}`;
+            popupContainer.appendChild(noteItem);
+        }
+    } catch (error) {
+        console.error('Error loading cooking notes:', error);
+    }
+}
+
 async function loadMenu() {
 
     const categories = [
@@ -141,6 +160,7 @@ async function loadMenu() {
         await fetchCategoryData(category);
         renderMenu(Array.from(itemNameMap.values()));
     }
+    await renderNotes();
 }
 
 const instructionsContainer = document.getElementById('food-instructions');
