@@ -726,6 +726,44 @@ label {
  * -------------- */
 .footer {
     padding: 20px;
+    position: relative;
+}
+
+.info-icon {
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.info-popup {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+  
+.info-icon:hover + .info-popup {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.info-popup h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+  
+.info-popup p {
+    font-size: 14px;
 }
 
 /* -------------- *
