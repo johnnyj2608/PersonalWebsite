@@ -62,8 +62,8 @@
     {
         "name": "Chicken Teriyaki",
         "cuisine": "Japanese",
-        "ingredients": "",
-        "instructions": ""
+        "ingredients": "Chicken Thigh, Soy Sauce, Garlic, Ginger, Sesame Oil, Brown Sugar, Cornstarch",
+        "instructions": "Mince the garlic and ginger. Marinate the chicken in soy sauce, sesame oil, garlic, and ginger. Pan fry the chicken for 5 minutes on each side. Mix brown sugar with the remaining marinade and cornstarch slurry. Simmer the sauce until thickened, then pour over the chicken."
     },
     {
         "name": "Honey Sriracha Chicken",

@@ -26,7 +26,7 @@
     {
         "name": "Steak",
         "cuisine": "American",
-        "ingredients": "",
-        "instructions": ""
+        "ingredients": "Steak, Hoisin Sauce, Oyster Sauce, Pepper, Wine, Ginger, Scallion",
+        "instructions": "Poke holes all over the steak and marinate with hoisin sauce, oyster sauce, pepper, wine, ginger, and scallions. Pan fry the steak for 3 minutes per side for medium-rare."
     }
 ]
