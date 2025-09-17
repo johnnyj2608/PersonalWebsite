@@ -38,13 +38,12 @@ function popupVideo() {
   const iframe = document.querySelector('.popup-video iframe');
   const closeButton = document.querySelector('.popup-video span');
 
-  playButtons.forEach(button => {
-    button.onclick = () => {
-      const videoId = button.getAttribute('data-video-id');
-      const youtubeUrl = `https://www.youtube.com/embed/${videoId}`;
-      iframe.src = youtubeUrl;
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('play-video')) {
+      const videoId = e.target.getAttribute('data-video-id');
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
       popup.style.display = 'block';
-    };
+    }
   });
 
   closeButton.onclick = () => {

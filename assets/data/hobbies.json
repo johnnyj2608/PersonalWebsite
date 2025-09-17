@@ -1,23 +1,28 @@
 [
     {
         "title": "Vlogging",
-        "description": "If a picture is worth a thousand words, then a video is worth millions. I love capturing memorable moments or progression in one's journey. Even though it can be awkward for some of my friends in the moment, they always appreciate being able to revisit these time-capsuled moments.",
+        "description": "Pictures are great, but I love capturing the context behind each frame. Even though some of my friends are camera shy in the moment, they always appreciate being able to revisit these time-capsuled memories!",
         "image": "assets/images/hobbies/vlogging.jpg"
     },
     {
         "title": "Calisthenics",
-        "description": "Growing up I could not do a single pull-up. Since I started my calisthenics journey, I achieved my first after 2.5 months! I've always admired the mastery of bodyweight movements more than lifting heavy. I will participate in the Murph Challenge on Memorial Day '25, stay tuned!",
+        "description": "From being too weak to do a single pull-up to completing 100 for the Murph, I discovered my love for training through bodyweight fitness rather than lifting weights. Now I’m working towards more advanced skills!",
         "image": "assets/images/hobbies/calisthenics.jpg"
     },
     {
-        "title": "Cooking",
-        "description": "I love to eat—who doesn't? I enjoy learning new recipes, cooking for others, and experimenting with wacky ideas. It's so satisfying when my guests want a second plate. I am currently working on a cookbook of all my favorite foods!",
-        "image": "assets/images/hobbies/cooking.jpg",
-        "subpage": "/menu"
+        "title": "Running",
+        "description": "I never thought I’d voluntarily run, but ever since I said \"If you sign up, I will too,\" participating in races has been addicting. Even just training for one has become meditative!",
+        "image": "assets/images/hobbies/running.jpg"
     },
     {
-        "title": "Karaoke",
-        "description": "\"If you can talk, you can sing\"—that's what convinced me to give karaoke a try. Through karaoke, I've made friends from all different cultures and backgrounds. It encourages me to explore new songs across all genres, widening my perspective.",
-        "image": "assets/images/hobbies/karaoke.jpg"
+        "title": "Bouldering",
+        "description": "There’s something about climbing that makes you feel like a kid again. I love the social aspect of climbing with friends, and the community is so friendly!",
+        "image": "assets/images/hobbies/bouldering.jpg"
+    },
+    {
+        "title": "Cooking",
+        "description": "I enjoy learning new recipes and especially cooking for others. It's so satisfying when my guests want a second plate. I am currently working on a cookbook of all my favorite foods!",
+        "image": "assets/images/hobbies/cooking.jpg",
+        "subpage": "/menu"
     }
 ]

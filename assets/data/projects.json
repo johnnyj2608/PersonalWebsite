@@ -1,5 +1,15 @@
 [
     {
+        "title": "Senior Connect",
+        "subtitle": "Electronic Health Record System",
+        "description": "Developed a full-stack Django/React/PostgreSQL web app to digitize and centralize patient records, ensuring consistent, accurate data across departments. Implements role-based access control, PHI encryption, and 2FA for secure information handling. Features include member management, billing integration, monthly automated snapshots, and bulk operations to streamline staff workflows and reduce errors. ",
+        "image": "assets/images/projects/seniorconnect.jpg",
+        "github": "https://github.com/johnnyj2608/SeniorConnect",
+        "demo": "",
+        "subpage": "",
+        "visible": true
+    },
+    {
         "title": "Lunar Birthdays",
         "subtitle": "Birthday Reminder & Converter",
         "description": "Created a SwiftUI iOS app to save birthday profiles in core data and count down until the next. It will notify users of upcoming birthdays. The main idea is to help ABC's (American-born Chinese) to help remember their family's birthdays since Lunar birthdays are never on the same day on Gregorian calendars.",
@@ -34,7 +44,7 @@
         "image": "assets/images/projects/timesheet.jpg",
         "github": "https://github.com/johnnyj2608/Timesheet",
         "demo": "qL-lIXtQlJQ",
-        "visible": true
+        "visible": false
     },
     {
         "title": "Order Up (Old)",

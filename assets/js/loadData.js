@@ -28,6 +28,7 @@ function loadExperiences() {
         const educationContainer = document.getElementById('education-list');
         
         experiences.forEach(experience => {
+            const newLineDesc = experience.description.replace(/\n/g, '<br>');
             const experienceHTML = `
                 <li>
                     <time class="exp-date">
@@ -39,7 +40,7 @@ function loadExperiences() {
                             <strong>${experience.location}</strong> |
                             <em>${experience.title}</em>
                         </h4>
-                        <p>${experience.description}</p>
+                        <p>${newLineDesc}</p>
                         <br />
                         <img class="img-fluid w-100" src="${experience.image}" alt=""/>
                     </div>
@@ -68,7 +69,9 @@ function loadProjects() {
             const projectHTML = `
                 <div class="row project text-left align-items-center">
                     <div class="col-xs-12 col-lg-6">
-                        <img class="img-fluid proj-img" src="${project.image}" alt="${project.title}"/>
+                        <div class="proj-img">
+                            <img class="img-fluid" src="${project.image}" alt="${project.title}" />
+                        </div>
                     </div>
                     <div class="col-xs-12 col-lg-6">
                         <div class="proj-title">${project.title}</div>
@@ -106,8 +109,10 @@ function loadHobbies() {
                         <p>${hobby.description}</p>
                         ${hobby.subpage ? `<div class="proj-desc"><a href="${hobby.subpage}">Interactive Menu</a></div>` : ''}
                     </div>
-                    <div class="col-xs-12 col-lg-6 proj-img">
-                        <img class="img-fluid" src="${hobby.image}" alt="${hobby.title}" />
+                    <div class="col-xs-12 col-lg-6">
+                        <div class="proj-img">
+                            <img class="img-fluid" src="${hobby.image}" alt="${hobby.title}" />
+                        </div>
                     </div>
                 </div>
             `;
