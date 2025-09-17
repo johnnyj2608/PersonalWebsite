@@ -100,25 +100,33 @@ function loadHobbies() {
     .then(response => response.json())
     .then(hobbies => {
         const hobbiesContainer = document.getElementById('hobbies-list');
-    
-        hobbies.forEach(hobby => {
-            const hobbyHTML = `
-                <div class="row project text-left align-items-center">
-                    <div class="col-xs-12 col-lg-6">
-                        <div class="proj-title">${hobby.title}</div>
-                        <p>${hobby.description}</p>
-                        ${hobby.subpage ? `<div class="proj-desc"><a href="${hobby.subpage}">Interactive Menu</a></div>` : ''}
+
+        function renderHobbyColumn(hobby) {
+            if (!hobby) return '';
+            return `
+                <div class="col-xs-12 col-lg-6">
+                    <div class="proj-img">
+                        <img class="img-fluid" src="${hobby.image}" alt="${hobby.title}" />
                     </div>
-                    <div class="col-xs-12 col-lg-6">
-                        <div class="proj-img">
-                            <img class="img-fluid" src="${hobby.image}" alt="${hobby.title}" />
-                        </div>
-                    </div>
+                    <div class="proj-title">${hobby.title}</div>
+                    <p>${hobby.description}</p>
+                    ${hobby.subpage ? `<div class="proj-desc"><a href="${hobby.subpage}">Interactive Menu</a></div>` : ''}
                 </div>
             `;
-        
+        }
+    
+        for (let i = 0; i < hobbies.length; i += 2) {
+            const hobby1 = hobbies[i];
+            const hobby2 = hobbies[i + 1];
+
+            const hobbyHTML = `
+                <div class="row project text-left align-items-center">
+                    ${renderHobbyColumn(hobby1)}
+                    ${renderHobbyColumn(hobby2)}
+                </div>
+            `;
             hobbiesContainer.innerHTML += hobbyHTML;
-        });
+        }
     })
     .catch(error => {
         console.error('Error loading the hobbies:', error);
