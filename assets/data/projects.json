@@ -5,7 +5,7 @@
         "description": "Developed a full-stack Django/React/PostgreSQL web app to digitize and centralize patient records, ensuring consistent, accurate data across departments. Implements role-based access control, PHI encryption, and 2FA for secure information handling. Features include member management, billing integration, monthly automated snapshots, and bulk operations to streamline staff workflows and reduce errors. ",
         "image": "assets/images/projects/seniorconnect.jpg",
         "github": "https://github.com/johnnyj2608/SeniorConnect",
-        "demo": "",
+        "demo": "jjr79qNWJ4A",
         "subpage": "",
         "visible": true
     },

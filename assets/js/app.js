@@ -50,6 +50,13 @@ function popupVideo() {
     popup.style.display = 'none';
     iframe.src = ''; 
   };
+
+  popup.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+      iframe.src = '';
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', popupVideo);
