@@ -11,7 +11,7 @@
     },
     {
         "title": "Running",
-        "description": "I never thought I’d voluntarily run, but ever since I said \"If you sign up, I will too,\" participating in races has been addicting. Even just training for one has become meditative!",
+        "description": "I never thought I’d voluntarily run, but ever since I was told \"If you sign up, I will too,\" participating in races has been addicting. It's a blessing to be able to use your legs to move around!",
         "image": "assets/images/hobbies/running.jpg"
     },
     {
@@ -24,5 +24,10 @@
         "description": "I enjoy learning new recipes and especially cooking for others. It's so satisfying when my guests want a second plate. I am currently working on a cookbook of all my favorite foods!",
         "image": "assets/images/hobbies/cooking.jpg",
         "subpage": "/menu"
+    },
+    {
+        "title": "Languages",
+        "description": "I’m trilingual in English, Mandarin, and Fuzhounese. I enjoy learning languages as a way to connect with people. I’m learning Cantonese in my spare time!",
+        "image": "assets/images/hobbies/languages.jpg"
     }
 ]

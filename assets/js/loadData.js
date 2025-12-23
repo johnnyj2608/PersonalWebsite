@@ -120,7 +120,7 @@ function loadHobbies() {
             const hobby2 = hobbies[i + 1];
 
             const hobbyHTML = `
-                <div class="row project text-left align-items-center">
+                <div class="row project text-left">
                     ${renderHobbyColumn(hobby1)}
                     ${renderHobbyColumn(hobby2)}
                 </div>
