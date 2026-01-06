@@ -2,54 +2,63 @@
     {
         "name": "Stir Fried Water Spinach",
         "cuisine": "Fuzhounese",
+        "time": "15",
         "ingredients": "Water Spinach, Salt, Sugar, Oyster Sauce, Garlic",
         "instructions": "Mince garlic. Trim the stems and wash the spinach. Infuse oil with garlic. Stir fry spinach with salt, sugar, and oyster sauce"
     },
     {
         "name": "Stir Fried Cauliflower",
         "cuisine": "Fuzhounese",
+        "time": "15",
         "ingredients": "Cauliflower, Scallion, Salt, Sugar, Oyster Sauce",
         "instructions": "Chop cauliflower into florets and rinse. Infuse oil with scallion. Put cauliflower in and add salt, sugar, oyster sauce, and cold water. Stir until soft. Optionally cook with {Bacon} bits"
     },
     {
         "name": "Cauliflower with Eggs",
         "cuisine": "Fuzhounese",
+        "time": "15",
         "ingredients": "Cauliflower, Eggs, Salt, Sugar, Oyster Sauce",
         "instructions": "Prepare beaten eggs with salt. Chop cauliflower into florets and rinse. Put cauliflower in oil and add salt, sugar, oyster sauce, and cold water. Stir until soft. Spread the cauliflower out and drizzle with eggs. Flip when eggs are set"
     },
     {
         "name": "Red Wine Bamboo Shoots",
         "cuisine": "Fuzhounese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Braised Tofu",
         "cuisine": "Fuzhounese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Mapo Tofu",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Stir Fried Broccoli",
         "cuisine": "American",
+        "time": "10",
         "ingredients": "Broccoli, Garlic, Soy Sauce, Oyster Sauce, Salt, Corn Starch",
         "instructions": "Mince garlic. Chop broccoli into florets and boil briefly. Infuse oil with minced garlic. Mix soy sauce, oyster sauce, salt, and cornstarch. Add broccoli and stir"
     },
     {
         "name": "Stir Fried Snow Peas",
         "cuisine": "American",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Stir Fried String Beans",
         "cuisine": "American",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     }

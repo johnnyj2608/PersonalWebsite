@@ -2,72 +2,84 @@
     {
         "name": "Garlic Bread",
         "cuisine": "American",
+        "time": "15",
         "ingredients": "Bread, Butter, Parsley, Garlic, Parmesan Cheese, Salt",
         "instructions": "Melt butter. Mince garlic. Mix butter, salt, garlic, Parmesan cheese, and parsley flakes. Spread the garlic butter mixture onto the bread. Broil or toast until cheese melts"
     },
     {
         "name": "Chive Pancake",
         "cuisine": "Fuzhounese",
+        "time": "15",
         "ingredients": "Chives, Flour, Eggs, Salt",
-        "instructions": "Rinse and chop the greens of chives into small pieces. Mix chives, flour, egg(s), a lot of salt, and cold water until well combined. Pan fry oth sides with oil until golden brown spots. Optionally cook with {Bacon} bits"
+        "instructions": "Rinse and chop the greens of chives into small pieces. Mix chives, flour, egg(s), a lot of salt, and cold water until well combined. Pan fry both sides with oil until golden brown spots. Optionally cook with {Bacon} bits"
     },
     {
         "name": "Scallion Pancake",
         "cuisine": "Fuzhounese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Sweet Potato Pancake",
         "cuisine": "Fuzhounese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Satay Chicken",
         "cuisine": "Malaysian",
+        "time": "",
         "ingredients": "",
         "instructions": ""    
     },
     {
         "name": "Egg Foo Young",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Crab Rangoons",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Pan Fried Dumplings",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Pan Fried Scallops",
         "cuisine": "American",
+        "time": "10",
         "ingredients": "Scallops, Salt, Pepper, Butter",
         "instructions": "Remove side muscle, pat dry, and season both sides with salt and pepper. Pan fry in oil until golden brown. Reduce to simmer, flip, and baste in butter for a minute. Serve with residual butter"
     },
     {
         "name": "Meatballs",
         "cuisine": "American",
+        "time": "45",
         "ingredients": "Ground Beef, Sausage, Onions, Garlic, Parsley, Breadcrumbs, Eggs, Milk, Salt, Pepper, Parmesan Cheese, Marinara Sauce",
         "instructions": "Mince onions and garlic. Mix beef, sausage, onions, garlic, parsley, breadcrumbs, eggs, milk, salt, pepper, and Parmesan cheese. Form balls without over-mixing. Shallow fry the balls until brown. Simmer balls in marinara sauce with lid (~10 mins)"
     },
     {
         "name": "Bacon Wrapped Smokies",
         "cuisine": "American",
+        "time": "30",
         "ingredients": "Mini Hot Dog, Bacon, Brown Sugar, Toothpicks",
         "instructions": "Slice bacon into thirds. Wrap each dog with bacon and secure with a toothpick. Sprinkle with brown sugar and bake until carmelized"
     },
     {
         "name": "Kani Salad",
         "cuisine": "Japanese",
+        "time": "5",
         "ingredients": "Imitation Crab, Kewpie Mayonnaise, Sriracha",
         "instructions": "Shred imitation crab by rolling sticks between hands. Mix with mayonnaise and Sriracha in a 2:1 ratio"
     }

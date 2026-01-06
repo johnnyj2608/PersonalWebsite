@@ -2,30 +2,35 @@
     {
         "name": "Pork Wontons",
         "cuisine": "Fuzhounese",
+        "time": "",
         "ingredients": "",
         "instructions": ""    
     },
     {
         "name": "Shrimp Balls",
         "cuisine": "Fuzhounese",
+        "time": "",
         "ingredients": "",
         "instructions": ""    
     },
     {
         "name": "Wonton Soup",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Egg Drop Soup",
         "cuisine": "Chinese",
+        "time": "15",
         "ingredients": "Chicken Broth, Salt, White Pepper, Eggs, Corn Starch, Green Onions, Sesame Oil",
         "instructions": "Simmer chicken broth with salt, white pepper, and sesame oil. Slowly pour in a corn starch slurry while swirling. Slowly pour beaten eggs while swirling. Top with green onions. Optionally serve with crackers"
     },
     {
         "name": "Loaded Potato Soup",
         "cuisine": "American",
+        "time": "35",
         "ingredients": "Potatoes, Bacon, Cheese, Onions, Garlic, Green Onions, Flour, Milk, Chicken Broth, Salt, Pepper",
         "instructions": "Slice bacon, mince garlic, and dice onions and potatoes. Cook bacon separately. Stir fry onions in oil (or bacon grease) for a few minutes, then add garlic for another minute. Then add flour. Then pour chicken broth and milk in a 3:2 ratio. Season with salt and pepper. When boiling, add potatoes and simmer. Stir in bacon, cheese, and green onions before serving"
     }

@@ -73,9 +73,6 @@ function renderMenu(items) {
                         <p class="card-text"><strong>Price:</strong> $${item.price}</p>
                         <p class="card-text"><strong>Ingredients:</strong> ${capitalizeIngredients(item.ingredients)}</p>
                     </div>
-                    <div class="card-bottom">
-                        <div class="cuisine-triangle" data-tooltip="${item.cuisine}"></div>
-                    </div>
                 </div>
             `;
             col.innerHTML = card;

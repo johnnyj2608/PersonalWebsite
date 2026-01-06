@@ -1,61 +1,71 @@
 [
     {
-        "name": "Eggs with Minced Pork",
+        "name": "Eggs with Ground Pork",
         "cuisine": "Fuzhounese",
+        "time": "20",
         "ingredients": "Eggs, Ground Pork, Salt, Soy Sauce",
         "instructions": "Mash ground pork onto a lip plate. In a separate bowl, mix eggs, water, soy sauce, and salt. Pour wet ingredients onto the pork and steam/simmer until set (~15 mins)"
     },
     {
         "name": "Sichuan Crispy Pork",
         "cuisine": "Fuzhounese",
+        "time": "20",
         "ingredients": "Pork Belly, Egg, Salt, Sugar, Oyster Sauce, Water Chestnut Powder",
         "instructions": "Rinse the pork. Remove skin and excess fat, leaving a thin layer. Slice into small pieces. Mix 1 egg, salt, sugar (3x), and oyster sauce. Marinate for at least 3 hours. Coat in water chestnut powder and deep fry until golden brown"    
     },
     {
         "name": "Braised Pork Belly",
         "cuisine": "Fuzhounese",
+        "time": "45",
         "ingredients": "Pork Belly, Ginger, Soy Sauce, Star Anise, 5 Spice Powder, Sugar, Salt",
         "instructions": "Slice ginger into coins. Slice pork into small pieces. Parboil in salted water and drain. Caramelize rock sugar or infuse ginger with oil. Add pork and brown. Mix soy sauce, star anise, 5 spice powder, sugar, salt, and enough cold water to cover the pork. Simmer for at least 25 mins"    
     },
     {
         "name": "Char Siu",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Roasted Pork Belly",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Lychee Pork",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Boneless Spare Ribs",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Lemongrass Pork Chop",
         "cuisine": "Vietnamese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Tonkatsu Pork",
         "cuisine": "Japanese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "BBQ Ribs",
         "cuisine": "American",
+        "time": "3 Hours",
         "ingredients": "Ribs, Brown Sugar, Salt, Pepper, Paprika, Garlic Powder, Onion Powder, BBQ Sauce",
         "instructions": "Preheat the oven at 300°F. Lay the ribs on foil and remove the membrane. Coat with oil and season with brown sugar, salt, pepper, paprika, garlic powder, and onion powder. Wrap tightly in the foil and bake for 3 hours. Open the foil, brush with BBQ sauce, and broil for 10 minutes until caramelized."
     }

@@ -2,30 +2,35 @@
     {
         "name": "Pepper Steak with Onions",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Mongolian Beef",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Beef with Broccoli",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Gyudon",
         "cuisine": "Japanese",
-        "ingredients": "",
-        "instructions": ""
+        "time": "20",
+        "ingredients": "Sliced ribeye, onions, ginger, soy sauce, mirin, brown sugar, green onions",
+        "instructions":"Slice onions and mince ginger. Mix water with a little bit of soy sauce, mirin, and brown sugar. Simmer with onions and ginger for about 5 minutes. Add beef and simmer for 15 minutes. Top with green onions"
     },
     {
         "name": "Steak",
         "cuisine": "American",
+        "time": "10",
         "ingredients": "Steak, Hoisin Sauce, Oyster Sauce, Pepper, Wine, Ginger, Scallion",
         "instructions": "Poke holes all over the steak and marinate with hoisin sauce, oyster sauce, pepper, wine, ginger, and scallions. Pan fry the steak for 3 minutes per side for medium-rare."
     }

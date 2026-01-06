@@ -2,18 +2,21 @@
     {
         "name": "Oreo Pudding",
         "cuisine": "American",
+        "time": "10",
         "ingredients": "Instant Vanilla Pudding, Milk, Cream Cheese, Cool Whip, Thin Oreos",
         "instructions": "Follow instant vanilla pudding instructions. Crush oreos. Mix all ingredients. Layer like a casserole"
     },
     {
         "name": "Brownie Sundae",
         "cuisine": "American",
+        "time": "25",
         "ingredients": "Brownie Mix, Egg, Ice Cream",
         "instructions": "Follow brownie instructions. Place a scoop of ice cream on top"
     },
     {
         "name": "Oreo Milkshake",
         "cuisine": "American",
+        "time": "5",
         "ingredients": "Milk, Oreo Ice Cream",
         "instructions": "Mix multiple scoops of ice cream and a little bit of milk until creamy and thick"
     }

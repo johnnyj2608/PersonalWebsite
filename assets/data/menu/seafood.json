@@ -2,42 +2,49 @@
     {
         "name": "Coconut Shrimp",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Pepper Shrimp",
         "cuisine": "Chinese",
+        "time": "25",
         "ingredients": "Shrimp, Green Pepper, Onions, Salt, Pepper, Sugar, Oyster Sauce, Soy Sauce",
         "instructions": "Chop onions and green peppers into small pieces. Peel, devein, and rinse the shrimp. Mix shrimp with egg and water chestnut powder. Deep fry until bright orange. Infuse oil with veggies. Stir fry shrimp with salt, pepper, soy sauce, oyster sauce, and a generous amount of sugar "
     },
     {
         "name": "Shrimp with Broccoli",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Stir Fried Clams",
         "cuisine": "Chinese",
+        "time": "20",
         "ingredients": "Little Neck Clams, Scallions, Salt",
         "instructions": "Soak clams in water to clean. Infuse oil with a scallion bulb. Put clams in, sprinkle with salt, and stir gently. Add green onions when clams open"
     },
     {
         "name": "Marble Goby Fish",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Pan Fried Salmon",
         "cuisine": "American",
+        "time": "15",
         "ingredients": "Salmon, Salt, Pepper, Butter",
         "instructions": "Pat dry the salmon and season both sides with salt and pepper. Pan fry in oil, skin side down, and hold for 10 seconds to prevent curling. Reduce to simmer, flip, and baste in butter for a minute. Serve with residual butter"
     },
     {
         "name": "Garlic Butter Shrimp",
         "cuisine": "American",
+        "time": "15",
         "ingredients": "Shrimp, Salt, Pepper, Butter, Garlic, Parsley",
         "instructions": "Mince the garlic. Peel and devein the shrimp. Melt butter in a pan and cook the garlic. Add the shrimp and season with salt and pepper. Pan fry for about 2 minutes per side. Top with parsley before serving."
     }

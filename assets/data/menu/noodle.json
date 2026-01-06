@@ -2,48 +2,56 @@
     {
         "name": "Lo Mein Noodles",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Mei Fun Rice Noodles",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Spaghetti",
         "cuisine": "American",
+        "time": "20",
         "ingredients": "Spaghetti, Ground Beef, Marinara Sauce",
         "instructions": "Boil spaghetti in salted water until Al Dente and drain. Cook ground beef separately. Simmer beef in marinara sauce (~10 mins). Toss the cooked spaghetti in the sauce before serving. Optionally serve with Parmesan cheese"
     },
     {
         "name": "Pho Noodles",
         "cuisine": "Vietnamese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Ramen Noodles",
         "cuisine": "Japanese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Instant Noodles",
         "cuisine": "Japanese",
+        "time": "10",
         "ingredients": "Mi Goreng, Salt",
         "instructions": "Boil noodles in salted water until soft and drain. Open sauce packets onto a plate. Mix noodles with sauce packets and a splash of pasta water. Optionally serve with {Sunny Side Eggs}"
     },
     {
         "name": "Peanut Noodles",
         "cuisine": "Fuzhounese",
+        "time": "10",
         "ingredients": "Noodles, Peanut Butter, Soy Sauce, Oyster Sauce, Sesame Oil, Green Onions",
         "instructions": "Boil noodles until soft. Mix peanut butter, soy sauce, oyster sauce, and oil. Mix sauce with noodles. Top with green onions"
     },
     {
         "name": "Noodle Soup",
         "cuisine": "Fuzhounese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     }

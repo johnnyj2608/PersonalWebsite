@@ -2,72 +2,84 @@
     {
         "name": "General Tso's Chicken",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Orange Chicken",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Sweet and Sour Chicken",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Coconut Chicken",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Pepper Chicken",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Chicken with Broccoli",
         "cuisine": "Chinese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Chicken Parmesan",
         "cuisine": "American",
+        "time": "20",
         "ingredients": "Chicken Breast, Salt, Pepper, Garlic Powder, Onion Powder, Flour, Eggs, Breadcrumbs, Parmesan Cheese, Marinara Sauce, Parsley",
         "instructions": "Butterfly, flatten, and season chicken with salt, pepper, garlic powder, and onion powder. Dredge in flour > egg > crumbs. Shallow fry both sides until golden brown (~4 min). Top with marinara and cheese, then broil or toast until melted. Top with parsley"
     },
     {
         "name": "Pan Fried Chicken",
         "cuisine": "American",
+        "time": "15",
         "ingredients": "Chicken, Salt, Pepper, Garlic Powder, Onion Powder, Paprika, Mayonnaise, Parsley",
         "instructions": "Flatten and marinate the chicken with mayonnaise. Then season both sides with salt, pepper, garlic powder, onion powder, and paprika. Pan fry in oil for about 5 minutes per side until golden brown. Top with parsley"
     },
     {
         "name": "Cola Wings",
         "cuisine": "Fuzhounese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Garlic Parmesan Wings",
         "cuisine": "Fuzhounese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     },
     {
         "name": "Chicken Teriyaki",
         "cuisine": "Japanese",
+        "time": "20",
         "ingredients": "Chicken Thigh, Soy Sauce, Garlic, Ginger, Sesame Oil, Brown Sugar, Mirin, Cornstarch",
         "instructions": "Mince the garlic and ginger. Marinate the chicken in soy sauce, sesame oil, mirin, garlic, and ginger. Pan fry the chicken for 5 minutes on each side. Mix brown sugar with the remaining marinade and cornstarch slurry. Simmer the sauce until thickened, then pour over the chicken."
     },
     {
         "name": "Honey Sriracha Chicken",
         "cuisine": "Japanese",
+        "time": "",
         "ingredients": "",
         "instructions": ""
     }
