@@ -337,10 +337,13 @@ function toggleFood(itemID) {
     foodCount.textContent = '1';
     foodOrderPrice.textContent = `$${item.price}`;
 
-    foodInstructions.innerHTML = processInstructions(item.instructions);
+    foodInstructions.innerHTML = processInstructions(item.time, item.instructions);
 }
 
-function processInstructions(instructions) {
+function processInstructions(time, instructions) {
+    let displayTime = /^\d+$/.test(time) ? `${time} minutes` : time;
+    const cookTime = `<div class="cook-time"><strong>⏱ Time:</strong> ${displayTime}</div><br>`
+
     const sentences = instructions.split(/(?<=[.!?])\s+/).filter(Boolean);
 
     const numberedInstructions = sentences.map((sentence, index) => {
@@ -359,7 +362,7 @@ function processInstructions(instructions) {
         return `<strong>${index + 1})</strong> ${sentence}`;
     });
     
-    return numberedInstructions.join('<br>');
+    return cookTime + numberedInstructions.join('<br>');
 }
 
 function toggleInstructions() {
