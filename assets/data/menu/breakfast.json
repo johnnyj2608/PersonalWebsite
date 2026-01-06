@@ -4,7 +4,7 @@
         "cuisine": "American",
         "time": "5",
         "ingredients": "Eggs, Salt",
-        "instructions": "Beat eggs with salt. Pour eggs into pan and stir until solid. Optionally serve with pepper, cheese, or ketchup"
+        "instructions": "Beat eggs with salt. Pour eggs into pan with oil and stir until solid. Optionally serve with pepper, cheese, or ketchup"
     },
     {
         "name": "Sunny Side Eggs",
@@ -30,9 +30,9 @@
     {
         "name": "Omelette",
         "cuisine": "American",
-        "time": "",
-        "ingredients": "Eggs, Salt",
-        "instructions": ""
+        "time": "10",
+        "ingredients": "Eggs, Salt, Sausage, Shredded Cheese",
+        "instructions": "Beat eggs with salt. Prepare sausages. Pour eggs and sausages into pan with oil until edges set. Pull edges back to let runny egg flow underneath. Add cheese and fold"
     },
     {
         "name": "Sweet and Sour Fried Eggs",

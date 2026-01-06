@@ -1,13 +1,13 @@
 [
     {
-        "name": "Eggs with Ground Pork",
+        "name": "Steamed Ground Pork Eggs",
         "cuisine": "Fuzhounese",
         "time": "20",
         "ingredients": "Eggs, Ground Pork, Salt, Soy Sauce",
         "instructions": "Mash ground pork onto a lip plate. In a separate bowl, mix eggs, water, soy sauce, and salt. Pour wet ingredients onto the pork and steam/simmer until set (~15 mins)"
     },
     {
-        "name": "Sichuan Crispy Pork",
+        "name": "Crispy Pork Belly",
         "cuisine": "Fuzhounese",
         "time": "20",
         "ingredients": "Pork Belly, Egg, Salt, Sugar, Oyster Sauce, Water Chestnut Powder",

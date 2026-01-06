@@ -23,9 +23,9 @@
     {
         "name": "Egg Drop Soup",
         "cuisine": "Chinese",
-        "time": "15",
-        "ingredients": "Chicken Broth, Salt, White Pepper, Eggs, Corn Starch, Green Onions, Sesame Oil",
-        "instructions": "Simmer chicken broth with salt, white pepper, and sesame oil. Slowly pour in a corn starch slurry while swirling. Slowly pour beaten eggs while swirling. Top with green onions. Optionally serve with crackers"
+        "time": "",
+        "ingredients": "",
+        "instructions": ""
     },
     {
         "name": "Loaded Potato Soup",
