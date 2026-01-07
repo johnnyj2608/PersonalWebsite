@@ -23,9 +23,9 @@
     {
         "name": "Gyudon",
         "cuisine": "Japanese",
-        "time": "20",
+        "time": "25",
         "ingredients": "Sliced ribeye, onions, ginger, soy sauce, mirin, brown sugar, green onions",
-        "instructions":"Slice onions and mince ginger. Mix water with a little bit of soy sauce, mirin, and brown sugar. Simmer with onions and ginger for about 5 minutes. Add beef and simmer for 15 minutes. Top with green onions"
+        "instructions":"Slice onions and mince ginger. Stir fry onions with oil. Mix onions with water with a soy sauce, mirin, brown sugar and ginger. Simmer for 5 minutes. Add beef and simmer for 15 minutes. Top with green onions"
     },
     {
         "name": "Steak",
