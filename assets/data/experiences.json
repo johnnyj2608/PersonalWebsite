@@ -1,10 +1,10 @@
 [
     {
         "experience": true,
-        "location": "An Kang Social Day Care",
-        "title": "Software Engineer",
+        "location": "An Kang Adult Daycare",
+        "title": "Product Manager",
         "date": "June '22 - Present",
-        "description": "Focused on full-stack development and automation scripting. Collaborated closely with end-users to design and implement high-impact solutions, saving thousands of hours of manual labor and cost savings of $50k+.",
+        "description": "Drove the development of billing automation, patient route optimization, and automated documentation solutions by translating stakeholder needs into product requirements, streamlining workflows, reducing operational costs, and improving resource utilization and staff productivity.",
         "image": "assets/images/experience/ankang.jpg"
     },
     {
