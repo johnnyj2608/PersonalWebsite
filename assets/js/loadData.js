@@ -1,3 +1,37 @@
+function loadTitles() {
+    fetch("assets/data/titles.json")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("Failed to load titles.json");
+        }
+        return response.json();
+    })
+    .then(data => {
+        const titles = data.titles;
+        const titleElement = document.getElementById("cycling-title");
+
+        if (!titles || titles.length === 0 || !titleElement) {
+            console.error("No titles found or cycling-title element is missing.");
+            return;
+        }
+
+        let currentIndex = 0;
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % titles.length;
+
+            titleElement.style.opacity = 0;
+
+            setTimeout(() => {
+                titleElement.textContent = titles[currentIndex];
+                titleElement.style.opacity = 1;
+            }, 400);
+
+        }, 2500);
+    })
+    .catch(error => console.error("Error loading titles:", error));
+}
+
 function loadAbouts() {
     fetch('assets/data/abouts.json')
     .then(response => response.json())
@@ -134,6 +168,7 @@ function loadHobbies() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    loadTitles();
     loadAbouts();
     loadExperiences();
     loadProjects();

@@ -212,6 +212,11 @@ body {
   -webkit-animation-delay: 2s;
 }
 
+#cycling-title {
+  display: inline-block;
+  transition: opacity 0.4s ease-in-out;
+}
+
 /* Social */
 .icon-button {
   background-color: white;
